@@ -5,10 +5,21 @@
     width: $button-border-width
   background:
     color: $blue-color
+  +box-shadow(0 1px 3px 0 #007FB7)
+  +text-shadow(0 -1px 1px #0087C1)
+
 
   &:focus, &:hover
     background:
-      color: $yelow-color
+      color: #FEDB2F
     border:
       color: white
     color: $blue-color
+    +text-shadow(0 1px 1px #FFF2B6)
+
+  &.large
+    font-family: "MyriadProSemiBold"
+    font-weight: normal
+    padding:
+      top: 0.175em
+      bottom: 0.3em
