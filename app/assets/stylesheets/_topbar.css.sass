@@ -8,7 +8,18 @@
         +box-shadow(inset 0 1px 0 0 #FFF89C)
 
         &.strong
-          font-weight: bold
+          font-family: "MyriadProBold"
+          font-size: emCalc(17px)
+
+        &.bank-link
+          color: $blue-color
+
+          .icon
+            margin:
+              right: emCalc(3px)
+
+          &:hover .icon
+            +icons-sprite(lock-white)
 
         > strong
           font-size: emCalc(17px)
@@ -22,7 +33,7 @@
 
 
   .top-bar-main-menu
-    padding: 7px 0 6px
+    padding: 7px 0 0
 
     ul
       li
@@ -35,10 +46,10 @@
           font-size: emCalc(11px)
 
           &:hover
-            background: none
+            background: $yelow-color
 
-      .active > a
-        background: none
+      li.active > a
+        background: $yelow-color
         color: $blue-color
 
   .top-bar-menu-sub
@@ -53,6 +64,7 @@
 
 .top-bar
   +box-shadow(inset 0 1px 0 0 #FFF89C)
+  margin: 0
 
 
 @media #{$topbar-media-query}
@@ -64,6 +76,9 @@ $topbar-media-query-top: "only screen and (max-width: "#{$topbar-breakpoint}")"
 
 @media #{$topbar-media-query-top}
   .top-bar
+    .icon-switcher
+      display: none
+
     .top-bar-section
       > ul
         > li 
