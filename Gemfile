@@ -21,7 +21,7 @@ gem "haml-rails"
 # gem 'therubyracer', platforms: :ruby
 
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4-hack'
-gem 'zurb-foundation', '~> 4.0.0'
+gem 'zurb-foundation', github: 'zurb/foundation'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
