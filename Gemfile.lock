@@ -1,7 +1,7 @@
 GIT
-  remote: git://github.com/milgner/compass-rails.git
-  revision: 1749c06f15dc4b058427e7969810457213647fb8
-  ref: 1749c06f15dc4b058427e7969810457213647fb8
+  remote: git://github.com/Compass/compass-rails.git
+  revision: 32c16cb90f78053310b35199a970c53355bcd300
+  branch: rails4-hack
   specs:
     compass-rails (1.0.3)
       compass (>= 0.12.2, < 0.14)
