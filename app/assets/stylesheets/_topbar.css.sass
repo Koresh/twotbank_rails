@@ -82,8 +82,6 @@
     .title-area .name h1
       display: none
 
-$topbar-media-query-top: "only screen and (max-width: "#{$topbar-breakpoint}")"
-
 @media #{$topbar-media-query-top}
   .top-bar
     .icon-switcher
@@ -100,7 +98,7 @@ $topbar-media-query-top: "only screen and (max-width: "#{$topbar-breakpoint}")"
 
       ul 
         li
-          a
+          > a
             +box-shadow(none)
 
             &:hover
@@ -109,6 +107,16 @@ $topbar-media-query-top: "only screen and (max-width: "#{$topbar-breakpoint}")"
               +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
               +box-shadow(none)
               color: white
+
+        li.active > a:hover
+          background-color: #019fe3 // Old browser
+          +filter-gradient(#019fe3, #41b8ea, vertical) // IE6-9
+          +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
+          +box-shadow(none)
+          color: white
+
+        li.active > a
+          background: none
 
     .top-bar-menu-sub, .dropdown
       li
