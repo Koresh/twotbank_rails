@@ -1,0 +1,285 @@
+
+// Features block
+
+.section-bg-gray
+  padding: emCalc(20px) 0
+
+.product-features-block
+  ul
+    font-size: 0
+
+    li
+      font-size: 16px
+      // width: 166px
+      // padding: 0 15px
+      +grid-column(6)
+      display: block
+      text-align: left
+      padding:
+        left: emCalc(90px)
+
+      p
+        font-weight: bold
+        line-height: 1.1
+        padding: 
+          top: emCalc(10px)
+        font-size: 0.9em
+
+      img
+        width: emCalc(60px)
+        height: emCalc(60px)
+        margin:
+          left: emCalc(-75px)
+
+      p, img
+        display: block
+        float: left
+
+// Product information block
+
+.product-information-block
+  padding: emCalc(50px) 0
+
+  .section-container
+    .title
+      // width: 33%
+
+
+// Documents block
+.product-documents-block
+  a
+    text-decoration: underline
+    font-weight: bold
+
+  .documents-block-list
+    padding: 40px 0 20px
+    border:
+      width: 5px 0
+      style: solid
+      color: $yelow-color
+    text-align: center
+    list-style: none
+
+    li
+      +grid-column(12)
+      float: none
+      text-align: left
+      margin:
+        bottom: emCalc(15px)
+
+      a
+        +clearfix
+        display: block
+
+      p
+        font-weight: bold
+        text-decoration: underline
+        line-height: 1.4
+        float: left
+        margin:
+          bottom: 0
+
+      .icon
+        float: left
+        margin:
+          bottom: 0
+          left: -40px
+
+    a
+      text-decoration: underline
+      font-weight: bold
+      padding:
+        left: 40px
+
+// Product questionary
+.product-questionnaire-block
+  padding:
+    top: emCalc(20px)
+    bottom: emCalc(230px)
+
+.product-questionnaire-infografic
+  padding: 
+    left: emCalc(30px)
+  +grid-row
+  list-style: none
+
+  li
+    +grid-column(12)
+    text-align: left
+    float: none
+    padding:
+      left: 50px
+    +clearfix
+
+    .icon
+      display: none
+
+    .icon-small
+      display: block
+      float: left
+      margin:
+        left: -50px
+
+    p
+      font-size: emCalc(18px)
+      float: left
+
+    .icon
+      margin:
+        bottom: emCalc(25px)
+
+    &.arrow
+      margin:
+        top: emCalc(30px)
+      +grid-column(1.8)
+      overflow: hidden
+      margin:
+        left: -5%
+
+      .icon
+        float: right
+        margin:
+          right: emCalc(-15px)
+          bottom: 0
+
+
+// Feedback block
+.product-feedbacks-block
+  padding: emCalc(20px) 0 emCalc(20px)
+
+  .feeds-block
+    border-bottom:
+      width: 1px
+      style: solid
+      color: #E5E5E5
+    margin:
+      bottom: emCalc(20px)
+
+    h3
+      margin:
+        top: emCalc(10px)
+
+    .icon
+      margin:
+        bottom: emCalc(-10px)
+
+  .addthis_default_style
+    .item
+      +inline-block(top)
+
+  .contacts-block
+    h3
+      margin:
+        top: emCalc(10px)
+
+    h6
+      margin:
+        bottom: 0
+
+    h2
+      margin:
+        top: 0
+
+
+@media #{$small}
+
+  // Features block
+
+  .section-bg-gray
+    padding: emCalc(70px) 0
+
+  .product-features-block
+    ul
+      li
+        +grid-column(2)
+        float: none
+        text-align: center
+        +inline-block(top)
+        white-space: normal
+
+        p
+          display: block
+          padding: 0
+          font-size: 1em
+
+        img
+          display: inline
+          width: emCalc(70px)
+          height: emCalc(70px)
+          margin: 0
+
+        p, img
+          float: none
+
+  // Product information block
+  .product-documents-block
+    margin:
+      bottom: emCalc(30px)
+
+    .documents-block-list
+
+      li
+        +grid-column(2.5)
+        float: none
+        +inline-block(top)
+        text-align: center
+        margin: 0
+
+        p
+          float: none
+
+        .icon
+          float: none
+          +inline-block(top)
+          margin:
+            bottom: emCalc(20px)
+            left: 0
+
+      a
+        padding: 0
+
+
+  // Product questionary
+  .product-questionnaire-infografic
+    list-style: none
+    padding: 0
+
+    li
+      float: left
+      +grid-column(3.2)
+      text-align: center
+
+      .icon
+        +inline-block
+
+      .icon-small
+        display: none
+
+      p
+        float: none
+
+
+  // Feedback block
+  .product-feedbacks-block
+    .contacts-block
+    h3
+      margin:
+        top: emCalc(10px)
+
+    h6
+      margin:
+        bottom: 0
+
+    h2
+      margin:
+        top: emCalc(-8px)
+      font-size: emCalc(26px)
+
+
+@media #{$medium}
+  .product-feedbacks-block
+    .contacts-block
+      h2
+        margin:
+          top: emCalc(-4px)
+        font-size: emCalc(32px)
