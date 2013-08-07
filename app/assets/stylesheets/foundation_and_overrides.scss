@@ -281,7 +281,7 @@ $small-font-size: 70%;
 
 // We use this to set the base for lots of form spacing and positioning styles
 
-// $form-spacing: emCalc(16);
+$form-spacing: emCalc(8);
 
 // We use these to style the labels in different ways
 
@@ -292,23 +292,23 @@ $small-font-size: 70%;
 // $form-label-bottom-margin: emCalc(3);
 // $input-font-family: inherit;
 // $input-font-color: rgba(0,0,0,0.75);
-// $input-font-size: emCalc(14);
+$input-font-size: emCalc(20);
 // $input-bg-color: #fff;
-// $input-focus-bg-color: darken(#fff, 2%);
-// $input-border-color: darken(#fff, 20%);
-// $input-focus-border-color: darken(#fff, 40%);
+$input-focus-bg-color: #fff;
+$input-border-color: #A6A6A6;
+$input-focus-border-color: $blue-color;
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-disabled-bg: #ddd;
-// $input-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+$input-box-shadow: none;
 // $input-include-glowing-effect: true;
 
 // We use these to style the fieldset border and spacing.
 
 // $fieldset-border-style: solid;
-// $fieldset-border-width: 1px;
+$fieldset-border-width: 0;
 // $fieldset-border-color: #ddd;
-// $fieldset-padding: emCalc(20);
+$fieldset-padding: 0;//emCalc(20);
 // $fieldset-margin: emCalc(18, 0);
 
 // We use these to style the legends when you use them
@@ -600,7 +600,7 @@ $button-radius: 2px;
 // $custom-form-input-size: 16px;
 // $custom-form-check-color: #222;
 // $custom-form-check-size: 16px;
-// $custom-form-radio-size: 8px;
+$custom-form-radio-size: 25px;
 // $custom-form-checkbox-radius: 0px;
 
 // We use these to style the custom select form element.
@@ -965,19 +965,19 @@ $button-radius: 2px;
 
 // We use this to se the prog bar height
 
-// $progress-bar-height: emCalc(25);
-// $progress-bar-color: transparent;
+$progress-bar-height: emCalc(10);
+$progress-bar-color: #cfcfcf;
 
 // We use these to control the border styles
 
 // $progress-bar-border-color: darken(#fff, 20%);
-// $progress-bar-border-size: 1px;
+$progress-bar-border-size: 0;
 // $progress-bar-border-style: solid;
 // $progress-bar-border-radius: $global-radius;
 
 // We use these to control the margin & padding
 
-// $progress-bar-pad: emCalc(2);
+$progress-bar-pad: 0; //emCalc(2);
 // $progress-bar-margin-bottom: emCalc(10);
 
 // We use these to set the meter colors

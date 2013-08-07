@@ -1,0 +1,67 @@
+%form#questionnaire.questionnaire.custom
+  .quest-nav-fixed.text-center
+    %a#teaser_short{href: "#"}Заполните заявку
+    и узнайте, насколько мы снизим вашу ставку
+  .quest-main-top-corner
+  .quest-main-center-bg
+    .row
+      .quest-main-block.columns.small-12
+        .row
+          .columns.small-12.text-center
+            %h1 Заполните заявку и узнайте, насколько мы снизим вашу ставку
+
+        .progress-bar-block
+          .row
+            .columns.small-12
+              .nice.round.progress.small-12
+                %span.meter{style: "width: 9%"}
+                  %i.bulet.icon-switcher-bullet
+          %ul.row.text-center.progress-steps
+            %li.columns.small-3.item.active
+              Основные
+              %br
+              данные
+            %li.columns.small-3.item
+              Персональные
+              %br
+              данные
+            %li.columns.small-3.item
+              Контактная
+              %br
+              информация
+            %li.columns.small-3.item
+              Дополнительная
+              %br
+              информация
+
+        %fieldset
+          .row
+            .columns.small-3
+              %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Фамилия"}
+            .columns.small-3
+              %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Имя"}
+            .columns.small-3
+              %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Отчество"}
+            .columns.small-3
+              %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "+7 (916) 123-45-67"}
+          .row
+            .columns.small-3
+              %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Дата рождения"}
+            .columns.small-3
+              %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Электронная почта"}
+            .columns.small-3.left
+              .row
+                .columns.small-3
+                  Пол:
+                .columns.small-3
+                  %label{for: "maf_sex_female"}
+                    %input#maf_sex_female{type: "radio", name: "maf_sex", value: "Женский"}
+                    Ж
+                .columns.small-3.left
+                  %label{for: "maf_sex_female"}
+                    %input#maf_sex_male{type: "radio", name: "maf_sex", value: "Мужской"}
+                    М
+
+
+
+  .quest-main-bottom-bg
