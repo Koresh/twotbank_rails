@@ -6,4 +6,8 @@ class LiveController < ApplicationController
   def credit_transfer
     
   end
+
+  def schet_dlya_zhizni
+  	
+  end
 end
