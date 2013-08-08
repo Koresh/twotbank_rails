@@ -286,7 +286,7 @@ $form-spacing: emCalc(8);
 // We use these to style the labels in different ways
 
 // $form-label-pointer: pointer;
-// $form-label-font-size: emCalc(14);
+$form-label-font-size: emCalc(16);
 // $form-label-font-weight: 500;
 // $form-label-font-color: lighten(#000, 30%);
 // $form-label-bottom-margin: emCalc(3);
@@ -349,7 +349,7 @@ $fieldset-padding: 0;//emCalc(20);
 
 $button-med: emCalc(6);
 // $button-tny: emCalc(7);
-// $button-sml: emCalc(9);
+$button-sml: emCalc(3);
 $button-lrg: emCalc(6px);
 
 // We use this to control the display property.
@@ -364,7 +364,7 @@ $button-lrg: emCalc(6px);
 // $button-font-color-alt: #333;
 $button-font-med: emCalc(16);
 // $button-font-tny: emCalc(11);
-// $button-font-sml: emCalc(13);
+$button-font-sml: emCalc(16);
 $button-font-lrg: emCalc(26px);
 $button-font-weight: normal;
 // $button-font-align: center;
@@ -599,7 +599,7 @@ $button-radius: 2px;
 // $custom-form-bg-disabled: #ddd;
 // $custom-form-input-size: 16px;
 // $custom-form-check-color: #222;
-// $custom-form-check-size: 16px;
+$custom-form-check-size: 23px;
 $custom-form-radio-size: 25px;
 // $custom-form-checkbox-radius: 0px;
 
@@ -978,7 +978,7 @@ $progress-bar-border-size: 0;
 // We use these to control the margin & padding
 
 $progress-bar-pad: 0; //emCalc(2);
-// $progress-bar-margin-bottom: emCalc(10);
+$progress-bar-margin-bottom: emCalc(16);
 
 // We use these to set the meter colors
 

@@ -1,6 +1,15 @@
 a
   text-decoration: underline
 
+  &.dashed
+    text-decoration: none
+    border:
+      bottom: 1px dashed $blue-color
+
+    &:hover
+      border:
+        color: #008DCA
+
 h1
   .bcond
     font-family: "MyriadProBoldCond"

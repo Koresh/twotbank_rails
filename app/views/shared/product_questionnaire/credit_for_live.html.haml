@@ -1,4 +1,4 @@
-%form#questionnaire.questionnaire.custom
+%form#questionnaire.questionnaire.custom{autocomplete: "off"}
   .quest-nav-fixed.text-center
     %a#teaser_short{href: "#"}Заполните заявку
     и узнайте, насколько мы снизим вашу ставку
@@ -36,31 +36,40 @@
 
         %fieldset
           .row
-            .columns.small-3
+            .columns.small-6.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Фамилия"}
-            .columns.small-3
+            .columns.small-6.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Имя"}
-            .columns.small-3
+            .columns.small-6.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Отчество"}
-            .columns.small-3
+            .columns.small-6.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "+7 (916) 123-45-67"}
           .row
-            .columns.small-3
+            .columns.small-6.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Дата рождения"}
-            .columns.small-3
+            .columns.small-6.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Электронная почта"}
-            .columns.small-3.left
-              .row
-                .columns.small-3
+            .columns.small-6.large-3.left
+              %ul.inline-fields.inline-list
+                %li
                   Пол:
-                .columns.small-3
+                %li
                   %label{for: "maf_sex_female"}
                     %input#maf_sex_female{type: "radio", name: "maf_sex", value: "Женский"}
                     Ж
-                .columns.small-3.left
+                %li
                   %label{for: "maf_sex_female"}
                     %input#maf_sex_male{type: "radio", name: "maf_sex", value: "Мужской"}
                     М
+            .columns.small-6.large-12
+              %label{for: "maf_accept_rules"}
+                %input#maf_accept_rules{type: "checkbox", name: "maf_accept_rules", value: "yes"}
+                Указывая свои данные в этой анкете, я даю свое согласие на их обработку Банком.
+                %a#maf_accept_conditions_link.dashed{href:"#"} Подробнее
+
+          .row
+            .columns.small-12.large-2.right.text-right
+              %a#first_step_submit.button.small{href:"#"} Далее
 
 
 
