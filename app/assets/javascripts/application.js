@@ -16,8 +16,12 @@
 //= require turbolinks
 //= require_tree .
 
-// $(document).foundation('topbar', {is_hover: false, custom_back_text: true, back_text: 'назад'});
+$(document)
+  .foundation()
+  // .foundation("topbar", {is_hover: false, custom_back_text: true, back_text: 'назад'}); 
 
-$(function(){
-  $(document).foundation('topbar', {is_hover: false, custom_back_text: true, back_text: 'назад'}); 
-});
+// $(function(){ 
+//   $(document).foundation(
+//     "topbar", {is_hover: false, custom_back_text: true, back_text: 'назад'}
+//   ); 
+// });
