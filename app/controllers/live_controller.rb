@@ -10,4 +10,8 @@ class LiveController < ApplicationController
   def schet_dlya_zhizni
   	
   end
+
+  def debetovye_karty
+    
+  end
 end
