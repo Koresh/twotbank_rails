@@ -41,7 +41,7 @@
       bottom: 0.8em
 
   .quest-main-block
-    padding: 0 65px
+    padding: 0 emCalc(15px)
 
     fieldset
       margin:
@@ -50,3 +50,8 @@
       .button
         margin: 
           bottom: 0
+
+@media #{$small}
+  .questionnaire
+    .quest-main-block
+      padding: 0 65px

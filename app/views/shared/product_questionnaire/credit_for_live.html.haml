@@ -36,20 +36,20 @@
 
         %fieldset
           .row
-            .columns.small-6.large-3
+            .columns.small-12.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Фамилия"}
-            .columns.small-6.large-3
+            .columns.small-12.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Имя"}
-            .columns.small-6.large-3
+            .columns.small-12.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Отчество"}
-            .columns.small-6.large-3
+            .columns.small-12.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "+7 (916) 123-45-67"}
           .row
-            .columns.small-6.large-3
+            .columns.small-12.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Дата рождения"}
-            .columns.small-6.large-3
+            .columns.small-12.large-3
               %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Электронная почта"}
-            .columns.small-6.large-3.left
+            .columns.small-12.large-3.left
               %ul.inline-fields.inline-list
                 %li
                   Пол:
@@ -61,15 +61,16 @@
                   %label{for: "maf_sex_female"}
                     %input#maf_sex_male{type: "radio", name: "maf_sex", value: "Мужской"}
                     М
-            .columns.small-6.large-12
-              %label{for: "maf_accept_rules"}
-                %input#maf_accept_rules{type: "checkbox", name: "maf_accept_rules", value: "yes"}
-                Указывая свои данные в этой анкете, я даю свое согласие на их обработку Банком.
-                %a#maf_accept_conditions_link.dashed{href:"#"} Подробнее
+            .columns.small-12.large-12
+              .input-field
+                %label{for: "maf_accept_rules"}
+                  %input#maf_accept_rules{type: "checkbox", name: "maf_accept_rules", value: "yes"}
+                  Указывая свои данные в этой анкете, я даю свое согласие на их обработку Банком.
+                  %a#maf_accept_conditions_link.dashed{href:"#"} Подробнее
 
           .row
             .columns.small-12.large-2.right.text-right
-              %a#first_step_submit.button.small{href:"#"} Далее
+              %a#first_step_submit.button.small.expand{href:"#"} Далее
 
 
 
