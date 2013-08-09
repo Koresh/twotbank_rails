@@ -48,7 +48,9 @@
 .product-documents-block
   a
     text-decoration: underline
-    font-weight: bold
+    font-family: "MyriadProSemiBold"
+    color: $blue-link-color
+    font-size: emCalc(18px)
 
   .documents-block-list
     padding: 40px 0 20px
@@ -71,7 +73,6 @@
         display: block
 
       p
-        font-weight: bold
         text-decoration: underline
         line-height: 1.4
         float: left
@@ -86,7 +87,6 @@
 
     a
       text-decoration: underline
-      font-weight: bold
       padding:
         left: 40px
 
@@ -180,6 +180,31 @@
     h2
       margin:
         top: 0
+
+// Features block
+.product-features-block
+  .phone-block
+    padding:
+      top: 60px
+
+    p
+      font-family: "MyriadProSemiBold"
+      margin: 0
+
+
+  p
+    font-size: emCalc(14px)
+    line-height: 1.4
+
+    &.phone
+      font-size: emCalc(32px)
+      color: $blue-color
+      line-height: 1
+
+.product-features-banner-block
+  p
+    font-size: emCalc(18px)
+      
 
 
 @media #{$small}

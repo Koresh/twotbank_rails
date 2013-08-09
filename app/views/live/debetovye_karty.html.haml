@@ -1,16 +1,35 @@
-= render template: "shared/product_banner/debetovye_karty"
+= render template: "live/blocks/product_banner/debetovye_karty"
 
-%section
+%section.section-bg-white-20
   .row
     .columns.small-12.text-center
       %h2 Карта — доступ ко всем преимуществам 2TБанка
 
-= render template: "shared/product_services/debetovye_karty"
+= render template: "live/blocks/product_services/debetovye_karty"
 
-= render template: "shared/product_information/credit_transfer"
+%section.section-bg-white-40
+  .row
+    .columns.small-12.text-center
+      %h2 Выбирайте свой формат
+  .row
+    .columns.small-10.centered
 
-= render template: "shared/product_documents/credit_transfer"
+= render template: "live/blocks/product_features/debetovye_karty"
 
-= render template: "shared/product_questionnaire/credit_transfer"
+%section.section-bg-white-60.product-features-banner-block
+  .row
+    .columns.small-6.small-offset-1.text-center
+      %h2 Больше свободы в отпуске или в поездках за границу
+      %p
+        Где бы вы ни находились, вы можете в любое время 24/7 управлять своими счетами через Интернет-Банк или смартфон — конвертировать валюту онлайн, пополнять счет карты и контролировать все транзакции.
 
-= render template: "shared/product_feedbacks/credit_transfer"
+      %p
+        Вы можете снимать наличные в любом банкомате мира без какой-либо комиссии!
+    .columns.small-4.text-center.left
+      = image_tag "/images/features/0001/01/83af9692a99a25508dc02e7d279df2350b2bc7e8.png"
+
+= render template: "live/blocks/product_documents/debetovye_karty"
+
+= render template: "live/blocks/product_questionnaire/credit_transfer"
+
+= render template: "live/blocks/product_feedbacks/credit_transfer"
