@@ -176,6 +176,7 @@
     h6
       margin:
         bottom: 0
+        top: -1px
 
     h2
       margin:
@@ -204,7 +205,86 @@
 .product-features-banner-block
   p
     font-size: emCalc(18px)
-      
+
+
+// Insured block
+.product-insured-block
+  .sub-line
+    margin:
+      bottom: emCalc(100px)
+      top: 20px
+    border:
+      top: 1px solid #E5E5E5
+
+  p
+    margin: emCalc(40px) 0
+
+  .inline-list
+    a
+      font-family: "MyriadProSemiBold"
+
+
+// Format choice
+.product-format-choice
+
+.format-choice-block
+  margin:
+    top: 20px
+    bottom: 20px
+
+  .border-top
+    height: 7px
+    border:
+      color: #a6a6a6
+      width: 2px 2px 0 2px
+      style: solid
+    +border-radius(6px 6px 0 0)
+    margin:
+      bottom: emCalc(40px)
+
+  .border-bottom
+    height: 7px
+    border:
+      color: #a6a6a6
+      width: 0 2px 2px 2px
+      style: solid
+    +border-radius(0 0 6px 6px)
+    margin:
+      top: -5px
+
+  header
+    font-family: "MyriadProSemiBold"
+    color: $blue-link-color
+    margin:
+      bottom: emCalc(40px)
+
+    ul
+      list-style: none
+      margin: 0
+
+      li
+        +inline-block(top)
+        margin: 0 5px
+
+    a
+      text-decoration: none
+      border:
+        width: 0 0 1px 0
+        color: $blue-link-color
+        style: dashed
+
+      &.active
+        border: 0
+
+  .content-item
+    display: none
+
+    &.active
+      display: block
+
+    p
+      font-size: emCalc(14px)
+
 
 
 @media #{$small}
@@ -299,11 +379,18 @@
     h6
       margin:
         bottom: 0
+        top: 10px
 
     h2
       margin:
         top: emCalc(-8px)
       font-size: emCalc(26px)
+
+  // Insured block
+  .product-insured-block
+    padding:
+      bottom: emCalc(80px)
+
 
 
 @media #{$medium}

@@ -7,12 +7,61 @@
 
 = render template: "live/blocks/product_services/debetovye_karty"
 
-%section.section-bg-white-40
+%section.section-bg-white-40.product-format-choice
   .row
     .columns.small-12.text-center
       %h2 Выбирайте свой формат
   .row
-    .columns.small-10.centered
+    .columns.small-12.large-10.small-centered.format-choice-block
+      .border-top.hide-for-small
+
+      .sections-block
+        %header
+          %ul.text-center
+            %li
+              %a.active{href: "#", data: {index: "0"}} MasterCard Standard
+            %li
+              \/
+            %li
+              %a{href: "#", data: {index: "1"}} MasterCard Gold
+            %li
+              \/
+            %li
+              %a{href: "#", data: {index: "2"}} MasterCard Maestro
+        .content
+          .row.content-item.active
+            .columns.small-6.hide-for-small
+              = image_tag "/images/features/0001/01/fd29dfe41b36f2feec931de09dccb1ff667c5a26.png"
+            .columns.small-12.large-6
+              %h3 MasterCard Standard
+              %p
+                Карта , которую вы получите после открытия 
+                %a{href: "/schet-dlya-zhizni/"} Счета для жизни.
+                Карта выпускается бесплатно, без комиссии за обслуживание. Вы можете выбрать из двух видов карт: карту мгновенной выдачи или персонифицированную карту. Совершайте любые покупки в интернете и офлайн, бронируйте отели, билеты, оплачивайте любые услуги без дополнительной авторизации и без комиссии.
+
+              %a.button.small.small-12.large-6{href: "/mobile/#"} Заказать карту
+          .row.content-item
+            .columns.small-6.hide-for-small
+              = image_tag "/images/features/0001/01/36fe49d95b5e87877226af25fd98053b242f06fb.png"
+            .columns.small-12.large-6
+              %h3 MasterCard Gold
+              %p
+                Карта, предоставляющая множество дополнительных привилегий и скидок от MasterCard. Легко пополняйте баланс карты через банкоматы с функцией кэш-ин и 
+                %a{href: "/internet-bank/"} Интернет-Банк.
+
+              %a.button.small.small-12.large-6{href: "/mobile/#"} Заказать карту
+          .row.content-item
+            .columns.small-6.hide-for-small
+              = image_tag "/images/features/0001/01/fd29dfe41b36f2feec931de09dccb1ff667c5a26.png"
+            .columns.small-12.large-6
+              %h3 MasterCard Maestro
+              %p
+                Преимущество этой карты в том, что ее может получить человек с нулевой банковской историей, даже с 14-ти лет. Это возможно благодаря тому, что она требует авторизации (введения дополнительных кодов) при проведении всех платежей. Поэтому ваши деньги под надежным контролем. Получите первую карту MasterCard Maestro бесплатно без необходимости брать деньги в кредит.
+
+              %a.button.small.small-12.large-6{href: "/mobile/#"} Заказать карту
+
+
+      .border-bottom.hide-for-small
 
 = render template: "live/blocks/product_features/debetovye_karty"
 
@@ -31,5 +80,7 @@
 = render template: "live/blocks/product_documents/debetovye_karty"
 
 = render template: "live/blocks/product_questionnaire/credit_transfer"
+
+= render template: "live/blocks/product_insured/debetovye_karty"
 
 = render template: "live/blocks/product_feedbacks/credit_transfer"

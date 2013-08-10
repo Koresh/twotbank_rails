@@ -14,7 +14,7 @@ $base-font-size: emCalc(18px) !default;
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be a different size and not have it effect grid size too,
 // set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
-$em-base: 16 !default;
+$em-base: 18 !default;
 
 // It strips the unit of measure and returns it
 @function strip-unit($num) {
@@ -175,12 +175,12 @@ $header-font-weight: normal;
 
 // Control header font sizes
 
-$h1-font-size: emCalc(48px);
-$h2-font-size: emCalc(24);
-$h3-font-size: emCalc(24);
+$h1-font-size: emCalc(48);
+$h2-font-size: emCalc(26);
+$h3-font-size: emCalc(17);
 $h4-font-size: emCalc(20);
 $h5-font-size: emCalc(18);
-$h6-font-size: emCalc(16px);
+$h6-font-size: emCalc(16);
 
 // Control how subheaders are styled.
 
