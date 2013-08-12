@@ -22,6 +22,8 @@
     image: image-url("questionnaire_bg.png")
     repeat: repeat-y
     position: center top
+  position: relative
+  z-index: 70
 
 .quest-main-bottom-bg
   height: 30px
@@ -29,10 +31,13 @@
     image: image-url("questionnaire_b.png")
     repeat: no-repeat
     position: center center
+  position: relative
+  z-index: 60
 
 .questionnaire
   margin:
     bottom: -250px
+  position: relative
 
   h1
     font-size: emCalc(38px)
@@ -51,7 +56,110 @@
         margin: 
           bottom: 0
 
+
+.questionnaire-full-form
+  position: absolute
+  width: 100%
+  min-width: 100%
+  z-index: 50
+  margin:
+    top: emCalc(-10px)
+
+
+.questionnaire-full-form-block
+  padding:
+    top: emCalc(20px)
+  background: #fff
+  +box-shadow(0 0 10px 0 rgba(0,0,0,.5))
+
+  p
+    font-size: emCalc(16px)
+
+
+// STEPS
+form
+  .questionnaire-step-block
+    .row
+      margin: 0 emCalc(-15px)
+
+      .columns
+        padding:
+          left: emCalc(15px)
+          right: emCalc(15px)
+
+        &.inline-fields
+          padding:
+            top: emCalc(7px)
+            bottom: emCalc(7px)
+
+      .row
+        margin: 0 emCalc(-15px)
+
+        .columns
+          padding:
+            left: emCalc(15px)
+            right: emCalc(15px)
+
+          &.inline-fields
+            padding:
+              top: emCalc(7px)
+              bottom: emCalc(7px)
+
+
+// Delivery Type Change
+form
+  .questionnaire-delivery-type-change-block
+    &.row
+      padding:
+        top: emCalc(20px)
+        bottom: emCalc(20px)
+      margin:
+        top: emCalc(10px)
+        bottom: emCalc(20px)
+
+    h2
+      margin:
+        bottom: emCalc(20px)
+
+.questionnaire-delivery-type-change
+  ul
+    list-style: none
+    margin:
+      bottom: 30px
+
+    li
+      margin: 0 emCalc(20px)
+      +inline-block(top)
+
+      a
+        font-size: emCalc(16px)
+
+        &.active
+          color: $body-font-color
+          border: 0
+          cursor: default
+
+
+
+  .questionnaire-delivery-type-block
+    .item
+      display: none
+
+      &.active
+        display: block
+
+    .custom.radio
+      margin:
+        right: emCalc(10px)
+
+
+  
+
+
 @media #{$small}
   .questionnaire
     .quest-main-block
       padding: 0 65px
+
+  .questionnaire-full-form-wrap
+    padding: 0 emCalc(25px)

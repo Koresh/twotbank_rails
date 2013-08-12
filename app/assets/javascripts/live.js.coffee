@@ -15,3 +15,20 @@ $ ->
     $(".format-choice-block").find(".content-item").eq(index).addClass "active"
 
     false
+
+  $(".questionnaire-delivery-type-change").find("ul").find("a").on "click", (e) ->
+
+    e.preventDefault()
+
+    $(".questionnaire-delivery-type-change").find("ul").find("a").removeClass "active"
+    $(this).addClass "active"
+    index = $(this).data("index")
+    $(".questionnaire-delivery-type-block").find(".item").removeClass("active").eq(index).addClass "active"
+
+  $("input[name='maf_way_to_get']").on "change", (e) ->
+    $("input[name='maf_way_to_get']").each ->
+      if $(this).is(":checked")
+        $($(this).data("block")).show()
+      else
+        $($(this).data("block")).hide()
+

@@ -176,7 +176,7 @@ $header-font-weight: normal;
 // Control header font sizes
 
 $h1-font-size: emCalc(48);
-$h2-font-size: emCalc(26);
+$h2-font-size: emCalc(24);
 $h3-font-size: emCalc(17);
 $h4-font-size: emCalc(20);
 $h5-font-size: emCalc(18);
@@ -282,7 +282,7 @@ $paragraph-line-height: 1.4;
 
 // We use this to set the base for lots of form spacing and positioning styles
 
-$form-spacing: emCalc(8);
+$form-spacing: emCalc(10);
 
 // We use these to style the labels in different ways
 
@@ -606,7 +606,7 @@ $custom-form-radio-size: 25px;
 
 // We use these to style the custom select form element.
 
-// $custom-select-bg: #fff;
+$custom-select-bg: #fff;
 // $custom-select-fade-to-color: #f3f3f3;
 // $custom-select-border-color: #ddd;
 // $custom-select-triangle-color: #aaa;

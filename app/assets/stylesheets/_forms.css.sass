@@ -26,18 +26,51 @@ textarea
 
 
 form
+  .input-field
+    margin:
+      bottom: emCalc(20px)
+
+    input
+      margin:
+        bottom: emCalc(4px)
+
+    label
+      font:
+        size: emCalc(11px)
+        family: "MyriadProSemiBold"
+      text-transform: uppercase
+
   .inline-fields
     font-size: emCalc(18px)
     padding:
       top: 5px
+    margin:
+      bottom: 20px
 
     .custom.radio
       margin:
         top: -1px
 
-  .input-field
-    margin:
-      bottom: 14px
+    label
+      text-transform: none
+      font:
+        size: emCalc(18px)
+        family: "MyriadProRegular"
+      margin: 0
+
+  .input-accept
+    label
+      font:
+        size: emCalc(16px)
+        family: "MyriadProRegular"
+      text-transform: none
+
+  textarea
+    resize: none
+    height: emCalc(125px)
+
+  small
+    font-size: emCalc(14px)
 
   &.custom 
     .custom
@@ -67,4 +100,8 @@ form
 
           &:before
             display: none
+
+.inline-select
+  overflow: visible
+  +clearfix
 
