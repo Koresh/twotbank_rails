@@ -82,7 +82,7 @@
         %a#questionnaire-close-btn.icon-btn-close-red{href: "#maf_close_form"}
 
         / Step 1
-        .row.questionnaire-step-block.step-1
+        .row.questionnaire-step-block.step-1{style: "display: none"}
           .columns.small-12
             %h2 Персональные данные
             %p
@@ -222,7 +222,7 @@
 
 
         / Step 3
-        .row.questionnaire-step-block.step-3{style: "display: none"}
+        .row.questionnaire-step-block.step-3
           .columns.small-12
             %h2 Дополнительная информация
             .row.questionnaire-delivery-type-change-block.section-bg-gray.no-shadow
@@ -330,7 +330,7 @@
                       Евро
 
                 %ul.inline-fields.inline-list.inline-select
-                  %li
+                  %li.label
                     Удобное время для звонка:
                   %li
                     %select#maf_call_time{name: "maf_call_time"}
