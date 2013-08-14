@@ -1,4 +1,4 @@
-%form#questionnaire.questionnaire.custom{autocomplete: "off"}
+%form#questionnaire.questionnaire.custom{autocomplete: "off", data: {form: {type: "deposite"}}}
   #questionnaire-fixed.quest-nav-fixed.text-center
     %a#teaser_short{href: "#"}Заполните заявку
     и узнайте, насколько мы снизим вашу ставку
@@ -82,7 +82,7 @@
         %a#questionnaire-close-btn.icon-btn-close-red{href: "#maf_close_form"}
 
         / Step 1
-        .row.questionnaire-step-block.step-1{style: "display: none"}
+        .row.questionnaire-step-block.step-1
           .columns.small-12
             %h2 Персональные данные
             %p
@@ -222,7 +222,7 @@
 
 
         / Step 3
-        .row.questionnaire-step-block.step-3
+        .row.questionnaire-step-block.step-3{style: "display: none"}
           .columns.small-12
             %h2 Дополнительная информация
             .row.questionnaire-delivery-type-change-block.section-bg-gray.no-shadow
