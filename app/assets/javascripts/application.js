@@ -13,10 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require underscore-1.4.4.js
-//= require backbone.min.js
-//= require Backbone.ModelBinder.v.1.0.2.js
-//= require live.js
+//= require underscore-1.4.4
+//= require backbone.min
+//= require Backbone.ModelBinder.v.1.0.2
+//= require live
+//= require jquery.maskedinput
 //= require_tree ./form
 // require_tree .
 
