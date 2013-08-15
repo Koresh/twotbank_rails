@@ -18,6 +18,8 @@
 //= require Backbone.ModelBinder.v.1.0.2
 //= require live
 //= require jquery.maskedinput
+//= require select2
+//= require select2_locale_ru
 //= require_tree ./form
 // require_tree .
 
