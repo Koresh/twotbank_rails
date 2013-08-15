@@ -1,0 +1,100 @@
+$i: 8
+@while $i > 0
+  #banner-slide-#{$i}
+    background:
+      image: image-url("banners/banner_bg#{$i}.jpg")
+  $i: $i - 1
+
+
+.orbit-container
+  .orbit-slides-container 
+    > li
+      height: 455px
+      background:
+        position: center center
+        repeat: no-repeat
+      color: #fff
+
+      > .row
+        height: 100%
+
+      h1
+        font-size: emCalc(32px)
+        color: #fff
+        line-height: 1.2
+
+      p
+        font-size: emCalc(16px)
+
+        a
+          color: $yelow-color
+
+  .btn-links-block
+    a
+      display: block
+      color: #fff
+      font-size: emCalc(12px)
+      text-decoration: none
+      line-height: 1.1
+      border:
+        width: 1px
+        style: solid
+        color: #fff
+      +border-radius(5px)
+      padding: 8px 15px
+
+      i, span
+        +inline-block
+        vertical-align: middle
+
+      i
+        margin:
+          right: emCalc(10px)
+
+  .banner-slide-content
+    padding:
+      top: emCalc(80px)
+
+.orbit-bullets
+  position: absolute
+  left: 60%
+  top: 90%
+  z-index: 60
+
+  li
+    height: 16px
+    width: 16px
+    border:
+      width: 3px
+      color: #fff
+    margin:
+      right: 10px
+
+    &:hover
+      border: 
+        color: $orbit-bullet-nav-color-active
+
+    &.active
+      border:
+        color: $orbit-bullet-nav-color-active
+
+.banner-slide-image
+  height: 100%
+
+#banner-image-1
+  background:
+    image: image-url("banners/banner1.png")
+    position: left bottom
+    repeat: no-repeat
+
+#banner-image-2
+  background:
+    image: image-url("banners/banner5.png")
+    position: left bottom
+    repeat: no-repeat
+
+#banner-image-3
+  background:
+    image: image-url("banners/banner4.png")
+    position: left bottom
+    repeat: no-repeat

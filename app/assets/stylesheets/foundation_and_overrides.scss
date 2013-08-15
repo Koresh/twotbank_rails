@@ -826,8 +826,8 @@ $custom-dropdown-opposite-padding: emCalc(34);
 
 // We use these to control the bullet nav styles
 
-// $orbit-bullet-nav-color: #999;
-// $orbit-bullet-nav-color-active: #555;
+$orbit-bullet-nav-color: transparent;
+$orbit-bullet-nav-color-active: $yelow-color;
 
 // We use thes to controls the style of slide numbers
 
