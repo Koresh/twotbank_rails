@@ -20,7 +20,7 @@ class TBank.Layout extends Backbone.View
   initialize: ->
     @product = $('#product').val() || @product
     @sendmodel ||= new TBank.SendModel
-    @api = new TBank.Api @type, @product
+    @api = new TBank.Api_test @type, @product
 
     @prev_step = 0
 

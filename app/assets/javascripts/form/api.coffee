@@ -101,3 +101,43 @@ class TBank.Api
 
 
 
+class TBank.Api_test
+    constructor: (@type, @product) ->
+
+    getUniqID:(callback) ->
+      uniqID = '123214'
+      callback uniqID
+
+    checkMobile: (mobile_phone, callback)->
+      callback true
+
+    sendSMS: (mobile_phone, callback) ->
+      callback true
+
+    checkCode: (mobile_phone, code, callback) ->
+      callback true
+
+    sendMailFinalStep: (model, callback) ->
+
+        request = $.ajax 
+          url:      @api_resourses.sendMailFinalStep
+          type:     "POST"
+          data:     model.toJSON()
+          dataType: "json"
+
+        request.done (result) =>
+          callback result.success
+
+        request.fail (jqXHR, textStatus) =>
+          callback textStatus
+
+
+    sendMobileStep: (model, callback) ->
+        $.post @api_resourses.sendMailMobileStep,
+            model.toJSON(),
+            (result) ->
+                callback result.success
+            ,'json'
+
+
+
