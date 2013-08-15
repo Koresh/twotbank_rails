@@ -811,7 +811,7 @@ class TBank.FinalStepBuhsoft extends TBank.FinalStep
 class TBank.Layout.Deposite extends TBank.Layout
   type: 'deposite'
   steps: [
-    {view: TBank.StartForm, el: '.formBlock1'},
+    {view: TBank.StartForm, el: '#form-main-step'},
     {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
     {view: TBank.ContactForm, el: '#maf_full_form_main .step2'}
     {view: TBank.Step4, el: '#maf_full_form_main .step3'}
@@ -821,7 +821,7 @@ class TBank.Layout.Deposite extends TBank.Layout
 class TBank.Layout.Credit extends TBank.Layout
   type: 'credit'
   steps: [
-    {view: TBank.StartForm, el: '.formBlock1'},
+    {view: TBank.StartForm, el: '#form-main-step'},
     {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
     {view: TBank.ContactFormHomePhone, el: '#maf_full_form_main .step2'}
     {view: TBank.Step4Credit, el: '#maf_full_form_main .step3'}
@@ -831,7 +831,7 @@ class TBank.Layout.Credit extends TBank.Layout
 class TBank.Layout.Transfer extends TBank.Layout
   type: "transfer"
   steps: [
-    {view: TBank.StartForm, el: '.formBlock1'},
+    {view: TBank.StartForm, el: '#form-main-step'},
     {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
     {view: TBank.ContactFormHomePhone, el: '#maf_full_form_main .step2'}
     {view: TBank.Step4Transfer, el: '#maf_full_form_main .step3'}
@@ -840,7 +840,7 @@ class TBank.Layout.Transfer extends TBank.Layout
 class TBank.Layout.Business extends TBank.Layout
   type: "business"
   steps: [
-    {view: TBank.StartBusiness, el: '.formBlock1'},
+    {view: TBank.StartBusiness, el: '#form-main-step'},
     {view: TBank.FinalBusiness, el: '#maf_full_form_main .step1'},
     {view: TBank.FinalStepBusiness, el: "#maf_success"}
   ]
@@ -849,7 +849,7 @@ class TBank.Layout.Pifanket extends TBank.Layout
   type: "pifanket"
   steps: [
     view: TBank.StartFormPif
-    el: ".formBlock1"
+    el: "#form-main-step"
   ,
     view: TBank.FinalStepDeposit
     el: "#maf_success"
@@ -872,7 +872,7 @@ class TBank.Layout.MTP extends TBank.Layout
 class TBank.Layout.CreditSpain extends TBank.Layout
   type: 'creditspain'
   steps: [
-    {view: TBank.StartForm, el: '.formBlock1'},
+    {view: TBank.StartForm, el: '#form-main-step'},
     {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
     {view: TBank.ContactFormHomePhone, el: '#maf_full_form_main .step2'}
     {view: TBank.Step4CreditSpain, el: '#maf_full_form_main .step3'}
