@@ -16,8 +16,8 @@
 //= require underscore-1.4.4.js
 //= require backbone.min.js
 //= require Backbone.ModelBinder.v.1.0.2.js
-//= require_tre form
 //= require live.js
+//= require_tree ./form
 // require_tree .
 
 $(document)
