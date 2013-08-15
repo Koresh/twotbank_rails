@@ -20,8 +20,8 @@
 //= require jquery.maskedinput
 //= require select2
 //= require select2_locale_ru
+//= require monkey_patching
 //= require_tree ./form
-// require_tree .
 
 $(document)
   .foundation()

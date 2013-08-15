@@ -812,9 +812,9 @@ class TBank.Layout.Deposite extends TBank.Layout
   type: 'deposite'
   steps: [
     {view: TBank.StartForm, el: '#form-main-step'},
-    {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
-    {view: TBank.ContactForm, el: '#maf_full_form_main .step2'}
-    {view: TBank.Step4, el: '#maf_full_form_main .step3'}
+    {view: TBank.PersonalForm, el: '.questionnaire-step-block.step-1'},
+    {view: TBank.ContactForm, el: '.questionnaire-step-block.step-2'}
+    {view: TBank.Step4, el: '.questionnaire-step-block.step-3'}
     {view: TBank.FinalStepDeposit, el: "#maf_success"}
   ]
 

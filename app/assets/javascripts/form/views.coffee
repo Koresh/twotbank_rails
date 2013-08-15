@@ -215,8 +215,6 @@ class TBank.StepView extends Backbone.View
       if mask = @model.getMask key
         eval "new Masks.#{mask.capitalize()}( $('##{key}') )"
 
-    @$el.find('input:checkbox, input:radio').CFElement()
-
     @afterRender()
 
     @
