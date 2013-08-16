@@ -22,6 +22,8 @@
 //= require select2_locale_ru
 //= require monkey_patching
 //= require_tree ./form
+//= require tbank.chars
+// require_tree .
 
 $(document)
   .foundation()

@@ -10,6 +10,9 @@
   top: emCalc(40px)
   left: emCalc(30px)
 
+  img
+    width: emCalc(80px)
+
 .product-banner-block
   position: relative
 
@@ -90,6 +93,13 @@
     p
       font-size: emCalc(18px)
       line-height: 1.3
+
+
+@media #{$small}
+  .logo-block-absolute
+    img
+      width: 100%
+
 
 @media #{$topbar-media-query-top}
   .product-banner-block

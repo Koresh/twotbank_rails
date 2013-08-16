@@ -19,7 +19,7 @@ $i: 8
         height: 100%
 
       h1
-        font-size: emCalc(32px)
+        font-size: emCalc(24px)
         color: #fff
         line-height: 1.2
 
@@ -41,7 +41,7 @@ $i: 8
         style: solid
         color: #fff
       +border-radius(5px)
-      padding: 8px 15px
+      padding: 3px 7px
 
       i, span
         +inline-block
@@ -49,11 +49,11 @@ $i: 8
 
       i
         margin:
-          right: emCalc(10px)
+          right: emCalc(7px)
 
   .banner-slide-content
     padding:
-      top: emCalc(80px)
+      top: emCalc(140px)
 
 .orbit-bullets
   position: absolute
@@ -82,19 +82,47 @@ $i: 8
   height: 100%
 
 #banner-image-1
-  background:
-    image: image-url("banners/banner1.png")
-    position: left bottom
-    repeat: no-repeat
+  background: none
 
 #banner-image-2
-  background:
-    image: image-url("banners/banner5.png")
-    position: left bottom
-    repeat: no-repeat
+  background: none
 
 #banner-image-3
-  background:
-    image: image-url("banners/banner4.png")
-    position: left bottom
-    repeat: no-repeat
+  background: none
+
+@media #{$small}
+  .orbit-container
+    .btn-links-block
+      a
+        padding: 8px 15px
+
+      i
+        margin:
+          right: emCalc(10px)
+
+    .orbit-slides-container 
+      > li
+        h1
+          font-size: emCalc(32px)
+
+    .banner-slide-content
+      padding:
+        top: emCalc(80px)
+
+  #banner-image-1
+    background:
+      image: image-url("banners/banner1.png")
+      position: left bottom
+      repeat: no-repeat
+
+  #banner-image-2
+    background:
+      image: image-url("banners/banner5.png")
+      position: left bottom
+      repeat: no-repeat
+
+  #banner-image-3
+    background:
+      image: image-url("banners/banner4.png")
+      position: left bottom
+      repeat: no-repeat

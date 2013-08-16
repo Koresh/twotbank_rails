@@ -1,6 +1,152 @@
 = render template: "live/blocks/product_banner/index"
 
-%section.section-bg-gray
+= render template: "live/blocks/under_banner/index"
+
+%section.section-bg-gray.padding-40
   = render template: "shared/contacts"
-%section.section-bg-gray
+
+%section.section-bg-blue.padding-top-20.section-mobile-banner
+  .row
+    .columns.large-5.small-12.text-center
+      %h2
+        %a{href: "/mobile/"} Мобильный сервис
+      %p Осуществление основных банковских операций через телефон
+
+    .columns.large-3.small-4.image-block
+      =image_tag "/images/filer_public_thumbnails/filer_public/2013/03/08/mobile_bg.png__271x194_q85_crop_upscale.jpg"
+    .columns.large-4.small-8
+      %ul.inline-list
+        %li
+          %a{href: "https://itunes.apple.com/ru/app/bank-2t/id517210131", target: "_blank"}
+            %i.icon.icon-app-store
+        %li
+          %a{href: "https://play.google.com/store/apps/details?id=ru.ftc.faktura.bankt&feature=search_result#?t=W251bGwsMSwyLDEsInJ1LmZ0Yy5mYWt0dXJhLmJhbmt0Il0.", target: "_blank"}
+            %i.icon.icon-google-play
+
+%section.section-bg-gray.padding-50.shadow-inset.section-proposals
+  .row
+    .columns.small-4.small-offset-1.hide-for-small
+      %a{href: "/schet-dlya-zhizni/"}
+        =image_tag "/images/filer_public_thumbnails/filer_public/2013/03/08/3cce78cb3b26c6643a76807757e9444fe8afb094.png__336x300_q85_crop_upscale.png"
+    .columns.large-6.large-offset-0.left.text-center.small-10.small-offset-1
+      %h1
+        %a{href: "/schet-dlya-zhizni/"} тСчет
+      %p
+        Текущий счет для ваших платежей и переводов. Открывая тСчет, вы бесплатно получаете банковскую карту MasterCard Standard, Доходный счет и Интернет-Банк.
+
+      %a.button.small{href: "/schet-dlya-zhizni/", title: "тСчет"} Расскажите подробнее
+
+%section#chars-block.section-bg-gray.section-chars-block
+  .row
+    #char-item-5.char-item.columns.large-9.small-12
+      .content
+        %p
+          Панды выделяют специальный секрет с феромонами, который вызывает симпатию к ним у других животных и людей.
+        %p.small
+          Спонсор эффекта —
+          %a{href: "/debetovye-karty/"} дебетовые карты
+          MasterCard с доставкой домой или в офис.
+
+      .image
+        =image_tag "/images/filer_public_thumbnails/filer_public/2013/03/08/e7f2c3914c818d65875d4776005d971ae7808813.png__510x380_q85_crop_upscale.png"
+
+    #char-item-3.char-item.columns.large-9.small-12.hide
+      .content
+        %p
+          Сурикат умеет издавать восемь уникальных звуков, благодаря которым он может передавать сигнал на расстояние до 5 миль.
+        %p.small
+          Спонсор эффекта — 
+          %a{href: "/services/mobile"} Мобильный сервис
+          в вашем смартфоне.
+
+      .image
+        =image_tag "/images/filer_public_thumbnails/filer_public/2013/03/08/9442eae7583286e4b230552b4ff3d6ba6da4c8f4.png__510x380_q85_crop_upscale.png"
+
+    #char-item-4.char-item.columns.large-9.small-12.hide
+      .content
+        %p
+          Колибри — единственные птицы на планете, способные летать задом наперед, вниз головой и даже выписывать «восьмерку»!
+        %p.small
+          Спонсор эффекта —
+          %a{href: "/schet-dlya-zhizni/"} платежи за любые услуги 
+          24/7 где угодно как угодно.
+
+      .image
+        =image_tag "/images/filer_public_thumbnails/filer_public/2013/03/08/310132adc02db0c6c6e61144c4b55e3bfd361323.png__510x380_q85_crop_upscale.png"
+
+    #char-item-1.char-item.columns.large-9.small-12.hide
+      .content
+        %p
+          Ложась на живот, пингвин скользит брюхом по льду, развивая скорость до 25 км/ч.
+        %p.small
+          Спонсор эффекта — служба бесплатной доставки
+          %a{href: "/debetovye-karty/"} банковских карт
+          \.
+
+      .image
+        =image_tag "/images/filer_public_thumbnails/filer_public/2013/03/07/ffade6375f48745d5189600a95f0f346cd96ec1a.png__510x380_q85_crop_upscale.png"
+
+    #char-item-2.char-item.columns.large-9.small-12.hide
+      .content
+        %p
+          Шея жирафа растет в два раза быстрее туловища, чтобы он легко доставал до воды, стоя на длинных ногах!!!
+        %p.small
+          Спонсор эффекта — 
+          %a{href: "/vklad-na-srok/"} Вклад на срок
+          \.
+
+      .image
+        =image_tag "/images/filer_public_thumbnails/filer_public/2013/03/08/f54ab66b51573a8cbee523ace155f1f4f3088836.png__510x380_q85_crop_upscale.png"
+
+
+    %form.custom.columns.large-3.small-12{autocomplete: "off"}
+      .selector-block
+        %h2 
+          —Не хочу
+          %span#selecter-title
+            панду
+          , хочу
+        %select#chars-selecter.medium
+          %option{value: "0"} что–нибудь другое
+          %option{value: "5", data: {title: "панду"}} панду
+          %option{value: "3", data: {title: "суриката"}} суриката
+          %option{value: "4", data: {title: "колибри"}} колибри
+          %option{value: "1", data: {title: "пингвина"}} пингвина
+          %option{value: "2", data: {title: "жирафа"}} жирафа
+
+%section.section-bg-yelow.product-questionnaire-block.shadow-inset
+  .row
+    .columns.small-12
+      %h1.text-center
+        Как стать клиентом Банка
+
+      %ul.product-questionnaire-infografic
+        %li
+          %i.icon.icon-what-watch
+          %i.icon.icon-small.icon-what-watch-small
+          %p
+            %strong
+              Заполняйте анкету
+            на сайте. Это буквально 10 (десять!) минут.
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow
+        %li
+          %i.icon.icon-what-phone
+          %i.icon.icon-small.icon-what-phone-small
+          %p
+            Менеджер Банка
+            %strong свяжется с вами по телефону.
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow
+        %li
+          %i.icon.icon-what-document
+          %i.icon.icon-small.icon-what-document-small
+          %p
+            А представитель Банка
+            %strong бесплатно
+            доставит вам договор и карту. 
+
+  = render template: "live/blocks/product_questionnaire/deposite"
+
+%section.section-bg-gray.padding-top-200
   = render template: "shared/feeds"

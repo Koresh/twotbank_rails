@@ -1,0 +1,156 @@
+// Place all the styles related to the live controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.section-mobile-banner
+  h2
+    margin:
+      top: 0
+
+  .inline-list
+    margin:
+      top: emCalc(50px)
+
+    li
+      margin:
+        bottom: emCalc(10px)
+
+
+.section-proposals
+  &.padding-50
+    padding: emCalc(10px) 0
+
+  h1
+    font-family: "MyriadProRegular"
+    font-size: emCalc(54px)
+    margin:
+      bottom: 0.1em
+
+    a
+      color: $header-font-color
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
+
+  p
+    margin: 
+      bottom: 1em
+
+.section-chars-block
+  padding: 
+    top: 60px
+
+
+  // Select
+  form.custom
+    .custom.dropdown
+      border:
+        color: $blue-link-color
+        width: 2px
+      font-size: emCalc(18px)
+      font-family: "MyriadProSemiBold"
+
+      .current
+        line-height: 1.6
+        color: $blue-link-color
+        margin:
+          left: 0.5em
+
+      .selector:after
+        border:
+          color: lighten($blue-link-color, 20%) transparent transparent
+
+      ul
+        li
+          color: $blue-link-color
+
+          &.selected, &:hover
+            color: #fff
+
+      &:hover
+        .selector:after
+          border:
+            color: $blue-link-color transparent transparent
+
+
+
+  .selector-block
+    padding:
+      top: 0
+    h2
+      font-size: emCalc(20px)
+
+  .char-item
+    +clearfix
+
+    .content
+      float: none
+      width: 100%
+      padding:
+        top: 0
+      text-align: center
+
+      p
+        font-size: emCalc(20px)
+
+        &.small
+          font-size: emCalc(16px)
+
+    .image
+      float: none
+      width: 100%
+      text-align: center
+
+      img
+        width: 40%
+
+.product-questionnaire-block
+  margin:
+    bottom: 0
+
+
+@media #{$small}
+  .section-mobile-banner
+    h2
+      margin:
+        top: emCalc(20px)
+
+  .section-proposals
+    &.padding-50
+      padding: emCalc(50px) 0
+
+    h1
+      margin:
+        bottom: 0.3em
+
+    p
+      margin: 
+        bottom: 2.5em
+
+  .section-chars-block
+    form.columns
+      margin:
+        left: -5%
+      width: 30%
+
+    .selector-block
+      padding:
+        top: 90px
+
+    .char-item
+      +clearfix
+
+      .content
+        float: left
+        width: 45%
+        padding:
+          top: 70px
+        text-align: left
+
+      .image
+        float: left
+        width: 55%
+        text-align: left
+
+        img
+          width: 100%
