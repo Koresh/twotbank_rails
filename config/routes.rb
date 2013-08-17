@@ -13,6 +13,7 @@ TwotbankRails::Application.routes.draw do
   get 'schet-dlya-zhizni' => 'live#schet_dlya_zhizni'
   get 'debetovye-karty'   => 'live#debetovye_karty'
   get 'credit-account'    => 'live#credit_account'
+  get 'contacts'          => 'contacts#index'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

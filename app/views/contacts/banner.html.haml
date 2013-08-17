@@ -1,0 +1,16 @@
+%header.contacts-banner-block.section-bg-gray.shadow-inset.padding-30
+  .row
+    .columns.small-3.logo-block
+      = image_tag "logo.png"
+    .columns.small-9
+      %h1 Контактная информация
+      %h2 Банк работает для клиентов в режиме 24/7.
+      %h2 
+        Узнайте как 
+        %a{href: "/recharge/", title: "Пополнить счет"}
+          пополнить счет
+        или
+        %a{href: "/cash-withdrawal/", title: "Cнять наличные"}
+          снять наличные
+
+  = render template: "shared/contacts"

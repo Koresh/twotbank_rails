@@ -23,6 +23,9 @@
 //= require monkey_patching
 //= require_tree ./form
 //= require tbank.chars
+//= require infobubble-compiled
+//= require tbank.contacts
+//= require tbank.mapObjects
 // require_tree .
 
 $(document)

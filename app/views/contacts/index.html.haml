@@ -1,0 +1,128 @@
+= render template: "contacts/banner"
+
+%section.contacts-adress-block
+  .row
+    .columns.small-12
+      %table
+        %thead
+          %tr
+            %th{style: "width: 30%"}
+              Офисы
+            %th{style: "width: 50%"}
+              Контакты
+            %th{style: "width: 20%"}
+              Время работы
+        %tbody
+          %tr
+            %td
+              Центр Международной Торговли
+            %td
+              %a.dashed{href: "#"} 123610, Москва, Краснопресненская набережная, 12
+              %br
+              8-800-100-94-34
+            %td
+              пн.-сб. 
+              %strong 9:00-20:30
+              (без перерыва)
+              %br
+              вс.
+              %strong 10:00-15:00
+          %tr
+            %td
+              Дополнительный офис «Ленинский проспект 30»
+            %td
+              %a.dashed{href: "#"} 119334, Москва, Ленинский проспект, 30 
+              %br
+              8-800-100-94-34
+            %td
+              пн.-сб. 
+              %strong 9:00-20:30
+              (без перерыва)
+              %br
+              вс.
+              %strong 10:00-15:00
+          %tr
+            %td
+              Северо-Западный филиал
+            %td
+              %a.dashed{href: "#"} 191186, Санкт-Петербург, Аптекарский пер., 4, помещение 14Н, лит. А 
+              %br
+              8-800-100-94-34
+            %td
+              пн.-сб. 
+              %strong 9:00-20:30
+              (без перерыва)
+              %br
+              вс.
+              %strong 10:00-15:00
+          %tr
+            %td
+              Дополнительный Офис «Красноармейская 43»
+            %td
+              %a.dashed{href: "#"} 350000, Краснодар, ул. Красноармейская/Гоголя, 43/68 
+              %br
+              8-800-100-94-34
+            %td
+              пн.-сб. 
+              %strong 9:00-20:30
+              (без перерыва)
+              %br
+              вс.
+              %strong 10:00-15:00
+          %tr
+            %td
+              Новороссийский филиал
+            %td
+              %a.dashed{href: "#"} 353900, Новороссийск, ул. Советов, 7 
+              %br
+              8-800-100-94-34
+            %td
+              пн.-сб. 
+              %strong 9:00-20:30
+              (без перерыва)
+              %br
+              вс.
+              %strong 10:00-15:00
+
+:javascript
+  var mapConfig = {
+    geoIpCityId: 697,
+    currentCity: {
+      id: 957,
+      title: 'Москве',
+      lat: 55.755773,
+      lng: 37.617761
+    }
+  }
+
+%section.section-bg-blue.shadow-inset-top.padding-40
+  .row
+    .columns.small-12.map.mainPage.map-contacts
+      %form.selectBlock1.custom
+        %select#change-city-map.medium
+          %option{value: "957", lat: "55.755773", lng: "37.617761", selected: "selected"} Москве
+          %option{value: "973", lat: "59.938806", lng: "30.314278"} Санкт-Петербурге
+          %option{value: "988", lat: "45.039080", lng: "39.017231"} Краснодаре
+          %option{value: "989", lat: "44.721820", lng: "37.766536"} Новороссийске
+
+      .Img
+        #map.google-map{style: "position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0);"}
+
+%script{src: "https://maps-api-ssl.google.com/maps/api/js?sensor=false&language=ru", type: "text/javascript"}
+
+%section.section-bg-gray.shadow-inset-top.padding-50
+  .row
+    .columns.small-4.small-centered.text-center
+      %p
+        %i.icon.icon-contact-ico1
+      %h2 Контакты для представителей СМИ
+      %p
+        Валерий Сорокин
+        %br
+        Тел.: +7 (495) 788-58-07 #1006
+        %br
+        Email.:
+        %a{title: "pr@2tbank.ru", href: "mailto:pr@2tbank.ru"} pr@2tbank.ru
+
+
+
