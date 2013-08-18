@@ -1,25 +1,27 @@
 %section.bank-about-information
   .row
-    .columns.small-3
-      .logo-block
-        = image_tag "logo.png"
+    .columns.small-12.large-3
+      .row
+        .logo-block.columns.small-4.large-12
+          = image_tag "logo.png"
 
-      %ul.side-nav
-        %li.active Информация о Банке
-        %li
-          %a{href: "/o-banke/info/", title: "Раскрытие информации"} 
-            Раскрытие информации
-        %li
-          %a{href: "/o-banke/financial-statements/", title: "Финансовая отчетность"} 
-            Финансовая отчетность
-        %li
-          %a{href: "/o-banke/requisites/", title: "Реквизиты"} 
-            Реквизиты
-        %li
-          %a{href: "/o-banke/registry-rules/", title: "Правила ведения реестра владельцев акций Банка "} 
-            Правила ведения реестра владельцев акций Банка 
+        .columns.small-8.large-12
+          %ul.side-nav
+            %li.active Информация о Банке
+            %li
+              %a{href: "/o-banke/info/", title: "Раскрытие информации"} 
+                Раскрытие информации
+            %li
+              %a{href: "/o-banke/financial-statements/", title: "Финансовая отчетность"} 
+                Финансовая отчетность
+            %li
+              %a{href: "/o-banke/requisites/", title: "Реквизиты"} 
+                Реквизиты
+            %li
+              %a{href: "/o-banke/registry-rules/", title: "Правила ведения реестра владельцев акций Банка "} 
+                Правила ведения реестра владельцев акций Банка 
 
-    .columns.small-9
+    .columns.small-12.large-9
       %h1 Информация о банке
       %h3 Миссия 2ТБанка
       %p.large 
@@ -50,35 +52,47 @@
       .padding-30
         %h2 Наши принципы
         .row
-          .columns.small-6
-            =image_tag "/images/features/0001/01/27907641160dd29eca287a90429106ecc3aeda6a.png"
-            %h4 Выпуск карты бесплатно
-            %p
-              Мы считаем, что клиенты не должны платить за карту. Первая стандартная карта MasterCard, которую мы выпускаем каждому клиенту, обслуживается бесплатно.
-              %a{href: "/debetovye-karty/"} Подробнее о карте MasterCard
-              \.
-          .columns.small-6
-            =image_tag "/images/features/0001/01/f224bbd28d5e1d40bed9fa01a1d900282ff8a189.png"
-            %h4 Бесплатное обслуживание и платежи
-            %p
-              Мы считаем, что клиенты не должны платить за обслуживание. Мы не берем абонентской платы и бесплатно проводим все платежи и переводы через Интернет-Банк.
-              %a{href: "/internet-bank/"} Подробнее об Интернет-Банке
-              \.
+          .columns.small-12.large-6
+            .row
+              .columns.small-5.large-12
+                =image_tag "/images/features/0001/01/27907641160dd29eca287a90429106ecc3aeda6a.png"
+              .columns.small-7.large-12
+                %h4 Выпуск карты бесплатно
+                %p
+                  Мы считаем, что клиенты не должны платить за карту. Первая стандартная карта MasterCard, которую мы выпускаем каждому клиенту, обслуживается бесплатно.
+                  %a{href: "/debetovye-karty/"} Подробнее о карте MasterCard
+                  \.
+          .columns.small-12.large-6
+            .row
+              .columns.small-5.large-12
+                =image_tag "/images/features/0001/01/f224bbd28d5e1d40bed9fa01a1d900282ff8a189.png"
+              .columns.small-7.large-12
+                %h4 Бесплатное обслуживание и платежи
+                %p
+                  Мы считаем, что клиенты не должны платить за обслуживание. Мы не берем абонентской платы и бесплатно проводим все платежи и переводы через Интернет-Банк.
+                  %a{href: "/internet-bank/"} Подробнее об Интернет-Банке
+                  \.
         .row
-          .columns.small-6
-            =image_tag "/images/features/0001/01/4049eacec6da9ecb7d7bd26289e67dde53062a74.png"
-            %h4 Бесплатные наличные в любой точке мира
-            %p
-              Мы считаем, что клиенты не должны платить за доступ к своим деньгам. Мы сделали возможность снимать наличные бесплатно в любом банкомате мира.
-              %a{title: "Снятие наличных", href: "/cash-withdrawal/"} Подробнее о снятии наличных
-              \.
-          .columns.small-6
-            =image_tag "/images/features/0001/01/e06d1a432b38b742626b9ba165a2d83d0fe8364c.png"
-            %h4 Бесплатное пополнение счета
-            %p
-              Мы считаем, что клиенты не должны платить за пополнение своего счета. Ваш счет можно бесплатно пополнить безналичным переводом из любого банка и через 3000 банкоматов и офисов.
-              %a{href: "/recharge/"} Подробнее о точках пополнения
-              \.
+          .columns.small-12.large-6
+            .row
+              .columns.small-5.large-12
+                =image_tag "/images/features/0001/01/4049eacec6da9ecb7d7bd26289e67dde53062a74.png"
+              .columns.small-7.large-12
+                %h4 Бесплатные наличные в любой точке мира
+                %p
+                  Мы считаем, что клиенты не должны платить за доступ к своим деньгам. Мы сделали возможность снимать наличные бесплатно в любом банкомате мира.
+                  %a{title: "Снятие наличных", href: "/cash-withdrawal/"} Подробнее о снятии наличных
+                  \.
+          .columns.small-12.large-6
+            .row
+              .columns.small-5.large-12
+                =image_tag "/images/features/0001/01/e06d1a432b38b742626b9ba165a2d83d0fe8364c.png"
+              .columns.small-7.large-12
+                %h4 Бесплатное пополнение счета
+                %p
+                  Мы считаем, что клиенты не должны платить за пополнение своего счета. Ваш счет можно бесплатно пополнить безналичным переводом из любого банка и через 3000 банкоматов и офисов.
+                  %a{href: "/recharge/"} Подробнее о точках пополнения
+                  \.
 
       .master-card.text-center
         =image_tag "master-card.png"
@@ -91,48 +105,72 @@
         %p Все, что для этого нужно — компьютер или любое мобильное устройство, подключенное к сети Интернет. Совершение банковских операций по телефону также позволяет экономить время.
 
         .row
-          .columns.small-6
-            =image_tag "transactions_ico1.png"
-            %h4 Ваши правила
-            %p.medium
-              Мы не устанавливаем никаких регулярных платежей и не навязываем ограничений или дополнительных специальных условий.
-            %p.medium
-              Мы не устанавливаем никаких регулярных платежей и не навязываем ограничений или дополнительных специальных условий.
-          .columns.small-6
-            =image_tag "transactions_ico2.png"
-            %h4 Дистанционное обслуживание
-            %p.medium
-              Мы используем систему дистанционного банковского обслуживания, благодаря которой необходимость поездок в наш офис сведена к минимуму.
-            %p.medium
-              Клиенты 2TBank.ru имеют возможность производить все основные операции через Интернет и по телефону.
-            .blue-block
-              %i.icon.icon-ico-comp
-              +
-              %i.icon.icon-ico-phone
+          .columns.small-12.large-6
+            .row
+              .columns.small-5.large-12
+                =image_tag "transactions_ico1.png"
+              .columns.small-7.large-12
+                %h4 Ваши правила
+                %p.medium
+                  Мы не устанавливаем никаких регулярных платежей и не навязываем ограничений или дополнительных специальных условий.
+                %p.medium
+                  Мы не устанавливаем никаких регулярных платежей и не навязываем ограничений или дополнительных специальных условий.
+          .columns.small-12.large-6
+            .row
+              .columns.small-5.large-12
+                =image_tag "transactions_ico2.png"
+              .columns.small-7.large-12
+                %h4 Дистанционное обслуживание
+                %p.medium
+                  Мы используем систему дистанционного банковского обслуживания, благодаря которой необходимость поездок в наш офис сведена к минимуму.
+                %p.medium
+                  Клиенты 2TBank.ru имеют возможность производить все основные операции через Интернет и по телефону.
+                .blue-block
+                  %i.icon.icon-ico-comp
+                  +
+                  %i.icon.icon-ico-phone
 
       %h3 Для кого?
       %h4 Мы работаем как с частными лицами, так и с индивидуальными предпринимателями, отлично взаимодействуем с компаниями малого и среднего бизнеса:
       .row
-        .columns.small-6
-          =image_tag "/images/product/0001/01/3cce78cb3b26c6643a76807757e9444fe8afb094.png"
-          %h4 тСчет
-          %p.margin-bottom-40 Личный счет, с возможностью овердрафта, с нулевой платой за обслуживание и осуществление платежей в рублях.
-          %a.button.small{href: "/schet-dlya-zhizni/", title: "тСчет"} Расскажите подробнее
-        .columns.small-6
-          =image_tag "/images/product/0001/01/0b7253237711df8e7fb252f74a8ac0d022565d0e.png"
-          %h4 Счет для бизнеса
-          %p.margin-bottom-40 Сберегательный счет, проценты на который начисляются с 1-го дня, а ограничения сроков по снятию средств отсутствуют.
-          %a.button.small{href: "/business/schet-dlya-biznesa", title: "Счет для бизнеса"} Расскажите подробнее
+        .columns.small-12.large-6
+          .row
+            .columns.small-4.large-12    
+              =image_tag "/images/product/0001/01/3cce78cb3b26c6643a76807757e9444fe8afb094.png"
+            .columns.small-8.large-12
+              %h4 тСчет
+              %p.margin-bottom-40 Личный счет, с возможностью овердрафта, с нулевой платой за обслуживание и осуществление платежей в рублях.
+              %a.button.small{href: "/schet-dlya-zhizni/", title: "тСчет"} Расскажите подробнее
+        .columns.small-12.large-6
+          .row
+            .columns.small-4.large-12    
+              =image_tag "/images/product/0001/01/0b7253237711df8e7fb252f74a8ac0d022565d0e.png"
+            .columns.small-8.large-12
+              %h4 Счет для бизнеса
+              %p.margin-bottom-40 Сберегательный счет, проценты на который начисляются с 1-го дня, а ограничения сроков по снятию средств отсутствуют.
+              %a.button.small{href: "/business/schet-dlya-biznesa", title: "Счет для бизнеса"} Расскажите подробнее
       %p.medium.margin-bottom-40
         В ближайшее время будут запущены следующие сервисы:
 
       %ul.no-bullet
-        %li Программа взаимного кредитования.
-        %li Программа коллективного кредитования.
-        %li Программа коллективных инвестиций.
-        %li Брокерское обслуживание.
-        %li Инвестиционные и страховые продукты нового поколения.
-        %li Программа коллективных покупок.
+        %li
+          %i.icon.icon-bullet-yelow
+          Программа взаимного кредитования.
+        %li
+          %i.icon.icon-bullet-yelow
+          Программа коллективного кредитования.
+        %li
+          %i.icon.icon-bullet-yelow
+          Программа коллективных инвестиций.
+        %li
+          %i.icon.icon-bullet-yelow
+          Брокерское обслуживание.
+        %li
+          %i.icon.icon-bullet-yelow
+          Инвестиционные и страховые продукты нового поколения.
+        %li
+          %i.icon.icon-bullet-yelow
+          Программа коллективных покупок.
 
       .row.hide-for-small
         .columns.small-12.small-centered.sub-line

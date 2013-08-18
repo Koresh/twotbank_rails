@@ -55,7 +55,11 @@
       font-size: emCalc(16px)
       padding:
         left: 23px
-      +icons-sprite(bullet-yelow)
+
+      .icon
+        float: left
+        margin:
+          left: -23px
 
   .product-insured-block
     h2
@@ -76,7 +80,7 @@
     li
       +clearfix
       padding:
-        left: 64px
+        left: 34px
       font-size: emCalc(14px)
       margin:
         bottom: 2.2em
@@ -89,7 +93,7 @@
 
     .icon
       margin:
-        left: -64px
+        left: -34px
 
 .mission-yelow
   margin:
@@ -116,3 +120,14 @@
     height: 20px
     background:
       repeat: repeat-x
+
+@media #{$small}
+  .bank-about-information
+    .douments-block
+      li
+        padding:
+          left: 64px
+
+      .icon
+        margin:
+          left: -64px
