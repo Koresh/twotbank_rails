@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.bank-about-sidebar
+  .logo-block
+    padding:
+      top: emCalc(10px)
+      left: emCalc(30px)
+    margin:
+      bottom: emCalc(20px)
+
 .bank-about-information
   padding:
     top: emCalc(30px)
@@ -26,13 +34,6 @@
 
     &.medium
       font-size: emCalc(16px)
-
-  .logo-block
-    padding:
-      top: emCalc(10px)
-      left: emCalc(30px)
-    margin:
-      bottom: emCalc(20px)
 
   .icon-card-ico
     vertical-align: top
@@ -72,28 +73,28 @@
       margin:
         bottom: emCalc(35px)
 
-  .douments-block
-    list-style: none
+.douments-block
+  list-style: none
+  margin:
+    bottom: emCalc(80px)
+
+  li
+    +clearfix
+    padding:
+      left: 34px
+    font-size: emCalc(14px)
     margin:
-      bottom: emCalc(80px)
+      bottom: 2.2em
 
-    li
-      +clearfix
-      padding:
-        left: 34px
-      font-size: emCalc(14px)
-      margin:
-        bottom: 2.2em
+    a
+      font-size: 14px
 
-      a
-        font-size: 14px
+    span
+      color: #808080
 
-      span
-        color: #808080
-
-    .icon
-      margin:
-        left: -34px
+  .icon
+    margin:
+      left: -34px
 
 .mission-yelow
   margin:
@@ -121,13 +122,57 @@
     background:
       repeat: repeat-x
 
-@media #{$small}
-  .bank-about-information
-    .douments-block
-      li
-        padding:
-          left: 64px
 
-      .icon
+.bank-about-requisites
+  h1,
+  h2,
+  .douments-block
+    padding:
+      left: 20px
+      right: 20px
+
+  h1
+    margin:
+      bottom: 1.5em
+
+  .page-block
+    h2
+      margin:
+        bottom: 2em
+
+  .as-table
+    li
+      *
+        font-size: emCalc(16px)
+        padding: 
+          left: 35px
+        line-height: 1.7
+
+      .columns:first-child
+        border-right: 3px solid white
+
+      .columns:last-child
+        border-left: 3px solid white
         margin:
-          left: -64px
+          left: -3px
+        float: left
+
+  .list-orange
+    border-top: 3px solid $yelow-color
+    background: #FFFEEB
+
+    li
+      *
+        font-size: emCalc(14px)
+
+
+
+@media #{$small}
+  .douments-block
+    li
+      padding:
+        left: 64px
+
+    .icon
+      margin:
+        left: -64px
