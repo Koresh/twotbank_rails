@@ -1,0 +1,118 @@
+// Place all the styles related to the o_banke controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.bank-about-information
+  padding:
+    top: emCalc(30px)
+
+  h2
+    font-size: emCalc(32px)
+
+  h3
+    font-size: emCalc(28px)
+
+  h4
+    font-size: emCalc(21px)
+
+  p
+    font-size: emCalc(16px)
+
+    &.large
+      font-size: emCalc(21px)
+
+      .icon
+        vertical-align: top
+
+    &.medium
+      font-size: emCalc(16px)
+
+  .logo-block
+    padding:
+      top: emCalc(10px)
+      left: emCalc(30px)
+    margin:
+      bottom: emCalc(20px)
+
+  .icon-card-ico
+    vertical-align: top
+
+  .master-card
+    border: 
+      width: 1px 0 1px 0
+      style: solid
+      color: #E5E5E5
+    padding: 40px 0
+
+  .blue-block
+    color: #35AEE5
+    font-size: emCalc(21px)
+    font-family: "MyriadProBold"
+    word-spacing: 8px
+
+  ul.no-bullet
+    li
+      font-size: emCalc(16px)
+      padding:
+        left: 23px
+      +icons-sprite(bullet-yelow)
+
+  .product-insured-block
+    h2
+      font-size: emCalc(24px)
+
+    p
+      font-size: emCalc(16px)
+
+    .sub-line
+      margin:
+        bottom: emCalc(35px)
+
+  .douments-block
+    list-style: none
+    margin:
+      bottom: emCalc(80px)
+
+    li
+      +clearfix
+      padding:
+        left: 64px
+      font-size: emCalc(14px)
+      margin:
+        bottom: 2.2em
+
+      a
+        font-size: 14px
+
+      span
+        color: #808080
+
+    .icon
+      margin:
+        left: -64px
+
+.mission-yelow
+  margin:
+    bottom: emCalc(50px)
+
+  .icon
+    margin:
+      top: 2px
+
+  p
+    margin: 0
+
+  .top
+    background:
+      position: top left
+
+  .bottom
+    background:
+      position: bottom left
+
+  .top, .bottom
+    background: 
+      image: image-url("mission-bg.png")
+    height: 20px
+    background:
+      repeat: repeat-x
