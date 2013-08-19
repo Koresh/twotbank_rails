@@ -17,6 +17,7 @@ TwotbankRails::Application.routes.draw do
 
   get 'o-banke'           => 'o_banke#index'
   get 'o-banke/requisites' => 'o_banke#requisites'
+  get 'o-banke/info'      => 'o_banke#info'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

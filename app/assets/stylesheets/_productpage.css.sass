@@ -149,6 +149,11 @@
     margin:
       bottom: emCalc(20px)
 
+  .contacts-block
+    h6
+      margin:
+        bottom: 10px
+
 .feeds-block
   border-bottom:
     width: 1px
@@ -397,19 +402,19 @@
   // Feedback block
   .product-feedbacks-block
     .contacts-block
-    h3
-      margin:
-        top: emCalc(10px)
+      h3
+        margin:
+          top: emCalc(10px)
 
-    h6
-      margin:
-        bottom: 0
-        top: 10px
+      h6
+        margin:
+          bottom: 0
+          top: 10px
 
-    h2
-      margin:
-        top: emCalc(-8px)
-      font-size: emCalc(26px)
+      h2.phone
+        margin:
+          top: emCalc(-8px)
+        font-size: emCalc(26px)
 
   // Insured block
   .product-insured-block
@@ -424,7 +429,10 @@
 @media #{$medium}
   .product-feedbacks-block
     .contacts-block
-      h2
+      h2.phone
         margin:
           top: emCalc(-4px)
         font-size: emCalc(30px)
+      h6
+        margin:
+          top: 2px

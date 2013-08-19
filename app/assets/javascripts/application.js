@@ -17,6 +17,7 @@
 //= require backbone.min
 //= require Backbone.ModelBinder.v.1.0.2
 //= require live
+//= require o_banke
 //= require jquery.maskedinput
 //= require select2
 //= require select2_locale_ru

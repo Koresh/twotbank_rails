@@ -31,4 +31,3 @@ $ ->
         $($(this).data("block")).show()
       else
         $($(this).data("block")).hide()
-

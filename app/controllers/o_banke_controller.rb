@@ -6,4 +6,8 @@ class OBankeController < ApplicationController
   def requisites
     
   end
+
+  def info
+    
+  end
 end

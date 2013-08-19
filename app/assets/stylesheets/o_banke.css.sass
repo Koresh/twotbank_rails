@@ -124,13 +124,6 @@
 
 
 .bank-about-requisites
-  h1,
-  h2,
-  .douments-block
-    padding:
-      left: 20px
-      right: 20px
-
   h1
     margin:
       bottom: 1.5em
@@ -140,32 +133,134 @@
       margin:
         bottom: 2em
 
-  .as-table
-    li
-      *
-        font-size: emCalc(16px)
-        padding: 
-          left: 35px
-        line-height: 1.7
+.bank-about-page
+  h2
+    margin:
+      bottom: emCalc(25px)
 
-      .columns:first-child
+  p
+    font-size: emCalc(16px)
+    margin:
+      bottom: 1.3em
+
+    &.medium
+      font-size: emCalc(14px)
+      line-height: 1.7em
+
+  .orange-bg
+    background:
+      color: #FFFEEB
+
+    p
+      margin: 0
+
+  .page-section
+    margin: 
+      bottom: emCalc(50px)
+
+  .as-table
+    +clearfix
+
+    li
+      margin:
+        left: -20px
+        // right: -20px
+      padding:
+        top: 2px
+        bottom: 3px
+
+      .columns
+        font-size: emCalc(16px)
+        line-height: 1.5
+
+      .columns:first-child, .columns.sub-first
         border-right: 3px solid white
+        padding: 
+          left: 20px
 
       .columns:last-child
         border-left: 3px solid white
         margin:
           left: -3px
         float: left
+        padding: 
+          left: 20px
+
+      &.header-yelow-line
+        border-bottom: 3px solid $yelow-color
+        padding:
+          bottom: 15px
+        margin: 
+          bottom: 15px
+
+        .columns
+          font-size: emCalc(14px)
+
+      &.gray-line
+        border:
+          bottom: 1px solid #EFEFEF
+        margin:
+          bottom: 8px
+        padding:
+          bottom: 10px
+
 
   .list-orange
-    border-top: 3px solid $yelow-color
-    background: #FFFEEB
+    li
+      background: #FFFEEB
+      .columns
+        font-size: emCalc(14px)
+        line-height: 1.7
+
+      &:first-child
+        .columns
+          border-top: 3px solid $yelow-color
+
+
+.side-nav
+  .hash-nav
+    li
+      a
+        display: inline
+        font-size: 1.14em
+
+.info-about-documents-section
+  .header
+    margin:
+      bottom: emCalc(30px)
 
     li
-      *
-        font-size: emCalc(14px)
+      a
+        text-transform: uppercase
+        font-size: emCalc(11px)
+        text-decoration: none
+        color: $body-font-color
+        font-family: "MyriadProSemiBold"
+
+        &.active
+          color: #B2B2B2
+          cursor: default
+
+.documents-inline-block-list
+  li
+    +grid-column(12)
+    float: none
+    font-size: emCalc(15px)
+    margin:
+      bottom: emCalc(20px)
+
+    padding:
+      left: 50px
+
+    .icon
+      float: left
+      margin:
+        left: -35px
 
 
+    p
+      margin:
+        bottom: 0.8em
 
 @media #{$small}
   .douments-block
@@ -176,3 +271,16 @@
     .icon
       margin:
         left: -64px
+
+  .documents-inline-block-list
+    li
+      +grid-column(4)
+      float: none
+      +inline-block(top)
+      width: 32%
+
+      .icon
+        margin:
+          bottom: 5px
+          left: 0
+        float: none
