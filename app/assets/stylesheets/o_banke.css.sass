@@ -155,8 +155,8 @@
       margin: 0
 
   .page-section
-    margin: 
-      bottom: emCalc(50px)
+    padding: 
+      top: emCalc(50px)
 
   .as-table
     +clearfix
@@ -219,7 +219,25 @@
 
 .side-nav
   .hash-nav
+    list-style-type: none
+    margin:
+      top: emCalc(30px)
+
     li
+      position: relative
+
+      &:before
+        content: ""
+        display: block
+        +border-radius(1000px)
+        position: absolute
+        background:
+          color: $blue-link-color
+        width: 5px
+        height: 5px
+        left: -14px
+        top: 9px
+
       a
         display: inline
         font-size: 1.14em
