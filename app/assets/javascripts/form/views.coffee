@@ -9,12 +9,12 @@ class TBank.Layout extends Backbone.View
   type: 'deposite'
 
   events:
-    "click #first_step_submit" : "toSecondStep"
+    # "click #first_step_submit" : "toSecondStep"
     "click #business_account_submit" : "toSecondStep"
 
 
-  toSecondStep:  ->
-    router.navigate "step2", trigger: true
+  # toSecondStep:  ->
+  #   router.navigate "step2", trigger: true
 
 
   initialize: ->
