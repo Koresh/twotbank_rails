@@ -10,4 +10,8 @@ class OBankeController < ApplicationController
   def info
     
   end
+
+  def financial_statements
+    
+  end
 end

@@ -280,6 +280,44 @@
       margin:
         bottom: 0.8em
 
+.statements-documents-list
+  list-style: none
+
+  li
+    background:
+      image: image-url("file_line.png")
+      position: 0 123px
+      repeat: no-repeat
+
+    &.row
+      margin:
+        left: -30px
+        bottom: emCalc(60px)
+      padding:
+        left: 15px
+
+    .columns:last-child
+      background:
+        image: image-url("file_line_r.png")
+        position: right 123px
+        repeat: no-repeat
+
+    .columns
+      p
+        margin: 0
+        font-size: emCalc(14px)
+
+    .icon
+      margin:
+        bottom: 30px
+
+.statement-section
+  border:
+    bottom: 1px solid #EFEFEF
+
+
+
+
 @media #{$small}
   .douments-block
     li
