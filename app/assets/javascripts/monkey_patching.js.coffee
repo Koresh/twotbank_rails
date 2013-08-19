@@ -64,17 +64,18 @@ class TbWidgets.FormClosing
 
   constructor: (callback_yes, callback_no) ->
 
-    $.fancybox.open "#maf_close_form", @options
+    console.log 123
+    $("#maf_close_form").foundation('reveal', 'open')
 
     
     $('#maf_close_form_no').on 'click', (e) =>
       e.preventDefault()
-      $.fancybox.close()
+      $("#maf_close_form").foundation('reveal', 'close')
       callback_no()
 
     $('#maf_close_form_yes').on 'click', (e) =>
       e.preventDefault()
-      $.fancybox.close()
+      $("#maf_close_form").foundation('reveal', 'close')
       callback_yes()
 
 
