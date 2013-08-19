@@ -290,31 +290,13 @@ class TBank.StepView extends Backbone.View
     _.indexOf(@disabledHash, key) > -1
 
   setError: (key) ->
-
-    $label  = $("##{key}_label")
-
-    if $label.length
-
-      $label.addClass "accessError"
-
-    else
-      $parent = $("##{key}").parent()
-      if $parent.hasClass "CFEselect"
-        $parent.addClass "selectfieldError"
-      else
-                                          #КОСТЫЛЬ!
-        $parent.addClass("textfieldError").nextAll(".error").show()
+    $input = $("input[name=#{key}]")
+    $input.parent().addClass "error"
 
   clearError: (key) ->
+    $input = $("input[name=#{key}]")
+    $input.parent().removeClass "error"
 
-    $label  = $("##{key}_label")
-
-    if $label.length
-
-      $label.removeClass "accessError"
-
-    else                                                                  #КОСТЫЛЬ!
-      $("##{key}").parent().removeClass('textfieldError selectfieldError').nextAll(".error").hide()
 
   openStep: (step_count, callback) ->
     @$el.show()
