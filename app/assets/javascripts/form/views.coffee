@@ -213,7 +213,7 @@ class TBank.StepView extends Backbone.View
 
     for key of @model.attributes
       if mask = @model.getMask key
-        eval "new Masks.#{mask.capitalize()}( $('##{key}') )"
+        eval "new Masks.#{mask.capitalize()}( $('input[name=#{key}]') )"
 
     @afterRender()
 

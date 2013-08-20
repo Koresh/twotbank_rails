@@ -64,7 +64,6 @@ class TbWidgets.FormClosing
 
   constructor: (callback_yes, callback_no) ->
 
-    console.log 123
     $("#maf_close_form").foundation('reveal', 'open')
 
     
