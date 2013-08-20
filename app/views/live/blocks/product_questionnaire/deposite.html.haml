@@ -346,3 +346,17 @@
             %a#prev_step_submit.button.small.expand{href: "#"}Назад
           .columns.small-12.large-2
             %a#other_step_submit.button.small.expand{href: "#"}Далее
+
+/ Modals
+#maf_close_form.reveal-modal.tiny.confirm-modal.text-center{data: {options: "closeOnBackgroundClick: false;"}}
+  %h2 Закрыть анкету?
+  %h3 Уверены в этом? Ваши данные будут потеряны
+  .buttons
+    %a#maf_close_form_no.button.medium{href: "#"} Нет
+    %a#maf_close_form_yes.button.medium{href: "#"} Да
+
+#maf_success.reveal-modal.tiny.confirm-modal.text-center{data: {options: "closeOnBackgroundClick: false;"}}
+  %h2 Поздравляем!
+  %h3 Ваша анкета принята. Сотрудник банка свяжется с вами для уточнения информации.
+  .buttons
+    %a#maf_final_button{href: "#"} Продолжить
