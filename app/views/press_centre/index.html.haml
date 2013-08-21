@@ -1,0 +1,135 @@
+%header.section-bg-blue
+  .row.logo-block-row.hide-for-small
+    .logo-block-absolute
+      = image_tag "logo.png"
+  .row.last-news-block
+    .columns.small-12.small-offset-0.large-9.large-offset-3
+      %h1 Последние новости
+      %p.date
+        17 августа 2013
+      %h2 
+        %a{title: "2ТБанк устанавливает новые рублевые ставки по «Вкладу на срок»", href: "/press-centre/news/150/"} 
+          2ТБанк устанавливает новые рублевые ставки по «Вкладу на срок»
+      %p.dscr
+        %em Корректируются условия размещения средств на 4, 5, 6, 9 и 12 месяцев
+      %a.more-link{title: "2ТБанк устанавливает новые рублевые ставки по «Вкладу на срок»", href: "/press-centre/news/150/"} 
+        Новость полностью
+
+%section.press-centre-section
+  .row.padding-20
+    .columns.small-12.large-3.aside-block
+      %h1
+        %a{title: "Пресса о нас", href: "/press-centre/press/"} Пресса о нас
+    .columns.small-12.large-9
+      #press-about-circle.row.press-post-block
+        .columns.small-12
+          %ul.no-bullet.content-list
+            %li.active
+              %p.date
+                29 июля 2013
+              %h2
+                %a{title: "Трудные климатические условия", href: "/press-centre/press/155/"} Трудные климатические условия
+              %p.muted
+                %em Как банки, большие и малые, улучшают предпринимательский климат в сегменте МСБ. На примерах Сбербанка, Альфа банка и 2Т Банка
+            - 10.times do
+              %li
+                %p.date
+                  28 июля 2013
+                %h2
+                  %a{title: "Малому бизнесу подставили плечо: банки меняют принцип работы с начинающими коммерсантами", href: "/press-centre/press/153/"} Малому бизнесу подставили плечо: банки меняют принцип работы с начинающими коммерсантами
+                %p.muted
+                  %em «ФедералПресс» попытался разобраться, как молодому бизнесу удачно выбрать банк-партнер и как сэкономить стартовые капиталы
+
+        .columns.small-12.authors-block
+          %a.arrow-left.disabled{href: "#", title: "Влево"}
+
+          %a.arrow-right{href: "#", title: "Вправо"}
+          .authors-block-overflow
+            %ul.no-bullet.inline-list
+
+              %li
+                %a.active{title: "Хороший банк - половина успеха", href: "#"}
+                  =image_tag "filer_public/2013/06/20/logo313333.png"
+              - 10.times do
+                %li
+                  %a{title: "Хороший банк - половина успеха", href: "#"}
+                    =image_tag "filer_public/2013/06/20/logo313333.png"
+                %li
+                  %a{title: "Игорь Черский, FLASH V: «При наличии нормальных главредов такие дайджесты могут заменить ряд СМИ»", href: "#"}
+                    =image_tag "filer_public/2013/06/20/logo-pressa2404.png"
+
+
+
+
+  .row.padding-20
+    .columns.small-12.large-3.aside-block
+      %h1
+        %a{title: "Все новости", href: "/press-centre/news/"} Все новости
+      %p
+        %a.no-underline{href: "news.rss"}
+          %i.icon.icon-rss
+        &nbsp;&nbsp;
+        %a{href: "/press-centre/rss/"} Подписаться
+    .columns.large-9.small-12
+      %ul.no-billet.news-list
+        %li
+          %h3
+            %a{href: ""}
+              2ТБанк устанавливает новые рублевые ставки по «Вкладу на срок»
+
+          %p.muted
+            %em
+              Корректируются условия размещения средств на 4, 5, 6, 9 и 12 месяцев
+
+        %li
+          %h3
+            %a{href: ""}
+              Интернет-сервис 2ТБанка для юридических лиц вошел в число лучших
+
+          %p.muted
+            %em
+              \...по оценке известного аналитического агентства Markswebb Rank & Report
+
+        %li
+          %h3
+            %a{href: ""}
+              2ТБанк корректирует условия депозитов
+
+          %p.muted
+            %em
+              Изменяются отдельные ставки привлечения рублевых средств физических лиц
+
+        %li
+          %h3
+            %a{href: ""}
+              Для клиентов МСБ 2ТБанк запускает сервис контроля исполнения бюджета
+
+          %p.muted
+            %em
+              Инструмент предоставляется бесплатно и уже доступен пользователям интернет-банка
+
+        %li
+          %h3
+            %a{href: ""}
+              2ТБанк внедряет новые интерфейсные решения в системе интернет-банка
+
+          %p.muted
+            %em
+              …и планирует соответствующие технические работы
+
+        %li
+          %h3
+            %a{href: ""}
+              2ТБанк выпустил новые версии приложений для iOS и Android
+
+          %p.muted
+            %em
+              Мобильный сервис получил технические усовершенствования
+
+
+%section.product-feedbacks-block
+  = render template: "shared/feeds"
+  = render template: "shared/contacts"
+
+
+      

@@ -1,0 +1,2 @@
+module PressCentreHelper
+end

@@ -1,0 +1,169 @@
+// Place all the styles related to the press_centre controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.last-news-block
+  padding: emCalc(40px) 0 emCalc(80px)
+
+  h1
+    color: #fff
+    line-height: 1.25
+    margin: 0 0 0.45em
+
+  h2
+    color: #fff
+    font-size: emCalc(28px)
+    line-height: 1em
+    margin:
+      top: 0
+
+  .date
+    font-size: emCalc(14px)
+    margin: 0
+
+  .dscr
+    font-size: emCalc(16px)
+
+  .more-link
+    color: $yelow-color
+
+.press-centre-section
+  p 
+    font-size: emCalc(16px)
+
+  .aside-block
+    h1
+      line-height: 1em
+
+.press-post-block
+  position: relative
+
+  &.row
+    border:
+      width: 5px
+      style: solid
+      color: $yelow-color
+    margin: 0
+    background:
+      color: #fff
+
+  .content-list
+    padding:
+      left: emCalc(25px)
+      top: emCalc(40px)
+      right: emCalc(25px)
+    margin:
+      bottom: emCalc(70px)
+
+    li
+      display: none
+
+      &.active
+        display: block
+
+    .date
+      font-size: emCalc(14px)
+      margin: 0
+
+    h2
+      margin: 0 0 0.43em
+      line-height: 1em
+
+  .authors-block
+    position: relative
+
+    .arrow-left, .arrow-right
+      position: absolute
+      display: block
+      top: 0
+
+      &.disabled 
+        cursor: default
+
+    .arrow-left
+      +icons-sprite(arrows-l)
+      height: icons-sprite-height(arrows-l)
+      width: icons-sprite-width(arrows-l)
+      left: -16px
+
+      &.disabled
+        +icons-sprite(arrows-l-g)
+
+
+    .arrow-right
+      +icons-sprite(arrows-r)
+      height: icons-sprite-height(arrows-r)
+      width: icons-sprite-width(arrows-r)
+      right: -16px
+
+      &.disabled
+        +icons-sprite(arrows-r-g)
+
+    .authors-block-overflow
+      overflow: hidden
+      height: 60px
+
+      ul
+        margin: 0
+        +transition-property(margin)
+        +transition-duration(300ms)
+        +transition-timing-function(ease-in)
+
+        li
+          width: 150px
+          height: 60px
+          margin: 0
+
+          a
+            +opacity(0.25)
+            height: 60px
+            position: relative
+
+            &.active, &:hover
+              +opacity(1)
+
+            &.active
+              &:after
+                content: ""
+                display: block
+                position: absolute
+                +icons-sprite(bullet12)
+                height: icons-sprite-height(bullet12)
+                width: icons-sprite-width(bullet12)
+                bottom: 0
+                left: 40px
+
+
+.news-list
+  li
+    +inline-block(top)
+    width: 100%
+    margin:
+      bottom: emCalc(20px)
+
+
+@media #{$small}
+  .news-list
+    margin: 0 emCalc(-20px)
+
+    li
+      width: 49%
+      margin:
+        bottom: emCalc(40px)
+
+  .press-post-block
+    &:before
+      content: ""
+      display: none
+      +icons-sprite(corner)
+      height: icons-sprite-height(corner)
+      width: icons-sprite-width(corner)
+      position: absolute
+      top: 120px
+      left: -67px
+
+    &.row
+      margin:
+        top: emCalc(-40px)
+        left: emCalc(-40px)
+
