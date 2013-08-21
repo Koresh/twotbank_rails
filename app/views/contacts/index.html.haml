@@ -99,6 +99,8 @@
   .row
     .columns.small-12.map.mainPage.map-contacts
       %form.selectBlock1.custom
+        %span#office-string-cnt
+
         %select#change-city-map.medium
           %option{value: "957", lat: "55.755773", lng: "37.617761", selected: "selected"} Москве
           %option{value: "973", lat: "59.938806", lng: "30.314278"} Санкт-Петербурге
@@ -106,7 +108,15 @@
           %option{value: "989", lat: "44.721820", lng: "37.766536"} Новороссийске
 
       .Img
-        #map.google-map{style: "position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0);"}
+        #map.google-map{style: "position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0); height: 457px;"}
+        .searchBlock
+          %p
+            Введите название улицы, рядом с&nbsp;которой вы ищете офис:
+          .textfield
+            %input#searchAdress.example{type:"text"}
+          .btn
+            %span
+              %input#searchOnMap{type: "submit", value:"Найти"}
 
 %script{src: "https://maps-api-ssl.google.com/maps/api/js?sensor=false&language=ru", type: "text/javascript"}
 

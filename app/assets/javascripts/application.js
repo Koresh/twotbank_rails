@@ -19,6 +19,7 @@
 //= require live
 //= require o_banke
 //= require jquery.maskedinput
+//= require jquery.example.min
 //= require select2
 //= require select2_locale_ru
 //= require monkey_patching

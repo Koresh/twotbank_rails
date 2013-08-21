@@ -19,6 +19,7 @@ TwotbankRails::Application.routes.draw do
   get 'o-banke/requisites' => 'o_banke#requisites'
   get 'o-banke/info'      => 'o_banke#info'
   get 'o-banke/financial-statements'  => "o_banke#financial_statements"
+  get 'ajax/geo/offices/:city_id' => 'api#offices'
 
   get 'press-centre'      => 'press_centre#index'
 
