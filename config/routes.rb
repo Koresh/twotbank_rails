@@ -13,6 +13,7 @@ TwotbankRails::Application.routes.draw do
   get 'schet-dlya-zhizni' => 'live#schet_dlya_zhizni'
   get 'debetovye-karty'   => 'live#debetovye_karty'
   get 'credit-account'    => 'live#credit_account'
+  get 'tvklad'            => 'live#tvklad'
   get 'contacts'          => 'contacts#index'
 
   get 'o-banke'           => 'o_banke#index'

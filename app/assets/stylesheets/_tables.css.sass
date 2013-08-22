@@ -10,4 +10,13 @@ table
         bottom: 1px solid $table-border-color
 
   thead, tfoot, tbody, tfoot, tr td
+
+  &.no-base-strips
+    border:
+      top: 0
+
+    tr:last-child
+      td
+        border:
+          bottom: 0
   

@@ -13,4 +13,8 @@ class LiveController < ApplicationController
 
   def credit_account
   end
+
+  def tvklad
+    
+  end
 end
