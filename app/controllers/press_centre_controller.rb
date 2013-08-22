@@ -8,4 +8,8 @@ class PressCentreController < ApplicationController
     
   end
 
+  def news_item
+    
+  end
+
 end
