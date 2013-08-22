@@ -23,6 +23,7 @@ TwotbankRails::Application.routes.draw do
 
   get 'press-centre'      => 'press_centre#index'
   get 'press-centre/press' => 'press_centre#press'
+  get 'press-centre/news'  => 'press_centre#news'
   get 'press-centre/press/155' => 'press_centre#news_item'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)

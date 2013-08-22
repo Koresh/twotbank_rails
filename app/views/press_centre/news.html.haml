@@ -1,0 +1,65 @@
+%section.padding-top-30
+  .row
+    .columns.small-12.large-3.bank-about-sidebar
+      .row
+        .logo-block.columns.small-4.large-12
+          = image_tag "logo.png"
+
+        .columns.small-8.large-12
+          %ul.side-nav.news-side-nav
+            %li.active
+              %a{title: "Новости", href: "/press-centre/news/"} Новости
+              %ul.hash-nav
+                %li.active
+                  2013
+                  %ul
+                    %li.active
+                      Июль
+                    %li
+                      %a{title: "Июнь", href: "/press-centre/news/filter/2013/06/"} Июнь
+                    %li
+                      %a{title: "Май", href: "/press-centre/news/filter/2013/05/"} Май
+                    %li
+                      %a{title: "Апрель", href: "/press-centre/news/filter/2013/04/"} Апрель
+                    %li
+                      %a{title: "Март", href: "/press-centre/news/filter/2013/03/"} Март
+                    %li
+                      %a{title: "Февраль", href: "/press-centre/news/filter/2013/02/"} Февраль
+                    %li
+                      %a{title: "Январь", href: "/press-centre/news/filter/2013/01/"} Январь
+
+                %li
+                  %a{title: "2012", href: "/press-centre/news/filter/2012/"} 2012
+                %li
+                  %a{title: "2011", href: "/press-centre/news/filter/2011/"} 2011
+            %li
+              %a{title: "Пресса о нас", href: "/press-centre/press/"} Пресса о нас
+          %p
+            %a.no-underline{href: "news.rss"}
+              %i.icon.icon-rss
+            &nbsp;&nbsp;
+            %a.rss-link-small{href: "/press-centre/rss/"} Подписаться
+
+    .columns.small-12.large-9
+      %h1 Новости
+      .row
+        .columns.small-12.margin-bottom-40
+          %ul.no-billet.news-list
+            - 4.times do
+              %li
+                %h3
+                  %a{href: "/press-centre/press/155/"}
+                    2ТБанк устанавливает новые рублевые ставки по «Вкладу на срок»
+
+                %p.muted.dscr
+                  %em
+                    Корректируются условия размещения средств на 4, 5, 6, 9 и 12 месяцев
+
+              %li
+                %h3
+                  %a{href: "/press-centre/press/155/"}
+                    Интернет-сервис 2ТБанка для юридических лиц вошел в число лучших
+
+                %p.muted.dscr
+                  %em
+                    \...по оценке известного аналитического агентства Markswebb Rank & Report

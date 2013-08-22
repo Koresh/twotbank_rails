@@ -12,4 +12,8 @@ class PressCentreController < ApplicationController
     
   end
 
+  def news
+    
+  end
+
 end
