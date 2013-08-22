@@ -33,7 +33,10 @@ class TbWidgets.PressAboutCircle
 
     @authors_link.on "click", (e) =>
       e.preventDefault()
-      @authors_link.removeClass("active").find(e.target).parents("a").addClass "active"
+      $target = $ e.target
+      ( $target = $target.parent("a") ) if $target.is("img")
+      @authors_link.removeClass("active")
+      $target.addClass "active"
       @content_list_items.removeClass("active").eq( $(e.target).parents("li").index() ).addClass "active"
 
 
