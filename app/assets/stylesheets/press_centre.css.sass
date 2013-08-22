@@ -47,6 +47,16 @@
     background:
       color: #fff
 
+    &:before
+      content: ""
+      display: none
+      +icons-sprite(corner)
+      height: icons-sprite-height(corner)
+      width: icons-sprite-width(corner)
+      position: absolute
+      top: 120px
+      left: -67px
+
   .content-list
     padding:
       left: emCalc(25px)
@@ -69,14 +79,29 @@
       margin: 0 0 0.43em
       line-height: 1em
 
-    &.simple
-      .content-list
-        padding:
-          left: emCalc(20px)
-          top: emCalc(30px)
-          right: emCalc(20px)
-        margin:
-          bottom: emCalc(70px)
+  &.simple
+    .content-list
+      padding:
+        left: emCalc(15px)
+        top: emCalc(30px)
+        right: emCalc(15px)
+      margin:
+        bottom: emCalc(40px)
+
+    .authors-block
+      .authors-block-overflow
+        height: auto
+
+        ul
+          li
+            height: auto
+
+            a
+              height: auto
+
+              &.active:after
+                display: none
+
 
   .authors-block
     position: relative
@@ -144,11 +169,33 @@
 
 
 .news-list
+  
+
   li
     +inline-block(top)
     width: 100%
     margin:
       bottom: emCalc(20px)
+    padding: 0 emCalc(20px)
+
+    h3
+      margin:
+        top: 0
+
+    p.date
+      margin: 0
+      font-size: emCalc(14px)
+
+    p.author 
+      a
+        +opacity(0.25)
+
+        &:hover
+          +opacity(1)
+
+    p.dscr
+      margin:
+        bottom: emCalc(5px)
 
 .news-side-nav
   margin:
@@ -214,20 +261,13 @@
         bottom: emCalc(40px)
 
   .press-post-block
-    &:before
-      content: ""
-      display: block
-      +icons-sprite(corner)
-      height: icons-sprite-height(corner)
-      width: icons-sprite-width(corner)
-      position: absolute
-      top: 120px
-      left: -67px
-
     &.row
       margin:
         top: emCalc(-40px)
         left: emCalc(-40px)
+
+      &:before
+        display: block
 
       &.simple
         margin: 
