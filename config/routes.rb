@@ -22,6 +22,7 @@ TwotbankRails::Application.routes.draw do
   get 'ajax/geo/offices/:city_id' => 'api#offices'
 
   get 'press-centre'      => 'press_centre#index'
+  get 'press-centre/press' => 'press_centre#press'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

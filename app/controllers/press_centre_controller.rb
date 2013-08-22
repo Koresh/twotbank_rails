@@ -4,4 +4,8 @@ class PressCentreController < ApplicationController
     
   end
 
+  def press
+    
+  end
+
 end

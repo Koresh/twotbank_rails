@@ -1,0 +1,57 @@
+%section.padding-top-30
+  .row
+    .columns.small-12.large-3.bank-about-sidebar
+      .row
+        .logo-block.columns.small-4.large-12
+          = image_tag "logo.png"
+
+        .columns.small-8.large-12
+          %ul.side-nav.news-side-nav
+            %li
+              %a{title: "Новости", href: "/press-centre/news/"} Новости
+            %li.active
+              %a{title: "Пресса о нас", href: "/press-centre/press/"} Пресса о нас
+              %ul.hash-nav
+                %li.active
+                  2013
+                  %ul
+                    %li.active
+                      Июль
+                    %li
+                      %a{title: "Июнь", href: "/press-centre/press/filter/2013/06/"} Июнь
+                    %li
+                      %a{title: "Май", href: "/press-centre/press/filter/2013/05/"} Май
+                    %li
+                      %a{title: "Апрель", href: "/press-centre/press/filter/2013/04/"} Апрель
+                    %li
+                      %a{title: "Март", href: "/press-centre/press/filter/2013/03/"} Март
+                    %li
+                      %a{title: "Февраль", href: "/press-centre/press/filter/2013/02/"} Февраль
+                    %li
+                      %a{title: "Январь", href: "/press-centre/press/filter/2013/01/"} Январь
+
+                %li
+                  %a{title: "2012", href: "/press-centre/press/filter/2012/"} 2012
+                %li
+                  %a{title: "2011", href: "/press-centre/press/filter/2011/"} 2011
+
+    .columns.small-12.large-9
+      %h1 Пресса о нас
+      .row
+        .columns.small-12.large-12
+          .row.press-post-block.simple
+            .columns.small-12
+              %ul.no-bullet.content-list
+                %li.active
+                  %h2
+                    %a{title: "Трудные климатические условия", href: "/press-centre/press/155/"} Трудные климатические условия
+                  %p.muted
+                    %em Как банки, большие и малые, улучшают предпринимательский климат в сегменте МСБ. На примерах Сбербанка, Альфа банка и 2Т Банка
+
+
+            .columns.small-12.authors-block
+              .authors-block-overflow
+                %ul.no-bullet.inline-list
+                  %li
+                    %a.active{title: "Хороший банк - половина успеха", href: "#"}
+                      =image_tag "filer_public/2013/06/20/logo313333.png"

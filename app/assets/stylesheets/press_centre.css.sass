@@ -69,6 +69,15 @@
       margin: 0 0 0.43em
       line-height: 1em
 
+    &.simple
+      .content-list
+        padding:
+          left: emCalc(20px)
+          top: emCalc(30px)
+          right: emCalc(20px)
+        margin:
+          bottom: emCalc(70px)
+
   .authors-block
     position: relative
 
@@ -141,6 +150,59 @@
     margin:
       bottom: emCalc(20px)
 
+.news-side-nav
+  margin:
+    left: emCalc(20px)
+
+  > li
+    position: relative
+
+    &:before
+      position: absolute
+      content: ""
+      border:
+        width: 5px 0 5px 5px
+        color: transparent transparent transparent $body-font-color
+        style: solid
+      top: 7px
+      left: -18px
+
+    &.active
+      > a:first-child
+        color: $blue-link-color
+        font-weight: normal
+
+      &:before
+        border:
+          width: 5px 5px 0 5px
+          color: $body-font-color transparent transparent transparent
+        left: -22px
+        top: 8px
+
+  .hash-nav
+    margin:
+      top: emCalc(15px)
+
+    li
+      font-size: 1em
+      a
+        font-size: 1em
+
+      ul
+        margin:
+          top: emCalc(10px)
+        list-style: none
+
+        li
+          margin:
+            bottom: 3px
+
+          &:before
+            display: none
+
+
+
+
 
 @media #{$small}
   .news-list
@@ -154,7 +216,7 @@
   .press-post-block
     &:before
       content: ""
-      display: none
+      display: block
       +icons-sprite(corner)
       height: icons-sprite-height(corner)
       width: icons-sprite-width(corner)
@@ -166,4 +228,8 @@
       margin:
         top: emCalc(-40px)
         left: emCalc(-40px)
+
+      &.simple
+        margin: 
+          top: 0
 
