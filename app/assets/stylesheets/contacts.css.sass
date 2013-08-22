@@ -43,3 +43,135 @@
     tbody tr td
       border: 0
       vertical-align: top
+
+.map-contacts
+  .Img
+    position: relative
+    margin:
+      bottom: emCalc(30px)
+    +box-shadow(0 0 10px #0073a4)
+
+  .btn1
+    position: absolute
+    display: block 
+    width: 100%
+    background:
+      color: $yelow-color
+    height: 20px
+    left: 0
+    bottom: 0
+
+    &:before
+      position: absolute
+      content: ""
+      border:
+        width: 5px 5px 0 5px
+        color: $body-font-color transparent transparent transparent
+        style: solid
+      top: 7px
+      left: 50%
+      margin:
+        left: -5px
+
+  .searchBlock
+    color: $body-font-color
+    position: absolute
+    width: 270px
+    padding: 10px
+    background:
+      color: $gray-color
+    +box-shadow(0 2px 1px #bfbfbf)
+    top: 40px
+    right: 5px
+
+    p 
+      font-size: emCalc(16px)
+
+    .button
+      margin: 0
+
+    .search-input
+      background:
+        color: $gray-color
+      font: emCalc(16px) 'MyriadProRegular'
+      color: $body-font-color
+
+  .selectBlock1
+    position: relative
+    background:
+      color: $blue-color
+    margin: 
+      top: -27px
+
+    > span
+      +inline-block(top)
+      font: emCalc(24px) 'MyriadProSemiBold'
+      padding: 5px 3px
+
+    &.custom .custom.dropdown
+      +inline-block(top)
+      background: transparent
+      border:
+        color: #fff
+        width: 2px
+      font: emCalc(24px) 'MyriadProSemiBold'
+      height: 1.6em
+      margin:
+        bottom: 0.8em
+
+      ul
+        background: $gray-color
+
+        li
+          color: $blue-color
+          line-height: 1em
+
+          &.selected, &:hover
+            color: #fff
+
+      .current
+        color: #fff
+        line-height: 1.5em
+
+      .selector
+        line-height: 1.5em
+        height: 1.6em
+
+        &:after
+          border:
+            color: #fff transparent transparent transparent
+
+      &.open
+        background: $gray-color
+        border:
+          color: $gray-color
+
+        .selector:after
+          border:
+            color: transparent transparent $blue-color transparent
+            width: 0 5px 5px 5px
+
+        .current
+          color: $blue-color
+
+  .sub-border-top
+    height: 7px
+    border:
+      color: #fff
+      width: 2px 2px 0 2px
+      style: solid
+    +border-radius(6px 6px 0 0)
+
+  .sub-border-bottom
+    height: 9px
+    border:
+      color: #fff
+      width: 0 4px 4px 4px
+      style: solid
+    +border-radius(0 0 8px 8px)
+
+
+
+
+
+

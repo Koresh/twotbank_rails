@@ -350,20 +350,20 @@ var markers = {
     markersArray: [],
     views: {
         cashin: {
-            marker: '/static/images/mapIcons/map_icon_cashin.png',
-            shadow: '/static/images/mapIcons/map_icon_cashin_shadow.png'
+            marker: "/images/mapIcons/map_icon_cashin.png",
+            shadow: "/images/mapIcons/map_icon_cashin_shadow.png"
         },
         office: {
-            marker: '/static/images/mapIcons/map_icon_office.png',
-            shadow: '/static/images/mapIcons/map_icon_office_shadow.png'
+            marker: "/images/mapIcons/map_icon_office.png",
+            shadow: "/images/mapIcons/map_icon_office_shadow.png"
         },
         partner: {
-            marker: '/static/images/mapIcons/map_icon_partner.png',
-            shadow: '/static/images/mapIcons/map_icon_partner_shadow.png'
+            marker: "/images/mapIcons/map_icon_partner.png",
+            shadow: "/images/mapIcons/map_icon_partner_shadow.png"
         },
         search: {
-            marker: '/static/images/mapIcons/map_icon_search.png',
-            shadow: '/static/images/mapIcons/map_icon_search_shadow.png'
+            marker: "/images/mapIcons/map_icon_search.png",
+            shadow: "/images/mapIcons/map_icon_search_shadow.png"
         }
     },
     markerVisible: {},

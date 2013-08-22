@@ -59,11 +59,11 @@
 
   .content-list
     padding:
-      left: emCalc(25px)
-      top: emCalc(40px)
-      right: emCalc(25px)
+      left: emCalc(0px)
+      top: emCalc(10px)
+      right: emCalc(0px)
     margin:
-      bottom: emCalc(70px)
+      bottom: emCalc(40px)
 
     li
       display: none
@@ -80,14 +80,6 @@
       line-height: 1em
 
   &.simple
-    .content-list
-      padding:
-        left: emCalc(15px)
-        top: emCalc(30px)
-        right: emCalc(15px)
-      margin:
-        bottom: emCalc(40px)
-
     .authors-block
       .authors-block-overflow
         height: auto
@@ -282,4 +274,19 @@
       &.simple
         margin: 
           top: 0
+
+    .content-list
+      padding:
+        left: emCalc(25px)
+        top: emCalc(40px)
+        right: emCalc(25px)
+      margin:
+        bottom: emCalc(70px)
+
+    &.simple .content-list
+      .content-list
+        padding:
+          left: emCalc(15px)
+          top: emCalc(30px)
+          right: emCalc(15px)
 
