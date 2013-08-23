@@ -57,6 +57,25 @@ p
   &.small
     font-size: emCalc(14px)
 
+ul
+  &.yelow-check-list
+    li
+      position: relative
+      padding:
+        left: emCalc(26px)
+      margin:
+        bottom: 5px
+
+      &:before
+        position: absolute
+        content: ""
+        left: 0
+        top: 2px
+        +icons-sprite(check-yelow)
+        height: icons-sprite-height(check-yelow)
+        width: icons-sprite-width(check-yelow)
+
+
 @media #{$small}
   h2
     font-size: emCalc(24px)

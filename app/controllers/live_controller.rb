@@ -17,4 +17,8 @@ class LiveController < ApplicationController
   def tvklad
     
   end
+
+  def credit_landing
+    render layout: "base"
+  end
 end

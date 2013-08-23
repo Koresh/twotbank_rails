@@ -15,6 +15,7 @@ TwotbankRails::Application.routes.draw do
   get 'credit-account'    => 'live#credit_account'
   get 'tvklad'            => 'live#tvklad'
   get 'contacts'          => 'contacts#index'
+  get 'credit-landing'    => 'live#credit_landing'
 
   get 'o-banke'           => 'o_banke#index'
   get 'o-banke/requisites' => 'o_banke#requisites'
