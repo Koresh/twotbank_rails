@@ -822,9 +822,9 @@ class TBank.Layout.Credit extends TBank.Layout
   type: 'credit'
   steps: [
     {view: TBank.StartForm, el: '#form-main-step'},
-    {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
-    {view: TBank.ContactFormHomePhone, el: '#maf_full_form_main .step2'}
-    {view: TBank.Step4Credit, el: '#maf_full_form_main .step3'}
+    {view: TBank.PersonalForm, el: '.questionnaire-step-block.step-1'},
+    {view: TBank.ContactFormHomePhone, el: '.questionnaire-step-block.step-2'}
+    {view: TBank.Step4Credit, el: '.questionnaire-step-block.step-3'}
     {view: TBank.FinalStepCredit, el: '#maf_success'}
   ]
 
