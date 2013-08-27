@@ -139,10 +139,10 @@ class AddressField
     @
 
   setFocus: ->
-    if @is_select2
-      @$container.select2 "open"
-    else
-      @$container.focus()
+    # if @is_select2
+    #   @$container.select2 "open"
+    # else
+    #   @$container.focus()
     @
 
   clearError: ->

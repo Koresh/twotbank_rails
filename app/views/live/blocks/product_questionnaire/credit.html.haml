@@ -59,7 +59,7 @@
                     Ж
                 %li
                   %label{for: "maf_sex_female"}
-                    %input#maf_sex_male{type: "radio", name: "maf_sex", value: "Мужской"}
+                    %input#maf_sex_male{type: "radio", name: "maf_sex", value: "Мужской", checked: "checked"}
                     М
             .columns.small-12.large-12
               .input-field.input-accept
@@ -135,7 +135,7 @@
                             Да
                         %li
                           %label{for: "maf_foreign_relations_no"}
-                            %input#maf_foreign_relations_no{type: "radio", name: "maf_foreign_relations_flag", value: "no"}
+                            %input#maf_foreign_relations_no{type: "radio", name: "maf_foreign_relations_flag", value: "no", checked: "checked"}
                             Нет
 
                 .columns.small-12.large-6.input-field
@@ -222,12 +222,12 @@
                     %label{for: "maf_connect_phone_home"}
                       %input#maf_connect_phone_home{type: "checkbox", name: "maf_connect_phone_home", value: "yes"}
                       Есть домашний телефон
-                .columns.small-12.large-6.input-field
+                #maf_connect_phone_name_field.columns.small-12.large-6.input-field
                   %input#maf_connect_phone_name{name:"maf_connect_phone_name", type: "text", placeholder: "Фамилия Имя Отчество", tabindex: "1"}
                   %label ФИО контактного лица (знакомый, родственник)
-                .columns.small-12.large-6.input-field
+                .columns.small-12.large-6.input-field.left
                   %input#maf_connect_phone{name:"maf_connect_phone", type: "text", placeholder: "+7 (495) 123-45-67", tabindex: "1"}
-                  %label Телефон контактного лица
+                  %label#maf_connect_phone_title Телефон контактного лица
 
 
         / Step 3
