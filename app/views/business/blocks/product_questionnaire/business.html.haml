@@ -1,0 +1,63 @@
+%form#questionnaire.questionnaire.custom{autocomplete: "off", data: {form: {type: "business"}}}
+  #questionnaire-fixed.quest-nav-fixed.text-center
+    %a#teaser_short{href: "#"}Заполните заявку
+    и станьте клиентом Банка
+  .quest-main-top-corner
+  .quest-main-center-bg
+    .row
+      .quest-main-block.columns.small-12
+        .row
+          .columns.small-12.text-center
+            %h1 Анкета
+
+        .progress-bar-block
+          .row
+            .columns.small-12
+              .nice.round.progress.small-12
+                %span.meter{style: "width: 9%"}
+                  %i.bulet.icon-switcher-bullet
+          %ul.row.text-center.progress-steps
+            %li.columns.small-3.item.item-1.active
+              Основные
+              %br
+              данные
+            %li.columns.small-3.item.item-2
+              Выбор
+              %br
+              продуктов
+
+        %fieldset#form-main-step
+          .row
+            .columns.small-12.large-6.left
+              Город
+
+            .columns.small-12.large-6.left
+              %ul.inline-fields.inline-list
+                %li
+                  Вы уже являетесь клиентом банка?
+                %li
+                  %label{for: "baf_is_client"}
+                    %input#is_client_yes{type: "radio", name: "baf_is_client", value: "yes"}
+                    Да
+                %li
+                  %label{for: "baf_is_client"}
+                    %input#is_client_no{type: "radio", name: "baf_is_client", value: "no"}
+                    Нет
+          .row
+            .columns.small-12.large-3
+              %input#baf_comp_name{name: "baf_comp_name", type: "text", placeholder: "Компания/ИП"}
+            .columns.small-12.large-3
+              %input#baf_client_name{name: "baf_client_name", type: "text", placeholder: "Контактное лицо"}
+            .columns.small-12.large-3
+              %input#baf_mobile_phone{name: "baf_mobile_phone", type: "text", placeholder: "+7 (916) 123-45-67"}
+            .columns.small-12.large-3
+              %input#baf_email{name: "baf_email", type: "text", placeholder: "E-mail"}
+            .columns.small-12.large-4.left
+
+          .row
+            .columns.small-12.large-2.right.text-right
+              %a#first_step_submit.button.small.expand{href:"#step2"} Далее
+
+
+
+  .quest-main-bottom-bg
