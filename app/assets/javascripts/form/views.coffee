@@ -300,11 +300,11 @@ class TBank.StepView extends Backbone.View
     _.indexOf(@disabledHash, key) > -1
 
   setError: (key) ->
-    $input = $("input[name=#{key}]")
+    $input = $("input[name=#{key}], select[name=#{key}]")
     $input.parent().addClass "error"
 
   clearError: (key) ->
-    $input = $("input[name=#{key}]")
+    $input = $("input[name=#{key}], select[name=#{key}]")
     $input.parent().removeClass "error"
 
 

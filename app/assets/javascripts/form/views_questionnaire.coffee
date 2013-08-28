@@ -122,13 +122,13 @@ class TBank.StartFormMTP extends TBank.StepView
   disableWork: ->
     @addressForm.disableWork()
     for item in @work_hash
-      $("##{item}").attr("disabled","disabled").parents(".textfield").addClass("gray_bg").end().parents(".CFEselect").addClass "CFEselect_disabled"
+      $("##{item}").attr("disabled","disabled").parent().addClass("disabled")
       @addDisabledHash null, name: item
 
   enableWork: ->
     @addressForm.enableWork()
     for item in @work_hash
-      $("##{item}").removeAttr("disabled").parents(".textfield").removeClass("gray_bg").end().parents(".CFEselect").removeClass "CFEselect_disabled"
+      $("##{item}").removeAttr("disabled").parent().removeClass("disabled")
       @rmDisabledHash null, name: item
 
   changeHomePhone: ->
@@ -509,7 +509,7 @@ class TBank.Step4Transfer extends TBank.Step4Credit
       for key in @c_type_hash[index - 1]
         @addDisabledHash null, name: key
 
-        $("##{key}").parents(".textfield").removeClass("textfieldError").end().parents(".CFEselect").removeClass "selectfieldError"
+        $("##{key}").parent().removeClass("error")
 
       #console.log @disabledHash
 

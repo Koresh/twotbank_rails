@@ -15,7 +15,7 @@ class Validates.Base
 class Validates.Required
 
   valid: (value) ->
-    if $.trim(value) isnt '' && value
+    if ( $.trim(value) isnt '' ) && value
       return true
     else
       return false
