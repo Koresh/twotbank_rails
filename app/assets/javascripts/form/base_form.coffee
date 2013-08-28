@@ -1,7 +1,8 @@
 window.TBank = window.TBank || {}
 TBank.cookieSync = (method, model, options) ->
   $.cookie.json = true
-  model_name = Object.getPrototypeOf(model).constructor.name
+  #model_name = Object.getPrototypeOf(model).constructor.name
+  model_name = model.cookie_name
   switch method
     when 'read'
       attributes = $.cookie model_name

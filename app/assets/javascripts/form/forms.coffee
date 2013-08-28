@@ -21,6 +21,7 @@ class TBank.SendModel extends Backbone.Model
         @set newkey, value
 
 class TBank.Form1 extends Backbone.Form
+    cookie_name: 'Form1'
     schema:
         maf_first_name:
             validators: ['name']
@@ -45,6 +46,7 @@ class TBank.Form1 extends Backbone.Form
 
 
 class TBank.Form1Pif extends Backbone.Form
+    cookie_name: 'Form1Pif'
     schema:
         maf_first_name:
             validators: ['name']
@@ -62,6 +64,7 @@ class TBank.Form1Pif extends Backbone.Form
 
 
 class TBank.Form2 extends Backbone.Form
+  cookie_name: 'Form2'
   schema:
     maf_zagran_fio:
       validators: ['latinname']
@@ -89,6 +92,7 @@ class TBank.Form2 extends Backbone.Form
 
 
 class TBank.Form2Pif extends Backbone.Form
+  cookie_name: 'Form2Pif'
   schema:
     maf_passport_seria:
       validators: ['pasportseria']
@@ -109,6 +113,7 @@ class TBank.Form2Pif extends Backbone.Form
 
 
 class TBank.Form3 extends Backbone.Form
+  cookie_name: 'Form3'
   schema:
     maf_reg_index:
       validators: ["number"]
@@ -160,6 +165,7 @@ class TBank.Form3 extends Backbone.Form
       defaults: true
 
 class TBank.Form3Pif extends Backbone.Form
+  cookie_name: 'Form3Pif'
   schema:
     maf_reg_index:
       validators: ["number"]
@@ -184,6 +190,7 @@ class TBank.Form3Pif extends Backbone.Form
 
 
 class TBank.Form4 extends Backbone.Form
+  cookie_name: 'Form4'
   schema:
     maf_way_to_get:
       validators: ['required']
@@ -222,6 +229,7 @@ class TBank.Form4 extends Backbone.Form
 
 
 class TBank.Form4Pif extends Backbone.Form
+  cookie_name: 'Form4Pif'
   schema:
     maf_way_to_get:
       validators: ['required']
@@ -244,6 +252,7 @@ class TBank.Form4Pif extends Backbone.Form
 
 
 class TBank.Form31 extends Backbone.Form
+  cookie_name: 'Form31'
   schema:
     maf_reg_index:
       validators: ["number"]
@@ -297,6 +306,7 @@ class TBank.Form31 extends Backbone.Form
       mask: "phone"
 
 class TBank.Form41 extends Backbone.Form
+  cookie_name: 'Form41'
   schema:
     maf_education:
       validators: ["required"]
@@ -373,6 +383,7 @@ class TBank.Form41 extends Backbone.Form
       validators: ["addressnum"]
 
 class TBank.Form41spain extends Backbone.Form
+  cookie_name: 'Form41spain'
   schema:
     maf_education:
       validators: ["required"]
@@ -466,6 +477,7 @@ class TBank.Form41spain extends Backbone.Form
       validators: ["required"]
 
 class TBank.Form42 extends Backbone.Form
+  cookie_name: 'Form42'
   schema:
     maf_education:
       validators: ["required"]
@@ -601,6 +613,7 @@ class TBank.Form42 extends Backbone.Form
 
 
 class TBank.StartBusinessFrom extends Backbone.Form
+  cookie_name: 'StartBusinessFrom'
   schema:
     baf_region:
       validators: ["required"]
@@ -620,6 +633,7 @@ class TBank.StartBusinessFrom extends Backbone.Form
       defaults: "no"
 
 class TBank.FinalBusinessForm extends Backbone.Form
+  cookie_name: 'FinalBusinessForm'
   schema:
     baf_size_of_state:
       validators: ["number"]
@@ -653,6 +667,7 @@ class TBank.FinalBusinessForm extends Backbone.Form
       validators: []
 
 class TBank.BuhsoftForm extends Backbone.Form
+  cookie_name: 'BuhsoftForm'
   schema:
     baf_buhsoft_company:
       validators: ["simpletext"]
@@ -694,6 +709,7 @@ class TBank.BuhsoftForm extends Backbone.Form
       validators: []
 
 class TBank.MTPFormSTEP2 extends Backbone.Form
+  cookie_name: 'MTPFormSTEP2'
   schema:
     # Start
     maf_first_name:
