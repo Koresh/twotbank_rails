@@ -113,7 +113,7 @@ class AddressField
 
   disable: ->
     @settings.enable = false
-    @$container.attr("disabled","disabled").parents(".textfield").addClass("gray_bg").removeClass "textfieldError textfieldActive"
+    @$container.attr("disabled","disabled").parents(".input-field").addClass("disabled").removeClass "error"
     @$container.trigger "field-disabled", name: @settings.name
     if @is_select2
       @$container.select2 "enable", false
@@ -121,7 +121,7 @@ class AddressField
 
   enable: ->
     @settings.enable = true
-    @$container.removeAttr("disabled").parents(".textfield").removeClass "gray_bg"
+    @$container.removeAttr("disabled").parents(".input-field").removeClass "disabled error"
     @$container.trigger "field-enabled", name: @settings.name
     if @is_select2
       @$container.select2 "enable", true

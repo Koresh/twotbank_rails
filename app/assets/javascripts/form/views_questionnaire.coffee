@@ -401,13 +401,13 @@ class TBank.Step4Credit extends TBank.Step4
   disableWork: ->
     @addressForm.disableWork()
     for item in @work_hash
-      $("##{item}").attr("disabled","disabled").parents(".input-field").find(".custom.dropdown").addClass("disabled")
+      $("##{item}").attr("disabled","disabled").parents(".input-field").removeClass("error").find(".custom.dropdown").addClass("disabled")
       @addDisabledHash null, name: item
 
   enableWork: ->
     @addressForm.enableWork()
     for item in @work_hash
-      $("##{item}").removeAttr("disabled").parents(".input-field").find(".custom.dropdown").removeClass("disabled")
+      $("##{item}").removeAttr("disabled").parents(".input-field").removeClass("error").find(".custom.dropdown").removeClass("disabled")
       @rmDisabledHash null, name: item
 
   addDisabledHash: (e, data) ->
