@@ -48,11 +48,11 @@ class TBank.Layout extends Backbone.View
     @updateAnalytics "#step#{@current_step}"
 
   updateAnalytics: (label) =>
-      yaCounter10379614.reachGoal(@sendmodel.get('product_url') + label);
-      _gaq.push(['_setCustomVar', 1, 'uniqId', @sendmodel.get('uniqID'), 1]);
-      _gaq.push(['_setCustomVar', 2, 'formType', @type, 2]);
-      _gaq.push(['_setCustomVar', 3, 'formStep', label, 2]);
-      _gaq.push(['_trackPageview', @sendmodel.get('product_url') + label]);
+      # yaCounter10379614.reachGoal(@sendmodel.get('product_url') + label);
+      # _gaq.push(['_setCustomVar', 1, 'uniqId', @sendmodel.get('uniqID'), 1]);
+      # _gaq.push(['_setCustomVar', 2, 'formType', @type, 2]);
+      # _gaq.push(['_setCustomVar', 3, 'formStep', label, 2]);
+      # _gaq.push(['_trackPageview', @sendmodel.get('product_url') + label]);
 
 
   gotoFinalStep: =>
@@ -127,8 +127,8 @@ class TBank.Layout extends Backbone.View
     #console.log "Stay on current step!"
     router.navigate "step#{ @current_step }", trigger: false
 
-    if @$el.find(".textfieldError, .selectfieldError").first().length
-      @scrollToEl @$el.find(".textfieldError, .selectfieldError").first(), 10
+    if @$el.find(".error").first().length
+      @scrollToEl @$el.find(".error").first(), 10
     else if $("#one_checkbox_valid").length 
       @scrollToEl $("#one_checkbox_valid"), 10
 
@@ -182,7 +182,17 @@ class TBank.StepView extends Backbone.View
   _modelBinder: undefined
 
   events: =>
-    _.extend {"change input[type='text']":"trimField"}, @originalEvents, @additionalEvents
+    _.extend {"change input[type='text']":"trimField", "change input[type='checkbox']":"change_checkbox", "change input[type='radio']":"change_radio"}, @originalEvents, @additionalEvents
+
+  change_checkbox: (e) ->
+    $target = $ e.target
+    $target.parent().find(".checkbox").addClass("checked") if $target.is(":checked")
+
+  change_radio: (e) ->
+    $target = $ e.target
+    name = $target.attr "name"
+    $("input[name='#{name}']").parent().find(".radio").removeClass("checked")
+    $target.parent().find(".radio").addClass("checked").trigger("change") if $target.is(":checked")
 
   trimField: (e)->
     target = $ e.target

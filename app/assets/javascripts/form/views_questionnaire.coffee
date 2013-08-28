@@ -8,12 +8,14 @@ class TBank.StartForm extends TBank.StepView
   originalEvents:
     "click #send_sms_again"  : "send_sms_again"
 
-  send_sms_again: ->
+  send_sms_again: (e) ->
+    e.preventDefault()
     $('#send_sms_again').addClass('disabled');
     @api.sendSMS @model.get('maf_mobile_phone'), (status) =>
       @sendmodel.set 'mobile_phone', @model.get('maf_mobile_phone')
       $('#send_sms_again').removeClass('disabled');
       #console.log "SMS send"
+    return false
 
   stepvalidate: (callback) ->
     @api.checkMobile @model.get('maf_mobile_phone'), (status)=>
@@ -169,6 +171,9 @@ class TBank.PersonalForm extends TBank.StepView
     if first_name && last_name
       @model.set 'maf_zagran_fio', "#{first_name} #{last_name}".toTranslit()
 
+    
+
+  afterRender: ->
     @model.on "change:maf_foreign_relations_flag", =>
       @relationsChange()
 
@@ -396,13 +401,13 @@ class TBank.Step4Credit extends TBank.Step4
   disableWork: ->
     @addressForm.disableWork()
     for item in @work_hash
-      $("##{item}").attr("disabled","disabled").parents(".textfield").addClass("gray_bg").end().parents(".CFEselect").addClass "CFEselect_disabled"
+      $("##{item}").attr("disabled","disabled").parents(".input-field").find(".custom.dropdown").addClass("disabled")
       @addDisabledHash null, name: item
 
   enableWork: ->
     @addressForm.enableWork()
     for item in @work_hash
-      $("##{item}").removeAttr("disabled").parents(".textfield").removeClass("gray_bg").end().parents(".CFEselect").removeClass "CFEselect_disabled"
+      $("##{item}").removeAttr("disabled").parents(".input-field").find(".custom.dropdown").removeClass("disabled")
       @rmDisabledHash null, name: item
 
   addDisabledHash: (e, data) ->

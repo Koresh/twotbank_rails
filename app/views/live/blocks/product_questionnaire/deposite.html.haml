@@ -138,8 +138,9 @@
                             %input#maf_foreign_relations_no{type: "radio", name: "maf_foreign_relations_flag", value: "no"}
                             Нет
 
-                .columns.small-12.large-6.input-field
+                #maf_foreign_relations_field.columns.small-12.large-6.input-field{style: "display: none"}
                   %textarea#maf_foreign_relations{placeholder: "Дополнительные сведения", name: "maf_foreign_relations", tabindex: "9"}
+                }
 
         / Step 2
         .row.questionnaire-step-block.step-2{style: "display: none"}

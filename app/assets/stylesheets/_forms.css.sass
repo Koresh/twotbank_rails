@@ -111,6 +111,23 @@ form
       &.dropdown
         font-size: emCalc(20px)
         +border-radius(3px)
+        background: #fff
+        border:
+          color: #a6a6a6
+
+      &.disabled
+        background:
+          color: #f0f0f0
+        border:
+          color: #a6a6a6
+
+        .current
+          color: rgba(0, 0, 0, 0.3)
+
+    .error
+      .custom.dropdown
+        margin:
+          bottom: emCalc(4)
 
 .inline-select
   overflow: visible

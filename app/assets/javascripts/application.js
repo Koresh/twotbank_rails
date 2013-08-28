@@ -29,6 +29,7 @@
 //= require tbank.contacts
 //= require tbank.mapObjects
 //= require_tree ./widgets
+//= require placeholders
 // require_tree .
 
 $(document)

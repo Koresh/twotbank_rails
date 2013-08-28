@@ -139,10 +139,10 @@ class AddressField
     @
 
   setFocus: ->
-    # if @is_select2
-    #   @$container.select2 "open"
-    # else
-    #   @$container.focus()
+    if @is_select2
+      @$container.select2 "open"
+    else
+      @$container.focus()
     @
 
   clearError: ->
@@ -470,9 +470,9 @@ class TBank.AddressForm
     @container.find("#maf_reg_index_forgot").on "change", =>
       if @flag_sync
         if $("#maf_reg_index_forgot").is ":checked"
-          $("#maf_loc_index_forgot").attr("checked", "checked").parent().addClass "CFEcheckbox_checked"
+          $("#maf_loc_index_forgot").attr("checked", "checked").parent().find(".checkbox").addClass "checked"
         else
-          $("#maf_loc_index_forgot").removeAttr("checked").parent().removeClass "CFEcheckbox_checked"
+          $("#maf_loc_index_forgot").removeAttr("checked").parent().find(".checkbox").removeClass "checked"
 
 
 
@@ -483,9 +483,9 @@ class TBank.AddressForm
     $("#maf_loc_index_forgot").attr "disabled", "disabled"
 
     if $("#maf_reg_index_forgot").is ":checked"
-      $("#maf_loc_index_forgot").attr("checked","checked").parent().addClass "CFEcheckbox_checked"
+      $("#maf_loc_index_forgot").attr("checked","checked").parent().find(".checkbox").addClass "checked"
     else
-      $("#maf_loc_index_forgot").removeAttr("checked").parent().removeClass "CFEcheckbox_checked"
+      $("#maf_loc_index_forgot").removeAttr("checked").parent().find(".checkbox").removeClass "checked"
 
     for item, i in value_array
        @loc_address.setValue i, item

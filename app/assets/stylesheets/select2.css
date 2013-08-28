@@ -698,6 +698,12 @@ disabled look for disabled choices in the results dropdown
 .select2-container .select2-choice{
     background: transparent;
 }
+
+.error .select2-container .select2-choice{
+    border-color: #c60f13;
+    background-color: rgba(198, 15, 19, 0.1);
+}
+
 .select2-container .select2-choice > div{
     display: none;
 }

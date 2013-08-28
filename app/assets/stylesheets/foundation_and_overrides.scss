@@ -608,13 +608,13 @@ $custom-form-radio-size: 25px;
 
 $custom-select-bg: #fff;
 $custom-select-fade-to-color: #fff;
-$custom-select-border-color: #333;
+$custom-select-border-color: #a6a6a6;
 // $custom-select-triangle-color: #888;
 // $custom-select-triangle-color-open: #222;
 $custom-select-height: emCalc(20) + ($form-spacing * 1.5);
-// $custom-select-margin-bottom: emCalc(20);
+$custom-select-margin-bottom: emCalc(4);
 // $custom-select-font-color-selected: #141414;
-// $custom-select-disabled-color: #888;
+$custom-select-disabled-color: #f0f0f0;
 
 // We use these to control the style of the custom select dropdown element.
 
