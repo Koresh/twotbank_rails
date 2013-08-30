@@ -1,12 +1,49 @@
-= render template: "live/blocks/product_banner/credit_transfer"
+= render template: "live/blocks/product_banner/schet_dlya_zhizni"
 
-= render template: "live/blocks/product_services/credit_transfer"
+= render template: "live/blocks/under_banner/index"
 
-= render template: "live/blocks/product_information/credit_transfer"
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Банковские услуги, которые вы получаете, открывая тСчет
 
-= render template: "live/blocks/product_documents/credit_transfer"
+  .row
+    .columns.small-10.small-centered
+      .row.text-center
+        .columns.small-3.small-offset-3
+          %p
+            =image_tag "features/0001/01/4bfd44e891aa20949f41675e9a99bc924778cb07.png"
+        .columns.small-3.left          
+          %p
+            =image_tag "features/0001/01/672a78f2b3129ead0bf5bf2211de3f48937c30ca.png"
 
-= render template: "live/blocks/product_questionnaire/credit_transfer"
+      .row.text-center
+        .columns.small-3.small-offset-3
+          %h4
+            Карта
+          %p.small
+            Пользуйтесь картой MasterCard Standard 
+            %i без платы 
+            за обслуживание. Подробнее про 
+            %a#scroll-to-table{href: "#"} карты
+        .columns.small-3.left
+          %h4
+            Текущий счет
+          %p.small
+            Совершайте любые платежи онлайн круглосуточно с компьютера или c мобильного телефона 
+            %i без комиссии. 
+            Осуществляйте перевод средств в другие банки 
+            %i без комиссии.
+
+
+= render template: "live/blocks/product_services/schet_dlya_zhizni"
+
+= render template: "live/blocks/product_information/schet_dlya_zhizni"
+
+= render template: "live/blocks/product_documents/schet_dlya_zhizni"
+
+= render template: "live/blocks/product_questionnaire/schet_dlya_zhizni"
 
 %section.padding-top-200
   = render template: "live/blocks/product_feedbacks/credit_transfer"
