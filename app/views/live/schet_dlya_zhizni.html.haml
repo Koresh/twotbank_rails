@@ -45,5 +45,27 @@
 
 = render template: "live/blocks/product_questionnaire/schet_dlya_zhizni"
 
-%section.padding-top-200
+%section.padding-top-220
+  .row
+    
+    .columns.small-10.small-centered.topline
+
+      .columns.small-3.padding-40.text-left
+
+        =image_tag "features/0001/01/insured.2dd4f40d3f31.png"
+
+      .columns.small-9.padding-40
+        %h2
+          Банк входит в Систему страхования вкладов и регулярно осуществляет отчисления в Фонд страхования вкладов с привлекаемых средств.
+        %p
+          Банк – Т (ОАО) является участником государственной Системы страхования вкладов, которая гарантирует каждому вкладчику полный возврат средств до 700 000 рублей (или эквивалента в долларах США / евро).
+
+        .padding-40
+          %span
+            =image_tag "features/0001/01/ico_pdf.2395476ab2f4.png"
+          %span
+            Свидетельство о страховании вкладов
+
+
+%section
   = render template: "live/blocks/product_feedbacks/credit_transfer"
