@@ -14,6 +14,7 @@ TwotbankRails::Application.routes.draw do
   get 'debetovye-karty'   => 'live#debetovye_karty'
   get 'credit-account'    => 'live#credit_account'
   get 'tvklad'            => 'live#tvklad'
+  get 'vklad-na-srok'     => 'live#vklad_na_srok'
   get 'contacts'          => 'contacts#index'
   get 'credit-landing'    => 'live#credit_landing'
 
