@@ -336,7 +336,7 @@ class TBank.Form41 extends Backbone.Form
       validators: ['required']
       defaults: "office"
     maf_delivery_address:
-      validators: ['required']
+      validators: []
     maf_city_office:
       validators: []
       defaults: "119334, Москва, Ленинский проспект, 30"
