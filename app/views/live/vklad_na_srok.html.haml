@@ -1,46 +1,6 @@
 = render template: "live/blocks/product_banner/vklad_na_srok"
 
-/ = render template: "live/blocks/under_banner/index"
-
-/ %section.padding-40
-/   .row
-/     .columns.small-12.text-center
-/       %h2.margin-bottom-20
-/         Собирайте и преумножайте свои средства с максимальной выгодой!
-
-/   .row
-/     .columns.small-10.small-centered
-/       .row.text-center
-/         .columns.small-3
-/           %p
-/             =image_tag "filer_public/2013/03/30/e3716706f9888ac30d20e2cbd8ed12bccb594480.png"
-/         .columns.small-3          
-/           %p
-/             =image_tag "filer_public/2013/03/30/e320f176de9c7a3a011d4ab2b7c207603f4e018d.png"
-/         .columns.small-3          
-/           %p
-/             =image_tag "filer_public/2013/03/30/006c4e3c0d98faae9af70b23fe781c74664ce044.png"
-/         .columns.small-3          
-/           %p
-/             =image_tag "filer_public/2013/03/30/02d96007cf7a85aaaca684c86b4f6f07f2ecdb10.png"
-
-/       .row.text-center
-/         .columns.small-3
-/           %p.small
-/             Получайте доход при — минимальном сроке от 1 дня и — минимальной сумме от 1 рубля!
-/         .columns.small-3
-/           %p.small
-/             Проценты по тВкладу начисляются каждый месяц по вашему выбору: на Расчетный счет, на тВклад (с капитализацией), на вашу Карту или счет другого клиента Банка.
-/         .columns.small-3
-/           %p.small
-/             Пополнять тВклад вы тоже можете так, как вам удобно: с другого своего счета, переводом из другого банка или через банкоматы с функцией кэш-ин.
-/         .columns.small-3
-/           %p.small
-/             Получайте дополнительный доход по повышенной процентной ставке на премиальных счетах!
-/             %a#scroll-to-table{href: "#"} Подробнее
-/             \.
-
-/ = render template: "live/blocks/product_services/tvklad"
+= render template: "live/blocks/under_banner/index"
 
 = render template: "live/blocks/product_information/vklad_na_srok"
 
@@ -53,66 +13,65 @@
   .row
     .columns.small-10.small-centered
       .row.text-center
-        .columns.small-3
+        .columns.small-4
           %p
             =image_tag "filer_public/2013/04/03/1b2bba10b814c7b4ccdc6e638a99571e83f76727.png"
-        .columns.small-3          
+        .columns.small-4          
           %p
             =image_tag "features/0001/01/04a8382228b82c0b5a521eaf0a91c70817e3e58d.png"
-        .columns.small-3          
+        .columns.small-4          
           %p
             =image_tag "features/0001/01/25f5c27478119066442b304a2b1e5b4b4b673123.png"
 
       .row.text-center
-        .columns.small-3
+        .columns.small-4
+          %h4 Любая валюта
           %p.small
-            Получайте доход при — минимальном сроке от 1 дня и — минимальной сумме от 1 рубля!
-        .columns.small-3
+            Открывайте один или несколько вкладов в рублях, евро или долларах США.
+        .columns.small-4
+          %h4 Начисление процентов на любой счет в Банке
           %p.small
-            Проценты по тВкладу начисляются каждый месяц по вашему выбору: на Расчетный счет, на тВклад (с капитализацией), на вашу Карту или счет другого клиента Банка.
-        .columns.small-3
+            Проценты по вкладу начисляются каждый месяц по вашему выбору: на текущий счет, на карту, на счет вклада (капитализация) или счет другого клиента Банка.
+        .columns.small-4
+          %h4 Пополнение вклада без комиссии
           %p.small
-            Пополнять тВклад вы тоже можете так, как вам удобно: с другого своего счета, переводом из другого банка или через банкоматы с функцией кэш-ин.
+            Пополнять Вклад вы можете так, как вам удобно: переводом из другого банка, перечислением со своих счетов в 2TБанке через Интернет-Банк, через кассу в отделениях 2ТБанка или через банкомат при помощи банковской карты.
+
+%section.padding-40
+  .row
+    .columns.small-10.text-center.margin-bottom-35.small-offset-1
+      %h2
+        Больше бонусов — больше времени
+      %p
+        Открывая Вклад на срок в 2ТБанке вы получаете комплекс бесплатных услуг, включая текущий счет. Текущий счет в 2TБанке позволяет оплачивать через Интернет-Банк любые услуги онлайн и без комиссии — вы экономите свои время и деньги.
+
+= render template: "live/blocks/product_services/vklad_na_srok"
 
 %section
   .row
-    .columns.small-12.text-center.margin-bottom-35
-      %h2
-        Дополнительные сервисы — больше преимуществ
     .columns.small-10.small-centered
-      .row.padding-40
-        .columns.small-7.text-center
-          %p
-            Для большего удобства вы получите карту MasterCard Standard для оплаты товаров и услуг, снятия и пополнения наличных. Карта выпускается 
-            %em без платы 
-            за обслуживание.
-          %p
-            Кроме того, мы сделали возможным снимать наличные без комиссии в банкомате 
-            %em любого
-            банка в любой точке мира!
-          %p
-            С помощью Карты вы можете пополнять свой тВклад через широкую сеть банкоматов 
-            %em без комиссии
-            \.
-            %br
-            %a{href: "/debetovye-karty/"}
-              Подробнее про карту
-        .columns.small-5
-          =image_tag "filer_public/2013/03/30/25d874620eb5d078da4c51d2b762319c3cf79ee5.png"
 
       .row.padding-40
         .columns.small-5
-          =image_tag "filer_public/2013/03/30/1fcb6319e540cd2a4feff793085402de0dbf2688.png"
-        .columns.small-7.text-center.padding-90
+          =image_tag "/images/filer_public/2013/03/30/25d874620eb5d078da4c51d2b762319c3cf79ee5.png"
+        .columns.small-7.text-center.padding-20
           %p
-            Дополнительно — сервис Интернет-Банк 2TБанка позволяет оплачивать любые услуги онлайн без 
-            %em комиссии
-            — вы получаете больше времени для своих дел и сохраняете больше средств для своих задач.
-            %a{href: "/internet-bank/"} Подробнее про сервисы и бонусы
+            Для большего удобства вы получите карту MasterCard Standard — для оплаты товаров и услуг, снятия наличных и пополнения счета.
+          %p
+            Согласно нашим принципам мы выпускаем эту карту 
+            %em бесплатно
+            , без комиссии за обслуживание и без необходимости брать деньги в кредит. Кроме того, мы сделали возможным снятие наличных без 
+            %em 
+            комиссии в банкомате 
+            %em любого 
+            банка в любой точке мира.
+          %p
+            %a{href: "/debetovye-karty/"} Подробнее про карту
 
-= render template: "live/blocks/product_features/tvklad"
-= render template: "live/blocks/product_documents/tvklad"
-= render template: "live/blocks/product_questionnaire/tvklad"
+= render template: "live/blocks/product_documents/vklad_na_srok"
+
+
+= render template: "live/blocks/product_questionnaire/vklad_na_srok"
 
 %section.padding-top-200
   = render template: "live/blocks/product_insured/debetovye_karty"
