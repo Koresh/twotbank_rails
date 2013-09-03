@@ -19,6 +19,7 @@ TwotbankRails::Application.routes.draw do
   get 'mortgage'          => 'live#mortgage'
   get 'new-moscow'        => 'live#new_moscow'
   get "mobile"            => 'live#mobile'
+  get 'internet-bank'     => 'live#internet_bank'
   get 'contacts'          => 'contacts#index'
   get 'credit-landing'    => 'live#credit_landing'
 
