@@ -7,13 +7,13 @@
       .row.text-center
         .columns.small-3.small-offset-2
           %p
-            =image_tag "filer_public_thumbnails/filer_public/2013/06/26/9f800c4f9be48717cc498d61f77015f9289ce066png__160x160_q85_crop_upscale.png__160x160_q85_crop_upscale.png"
+            =image_tag "filer_public_thumbnails/filer_public/2013/06/26/9f800c4f9be48717cc498d61f77015f9289ce066png__160x160_q85_crop_upscale.png__64x64_q85_crop_upscale.png"
         .columns.small-3          
           %p
-            =image_tag "filer_public_thumbnails/filer_public/2013/06/26/9f800c4f9be48717cc498d61f77015f9289ce066png__160x160_q85_crop_upscale.png__160x160_q85_crop_upscale.png"
+            =image_tag "filer_public_thumbnails/filer_public/2013/06/26/9f800c4f9be48717cc498d61f77015f9289ce066png__160x160_q85_crop_upscale.png__64x64_q85_crop_upscale.png"
         .columns.small-3.left          
           %p
-            =image_tag "filer_public_thumbnails/filer_public/2013/06/26/9f800c4f9be48717cc498d61f77015f9289ce066png__160x160_q85_crop_upscale.png__160x160_q85_crop_upscale.png"
+            =image_tag "filer_public_thumbnails/filer_public/2013/06/26/9f800c4f9be48717cc498d61f77015f9289ce066png__160x160_q85_crop_upscale.png__64x64_q85_crop_upscale.png"
 
       .row.text-center
         .columns.small-3.small-offset-2
@@ -32,50 +32,10 @@
           %p.small
             Гарантированный обратный выкуп паев 2ТБанком при досрочном расторжении договора - по цене приобретения
 
-= render template: "live/blocks/product_services/tvklad"
-= render template: "live/blocks/product_information/tvklad"
+= render template: "live/blocks/product_information/new_moscow"
 
-%section
-  .row
-    .columns.small-12.text-center.margin-bottom-35
-      %h2
-        Дополнительные сервисы — больше преимуществ
-    .columns.small-10.small-centered
-      .row.padding-40
-        .columns.small-7.text-center
-          %p
-            Для большего удобства вы получите карту MasterCard Standard для оплаты товаров и услуг, снятия и пополнения наличных. Карта выпускается 
-            %em без платы 
-            за обслуживание.
-          %p
-            Кроме того, мы сделали возможным снимать наличные без комиссии в банкомате 
-            %em любого
-            банка в любой точке мира!
-          %p
-            С помощью Карты вы можете пополнять свой тВклад через широкую сеть банкоматов 
-            %em без комиссии
-            \.
-            %br
-            %a{href: "/debetovye-karty/"}
-              Подробнее про карту
-        .columns.small-5
-          =image_tag "filer_public/2013/03/30/25d874620eb5d078da4c51d2b762319c3cf79ee5.png"
-
-      .row.padding-40
-        .columns.small-5
-          =image_tag "filer_public/2013/03/30/1fcb6319e540cd2a4feff793085402de0dbf2688.png"
-        .columns.small-7.text-center.padding-90
-          %p
-            Дополнительно — сервис Интернет-Банк 2TБанка позволяет оплачивать любые услуги онлайн без 
-            %em комиссии
-            — вы получаете больше времени для своих дел и сохраняете больше средств для своих задач.
-            %a{href: "/internet-bank/"} Подробнее про сервисы и бонусы
-
-= render template: "live/blocks/product_features/tvklad"
-= render template: "live/blocks/product_documents/tvklad"
-= render template: "live/blocks/product_questionnaire/tvklad"
+= render template: "live/blocks/product_questionnaire/new_moscow"
 
 %section.padding-top-200
-  = render template: "live/blocks/product_insured/debetovye_karty"
 
 = render template: "live/blocks/product_feedbacks/credit_transfer"
