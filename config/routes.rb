@@ -16,7 +16,8 @@ TwotbankRails::Application.routes.draw do
   get 'tvklad'            => 'live#tvklad'
   get 'vklad-na-srok'     => 'live#vklad_na_srok'
   get 'safebox'           => 'live#safebox'
-  get 'mortgage'           => 'live#mortgage'
+  get 'mortgage'          => 'live#mortgage'
+  get 'new-moscow'        => 'live#new_moscow'
   get 'contacts'          => 'contacts#index'
   get 'credit-landing'    => 'live#credit_landing'
 
