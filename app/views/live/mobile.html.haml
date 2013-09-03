@@ -1,87 +1,84 @@
-= render template: "live/blocks/product_banner/tvklad"
+= render template: "live/blocks/product_banner/mobile"
+
 = render template: "live/blocks/under_banner/index"
+
+= render template: "live/blocks/product_services/mobile"
+
 %section.padding-40
-  .row
-    .columns.small-12.text-center
-      %h2.margin-bottom-20
-        Собирайте и преумножайте свои средства с максимальной выгодой!
 
   .row
     .columns.small-10.small-centered
       .row.text-center
-        .columns.small-3
+        .columns.small-4
           %p
-            =image_tag "filer_public/2013/03/30/e3716706f9888ac30d20e2cbd8ed12bccb594480.png"
-        .columns.small-3          
+            =image_tag "features/0001/01/7633b1ae1458d65bb14ac46bd41dc40ed2ee7d2c.png"
+        .columns.small-4          
           %p
-            =image_tag "filer_public/2013/03/30/e320f176de9c7a3a011d4ab2b7c207603f4e018d.png"
-        .columns.small-3          
+            =image_tag "features/0001/01/d93a88228439a39bb28e65a8d7872b29276cead5.png"
+        .columns.small-4          
           %p
-            =image_tag "filer_public/2013/03/30/006c4e3c0d98faae9af70b23fe781c74664ce044.png"
-        .columns.small-3          
-          %p
-            =image_tag "filer_public/2013/03/30/02d96007cf7a85aaaca684c86b4f6f07f2ecdb10.png"
+            =image_tag "features/0001/01/26e08f2f0d6900396c75884c1cdf022d599cecf9.png"
 
       .row.text-center
-        .columns.small-3
+        .columns.small-4
+          %h4
+            Больше мобильности
           %p.small
-            Получайте доход при — минимальном сроке от 1 дня и — минимальной сумме от 1 рубля!
-        .columns.small-3
+            Мобильный сервис работает везде, где есть Интернет. Это делает вас абсолютно свободным. Все вопросы теперь решаются онлайн.
+        .columns.small-4
+          %h4
+            Больше времени
           %p.small
-            Проценты по тВкладу начисляются каждый месяц по вашему выбору: на Расчетный счет, на тВклад (с капитализацией), на вашу Карту или счет другого клиента Банка.
-        .columns.small-3
+            Круглосуточный доступ без выходных и легкие инструменты оплаты созданы, чтобы у вас было больше времени для себя.
+        .columns.small-4
+          %h4
+            Больше контроля
           %p.small
-            Пополнять тВклад вы тоже можете так, как вам удобно: с другого своего счета, переводом из другого банка или через банкоматы с функцией кэш-ин.
-        .columns.small-3
-          %p.small
-            Получайте дополнительный доход по повышенной процентной ставке на премиальных счетах!
-            %a#scroll-to-table{href: "#"} Подробнее
-            \.
-
-= render template: "live/blocks/product_services/tvklad"
-= render template: "live/blocks/product_information/tvklad"
+            Звоните в любое время из любого места. Мы всегда быстро ответим по телефону, через браузер или в чате.
 
 %section
   .row
-    .columns.small-12.text-center.margin-bottom-35
-      %h2
-        Дополнительные сервисы — больше преимуществ
     .columns.small-10.small-centered
       .row.padding-40
-        .columns.small-7.text-center
+        .columns.small-7.text-center.padding-top-180
+          %h2
+            Мобильный сервис
           %p
-            Для большего удобства вы получите карту MasterCard Standard для оплаты товаров и услуг, снятия и пополнения наличных. Карта выпускается 
-            %em без платы 
-            за обслуживание.
+            Работает везде, 24/7, без выходных и праздников.
           %p
-            Кроме того, мы сделали возможным снимать наличные без комиссии в банкомате 
-            %em любого
-            банка в любой точке мира!
-          %p
-            С помощью Карты вы можете пополнять свой тВклад через широкую сеть банкоматов 
-            %em без комиссии
-            \.
+            Вы также всегда можете управлять своими счетами через Интернет-Банк.
             %br
-            %a{href: "/debetovye-karty/"}
-              Подробнее про карту
+            %a{href: "/internet-bank/"}
+              Подробнее про Интернет-Банк.
         .columns.small-5
-          =image_tag "filer_public/2013/03/30/25d874620eb5d078da4c51d2b762319c3cf79ee5.png"
+          =image_tag "features/0001/01/2ed6946e91286e9ec3ffb6b48f19ad7213112c7d.png"
 
-      .row.padding-40
-        .columns.small-5
-          =image_tag "filer_public/2013/03/30/1fcb6319e540cd2a4feff793085402de0dbf2688.png"
-        .columns.small-7.text-center.padding-90
+%section.padding-40
+
+  .row
+    .columns.small-10.small-centered
+      .row.text-center
+        .columns.small-4.small-offset-2
           %p
-            Дополнительно — сервис Интернет-Банк 2TБанка позволяет оплачивать любые услуги онлайн без 
-            %em комиссии
-            — вы получаете больше времени для своих дел и сохраняете больше средств для своих задач.
-            %a{href: "/internet-bank/"} Подробнее про сервисы и бонусы
+            =image_tag "features/0001/01/6519c951974bcf25e7d3998324563b3e7a66cc0c.png"
+        .columns.small-4.left
+          %p
+            =image_tag "features/0001/01/a9455c967080af10231bf2d513ddfe02c6483a4b.png"
 
-= render template: "live/blocks/product_features/tvklad"
-= render template: "live/blocks/product_documents/tvklad"
-= render template: "live/blocks/product_questionnaire/tvklad"
+      .row.text-center
+        .columns.small-4.small-offset-2
+          %p
+            %strong
+              %a{href: "https://play.google.com/store/apps/details?id=ru.ftc.faktura.bankt"}
+                Скачать приложение для Android
+        .columns.small-4.left
+          %p
+            %strong
+              %a{href: "https://itunes.apple.com/ru/app/bank-2t/id517210131"}
+                Скачать приложение для iPhone, iPad, iPod
+
+= render template: "live/blocks/product_questionnaire/mobile"
 
 %section.padding-top-200
-  = render template: "live/blocks/product_insured/debetovye_karty"
 
 = render template: "live/blocks/product_feedbacks/credit_transfer"
