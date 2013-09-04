@@ -20,6 +20,7 @@ TwotbankRails::Application.routes.draw do
   get 'new-moscow'        => 'live#new_moscow'
   get 'mobile'            => 'live#mobile'
   get 'recharge'          => 'live#recharge'
+  get 'cash-withdrawal'   => 'live#cash_withdrawal'
   get 'internet-bank'     => 'live#internet_bank'
   get 'contacts'          => 'contacts#index'
   get 'credit-landing'    => 'live#credit_landing'

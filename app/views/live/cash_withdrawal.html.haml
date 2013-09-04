@@ -1,0 +1,45 @@
+= render template: "live/blocks/product_banner/cash_withdrawal"
+
+= render template: "live/blocks/under_banner/index"
+
+= render template: "live/blocks/product_services/cash_withdrawal"
+
+%section
+  .row
+    .columns.small-10.small-centered
+      .row.padding-top-120
+        .columns.small-3
+          =image_tag "service/0001/01/1934bc6f275dc450f486b492a93a634d93dfed63.png"
+        .columns.small-9
+          %h2
+            Снимайте наличные бесплатно по всему миру
+          %p
+            Целых три раза каждый месяц вы можете снимать деньги через любые банкоматы в мире без каких-либо комиссий! Учтите, что скорее всего банкомат не выдаст вам более 100 тысяч рублей в день — чаще всего в банкоматах установлен такой лимит.
+      .row.padding-top-70
+        .columns.small-3
+          =image_tag "service/0001/01/9365848c01a131510fb30dc9ef8e19f7e4382d6e.png"
+        .columns.small-9
+          %h2
+            Получайте наличные в отделении банка
+          %p
+            Снимать средства со счета вы можете также с помощью менеджеров 2ТБанка и банков-партнеров. Этой услугой стоит воспользоваться, если вы снимаете большую сумму. Это может быть безопаснее и часто быстрее, чем множество раз вытаскивать купюры из банкомата. При получении наличных в отделении банка или банка-партнера могут действовать особые условия.
+          %p
+            %a{href: "#"}
+              Посмотреть на карте
+
+%section.padding-top-70
+
+%section.section-bg-gray.padding-70.shadow-inset.product-services-block
+  .row
+    .columns.small-10.small-centered
+      .row.text-center
+        %p
+          =image_tag "features/0001/01/cash-out.f84e5014b80f.png"
+      .row.text-center
+        %h2
+          %a{href: "Как снять наличные"}
+            Как снять наличные
+
+%section.padding-top-70
+
+= render template: "live/blocks/product_feedbacks/credit_transfer"
