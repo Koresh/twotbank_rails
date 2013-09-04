@@ -1,0 +1,48 @@
+= render template: "live/blocks/product_banner/recharge"
+
+= render template: "live/blocks/under_banner/index"
+
+= render template: "live/blocks/product_services/recharge"
+
+%section
+  .row
+    .columns.small-10.small-centered
+      .row.padding-top-120
+        .columns.small-3
+          =image_tag "service/0001/01/6e1b02004a4cd0992c09ff4ef06f53cc5599b7e1.png"
+        .columns.small-9
+          %h2
+            Перечислите зарплату на счет в 2ТБанке
+          %p
+            Ваша зарплата может автоматически перечисляться на ваш счет в 2ТБанке. Для этого просто обратитесь в бухгалтерию на работе с запросом организовать этот несложный процесс.
+          %p
+            %a{href: "/clients/56/"}
+              Инструкция по переводу зарплаты на ваш счет в 2ТБанке
+      .row.padding-top-70
+        .columns.small-3
+          =image_tag "service/0001/01/35d3ed95a08ecb39931fd1945d4035bde5de29f8.png"
+        .columns.small-9
+          %h2
+            Сделайте безналичный перевод
+          %p
+            Вы можете просто сделать безналичный перевод денег на свой счет в 2ТБанке.
+          %p
+            %a{href: "/clients/55/"}
+              Инструкция по Безналичному переводу
+
+%section.padding-top-70
+
+%section.section-bg-gray.padding-70.shadow-inset.product-services-block
+  .row
+    .columns.small-10.small-centered
+      .row.text-center
+        %p
+          =image_tag "features/0001/01/cash-out.f84e5014b80f.png"
+      .row.text-center
+        %h2
+          %a{href: "Как снять наличные"}
+            Как снять наличные
+
+%section.padding-top-70
+
+= render template: "live/blocks/product_feedbacks/credit_transfer"
