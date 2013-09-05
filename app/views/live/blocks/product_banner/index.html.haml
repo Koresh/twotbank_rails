@@ -2,8 +2,9 @@
   .row.logo-block-row
     .logo-block-absolute
       = image_tag "logo.png"
-  %ul{data: {orbit: "", options: "animation: fade; navigation_arrows: false; slide_number: false; timer_speed: 6000; resume_on_mouseout: false;"}}
-    %li#banner-slide-1
+  .preloader
+  %ul#main-page-slider{data: {orbit: "", options: "animation: fade; navigation_arrows: false; slide_number: false; timer_speed: 6000; resume_on_mouseout: false;"}}
+    %li#banner-slide-1{style: "display: none;"}
       .row
         #banner-image-1.banner-slide-image.columns.small-12
           .row
@@ -34,7 +35,7 @@
 
 
           
-    %li#banner-slide-2
+    %li#banner-slide-2{style: "display: none;"}
       .row
         #banner-image-2.banner-slide-image.columns.small-12
           .row
@@ -64,7 +65,7 @@
 
 
 
-    %li#banner-slide-3
+    %li#banner-slide-3{style: "display: none;"}
       .row
         #banner-image-3.banner-slide-image.columns.small-12
           .row

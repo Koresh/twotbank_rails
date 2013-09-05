@@ -31,3 +31,8 @@ $ ->
         $($(this).data("block")).show()
       else
         $($(this).data("block")).hide()
+
+
+$("#main-page-slider").on "orbit:ready", (event) -> 
+  $("#main-page-slider").children("li").show()
+  console.log "IS SHOW TIME"
