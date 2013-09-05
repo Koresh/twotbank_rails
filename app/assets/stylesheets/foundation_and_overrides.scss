@@ -1259,7 +1259,7 @@ $topbar-margin-bottom: 0;//emCalc(30);
 
 $topbar-dropdown-bg: $gray-color;
 $topbar-dropdown-link-color: #333;
-// $topbar-dropdown-link-bg: lighten($topbar-bg, 5%);
+$topbar-dropdown-link-bg: $gray-color;
 // $topbar-dropdown-toggle-size: 5px;
 $topbar-dropdown-toggle-color: #333;
 $topbar-dropdown-toggle-alpha: 1;
