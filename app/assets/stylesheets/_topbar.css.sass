@@ -23,6 +23,7 @@
           .icon
             margin:
               right: emCalc(3px)
+              top: emCalc(-4px)
 
           &:hover .icon
             +icons-sprite(lock-white)
@@ -42,7 +43,14 @@
           color: $topbar-menu-link-color
           background: $gray-color
 
+  .has-dropdown > a
+    &:hover
+      &:after
+        border:
+          color: #fff transparent transparent transparent
+
   .top-bar-main-menu
+    +clearfix
     padding: 7px 0 0
     border:
       left: 0
@@ -84,6 +92,98 @@
   a
     text-decoration: none
 
+.business
+  .contain-to-grid
+    background: $business-blue
+    +box-shadow(0 0 3px 0 rgba(0,0,0,.5), inset 0 1px 0 0 #b4e3f7)
+
+  .top-bar
+    background: $business-blue
+    +box-shadow(inset 0 1px 0 0 #b4e3f7)
+
+    &.expanded .title-area
+      background: $business-blue
+
+    .name
+      h1
+        a
+          color: #fff
+          +text-shadow(#0081D6 0px -1px 0px)
+
+    .toggle-topbar.menu-icon a
+      color: #fff
+      +text-shadow(#0081D6 0px -1px 0px)
+
+      span
+        +box-shadow(0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff)
+
+  .top-bar-section
+    li
+      a:not(.button)
+        background: $business-blue
+
+      > a
+        color: #fff
+
+    > ul
+      > li
+        +box-shadow(inset 0 1px 0 0 #b4e3f7)
+        border: 
+          color: transparent #249ed2 transparent #5fc3ee
+
+        > a:not(.button)
+          +box-shadow(inset 0 1px 0 0 #b4e3f7)
+          +text-shadow(#0081D6 0px -1px 0px)
+
+          &:hover
+            background: $yelow-color
+            +text-shadow(#fff575 0 -1px)
+            border-top:
+              color: #fff89c
+            color: $topbar-link-color
+            +box-shadow(inset 0 1px 0 0 #fff89c)
+
+          &.bank-link
+            color: #fff
+
+            .icon
+              +icons-sprite(lock-white)
+
+            &:hover 
+              color: $topbar-link-color
+              +text-shadow(#fff575 0 -1px)
+
+              .icon
+                +icons-sprite(lock-blue)
+
+      .dropdown
+
+
+    .has-dropdown > a
+      &:after
+        border:
+          color: #fff transparent transparent transparent
+
+      &:hover
+        &:after
+          border:
+            color: $topbar-link-color transparent transparent transparent
+
+    .top-bar-menu-sub
+      li 
+        a
+          +box-shadow(inset 0 1px 0 0 #b4e3f7)
+
+          &:hover
+            color: $topbar-link-color
+
+    .top-bar-main-menu
+      ul li.active > a
+        background: $business-blue
+        color: $yelow-color
+        +text-shadow(#30a6e4 0 -1px)
+
+
 
 @media #{$topbar-media-query}
   .top-bar
@@ -100,6 +200,12 @@
         > li 
           > a:not(.button)
             +box-shadow(none)
+
+      .has-dropdown > a
+        &:hover
+          &:after
+            border:
+              color: transparent transparent transparent #fff
 
     .top-bar-main-menu
       padding: 0
@@ -138,3 +244,37 @@
             +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
             +box-shadow(none)
             color: white
+
+  .business
+    .top-bar-section
+      > ul > li > a:not(.button), li a:not(.button), > ul > li > a:not(.button).bank-link
+        background: #f7f7f7
+        color: $topbar-link-color
+        +text-shadow(none)
+        +box-shadow(none)
+
+        &:hover
+          background: $yelow-color
+          color: $topbar-link-color
+
+      .top-bar-main-menu ul li.active > a
+        background: #f7f7f7
+        +text-shadow(none)
+        color: $blue-color
+
+        &:hover
+          background: $yelow-color
+          color: $topbar-link-color
+
+      .has-dropdown > a
+        &, &:hover
+          &:after
+            border:
+              color: transparent transparent transparent $topbar-link-color
+
+
+      > ul > li > a:not(.button).bank-link
+        color: $blue-color
+
+        .icon
+          +icons-sprite(lock-blue)

@@ -1,5 +1,7 @@
 class BusinessController < ApplicationController
 
+  layout "business"
+
   def index
   end
 

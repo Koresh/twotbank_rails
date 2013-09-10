@@ -1,0 +1,81 @@
+.contain-to-grid.fixed
+  %nav.top-bar{data:{options: "is_hover: false; custom_back_text: true; back_text: назад;"}}
+    %ul.title-area
+      %li.name
+        %h1
+          %a{href:"#"}
+            2TBank
+      %li.toggle-topbar.menu-icon
+        %a{href:"#"}
+          %span
+            Меню
+    %section.top-bar-section
+      %ul
+        %li.top-bar-main-menu
+          %i.icon.icon-switcher.left
+          %ul.left
+            %li
+              %a{href: '/'} для жизни 
+            %li.active
+              %a{href: '/business/'} для бизнеса
+        %li
+          %a.strong{href: '/business/schet-dlya-biznesa/'}
+            Счет для бизнеса
+
+        %li.has-dropdown
+          %a{href: '#'} все продукты
+          %ul.dropdown
+            %li
+              %a{href: "/business/schet-dlya-biznesa/"}
+                Расчетный счет
+            %li
+              %a{href: "/business/encashment-card/"}
+                Карта для инкассации
+            %li
+              %a{href: "/business/business-card/"}
+                Бизнес-карта
+            %li
+              %a{href: "/business/acquiring/"}
+                Торговый эквайринг
+            %li
+              %a{href: "/business/internet-acquiring/"}
+                Интернет-эквайринг
+            %li
+              %a{href: "/business/salary/"}
+                Зарплатный проект
+            %li
+              %a{href: "/business/dohodniy-schet-dlya-biznesa/"}
+                Доходный счет
+            %li
+              %a{href: "/business/business-vklad-na-srok/"}
+                Вклад на срок
+            %li
+              %a{href: "/business/business-overdraft/"}
+                Овердрафт
+
+        %li.has-dropdown
+          %a{href: '#', data:{options: "is_hover:false"}} все сервисы
+          %ul.dropdown
+            %li
+              %a{href: '/mobile/'} Мобильный банк
+            %li
+              %a{href: '/internet-bank/'} Интернет-Банк
+            %li
+              %a{href: '/recharge/'} Пополнение счета
+            %li
+              %a{href: '/cash-withdrawal/'} Снятие наличных
+
+        %li
+          %a.bank-link.strong{href: '#'}
+            %i.icon.icon-lock
+            Интернет-Банк
+
+        %li.top-bar-menu-sub
+          %ul
+            %li
+              %a{href: '/press-centre/'} Новости
+            %li
+              %a{href: '/contacts/'} Контакты
+
+            %li
+              %a{href: '/o-banke/'} О Банке
