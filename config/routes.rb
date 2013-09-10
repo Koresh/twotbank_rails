@@ -25,6 +25,8 @@ TwotbankRails::Application.routes.draw do
   get 'contacts'          => 'contacts#index'
   get 'credit-landing'    => 'live#credit_landing'
 
+  get 'schet-dlya-biznesa'    => 'business#schet_dlya_biznesa'
+
   get 'o-banke'           => 'o_banke#index'
   get 'o-banke/requisites' => 'o_banke#requisites'
   get 'o-banke/info'      => 'o_banke#info'
