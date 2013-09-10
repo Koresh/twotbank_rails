@@ -43,15 +43,15 @@ TwotbankRails::Application.routes.draw do
   get 'business'                    => 'business#index'
   get 'business/schet-dlya-biznesa' => 'business#schet_dlya_biznesa'
   get 'business/acquiring'          => 'business#acquiring'
-  get 'business/business_card'      => 'business#business_card'
-  get 'business/encashment_card'    => 'business#encashment_card'
-  get 'business/internet_acquiring' => 'business#internet_acquiring'
+  get 'business/business-card'      => 'business#business_card'
+  get 'business/encashment-card'    => 'business#encashment_card'
+  get 'business/internet-acquiring' => 'business#internet_acquiring'
   get 'business/overdraft'          => 'business#overdraft'
   get 'business/salary'             => 'business#salary'
-  get 'business/schet_dlya_biznesa' => 'business#schet_dlya_biznesa'
+  get 'business/schet-dlya-biznesa' => 'business#schet_dlya_biznesa'
   get 'business/sms'                => 'business#sms'
-  get 'business/vklad_na_srok'      => 'business#vklad_na_srok'
-  get 'business/dohodniy_schet_dlya_biznesa' => 'business#dohodniy_schet_dlya_biznesa'
+  get 'business/vklad-na-srok'      => 'business#vklad_na_srok'
+  get 'business/dohodniy-schet-dlya-biznesa' => 'business#dohodniy_schet_dlya_biznesa'
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
