@@ -8,6 +8,7 @@ TwotbankRails::Application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
+  #live
   get 'live' => 'live#index'
   get 'credit-transfer'   => 'live#credit_transfer'
   get 'schet-dlya-zhizni' => 'live#schet_dlya_zhizni'
@@ -25,21 +26,33 @@ TwotbankRails::Application.routes.draw do
   get 'contacts'          => 'contacts#index'
   get 'credit-landing'    => 'live#credit_landing'
 
-  get 'schet-dlya-biznesa'    => 'business#schet_dlya_biznesa'
-
-  get 'o-banke'           => 'o_banke#index'
+  #o-banke
+  get 'o-banke'            => 'o_banke#index'
   get 'o-banke/requisites' => 'o_banke#requisites'
-  get 'o-banke/info'      => 'o_banke#info'
+  get 'o-banke/info'       => 'o_banke#info'
   get 'o-banke/financial-statements'  => "o_banke#financial_statements"
-  get 'ajax/geo/offices/:city_id' => 'api#offices'
+  get 'ajax/geo/offices/:city_id'     => 'api#offices'
 
-  get 'press-centre'      => 'press_centre#index'
-  get 'press-centre/press' => 'press_centre#press'
-  get 'press-centre/news'  => 'press_centre#news'
+  #press-centre
+  get 'press-centre'           => 'press_centre#index'
+  get 'press-centre/press'     => 'press_centre#press'
+  get 'press-centre/news'      => 'press_centre#news'
   get 'press-centre/press/155' => 'press_centre#news_item'
 
   #business
-  get 'business' => 'business#index'
+  get 'business'                    => 'business#index'
+  get 'business/schet-dlya-biznesa' => 'business#schet_dlya_biznesa'
+  get 'business/acquiring'          => 'business#acquiring'
+  get 'business/business_card'      => 'business#business_card'
+  get 'business/encashment_card'    => 'business#encashment_card'
+  get 'business/internet_acquiring' => 'business#internet_acquiring'
+  get 'business/overdraft'          => 'business#overdraft'
+  get 'business/salary'             => 'business#salary'
+  get 'business/schet_dlya_biznesa' => 'business#schet_dlya_biznesa'
+  get 'business/sms'                => 'business#sms'
+  get 'business/vklad_na_srok'      => 'business#vklad_na_srok'
+  get 'business/dohodniy_schet_dlya_biznesa' => 'business#dohodniy_schet_dlya_biznesa'
+  
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
