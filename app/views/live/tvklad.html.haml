@@ -6,37 +6,47 @@
       %h2.margin-bottom-20
         Собирайте и преумножайте свои средства с максимальной выгодой!
 
-  .row
-    .columns.small-10.small-centered
-      .row.text-center
-        .columns.small-3
-          %p
-            =image_tag "filer_public/2013/03/30/e3716706f9888ac30d20e2cbd8ed12bccb594480.png"
-        .columns.small-3          
-          %p
-            =image_tag "filer_public/2013/03/30/e320f176de9c7a3a011d4ab2b7c207603f4e018d.png"
-        .columns.small-3          
-          %p
-            =image_tag "filer_public/2013/03/30/006c4e3c0d98faae9af70b23fe781c74664ce044.png"
-        .columns.small-3          
-          %p
-            =image_tag "filer_public/2013/03/30/02d96007cf7a85aaaca684c86b4f6f07f2ecdb10.png"
-
-      .row.text-center
-        .columns.small-3
-          %p.small
-            Получайте доход при — минимальном сроке от 1 дня и — минимальной сумме от 1 рубля!
-        .columns.small-3
-          %p.small
-            Проценты по тВкладу начисляются каждый месяц по вашему выбору: на Расчетный счет, на тВклад (с капитализацией), на вашу Карту или счет другого клиента Банка.
-        .columns.small-3
-          %p.small
-            Пополнять тВклад вы тоже можете так, как вам удобно: с другого своего счета, переводом из другого банка или через банкоматы с функцией кэш-ин.
-        .columns.small-3
-          %p.small
-            Получайте дополнительный доход по повышенной процентной ставке на премиальных счетах!
-            %a#scroll-to-table{href: "#"} Подробнее
-            \.
+  .row.product-features-list
+    .columns.small-12.large-centered.large-10
+      .row
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public/2013/03/30/e3716706f9888ac30d20e2cbd8ed12bccb594480.png"
+            .columns.small-10.large-12
+              %p.small
+                Получайте доход при — минимальном сроке от 1 дня и — минимальной сумме от 1 рубля!
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public/2013/03/30/e320f176de9c7a3a011d4ab2b7c207603f4e018d.png"
+            .columns.small-10.large-12
+              %p.small
+                Проценты по тВкладу начисляются каждый месяц по вашему выбору: на Расчетный счет, на тВклад (с капитализацией), на вашу Карту или счет другого клиента Банка.
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public/2013/03/30/006c4e3c0d98faae9af70b23fe781c74664ce044.png"
+            .columns.small-10.large-12
+              %p.small
+                Пополнять тВклад вы тоже можете так, как вам удобно: с другого своего счета, переводом из другого банка или через банкоматы с функцией кэш-ин.
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public/2013/03/30/02d96007cf7a85aaaca684c86b4f6f07f2ecdb10.png"
+            .columns.small-10.large-12
+              %p.small
+                Получайте дополнительный доход по повышенной процентной ставке на премиальных счетах!
+                %a#scroll-to-table{href: "#"} Подробнее
+                \.
+        
+        
+        
+        
 
 = render template: "live/blocks/product_services/tvklad"
 = render template: "live/blocks/product_information/tvklad"
@@ -46,9 +56,11 @@
     .columns.small-12.text-center.margin-bottom-35
       %h2
         Дополнительные сервисы — больше преимуществ
-    .columns.small-10.small-centered
+    .columns.large-10.large-centered.small-12
       .row.padding-40
-        .columns.small-7.text-center
+        .columns.small-3.large-5.push-7.small-centered.large-uncentered
+          =image_tag "filer_public/2013/03/30/25d874620eb5d078da4c51d2b762319c3cf79ee5.png"
+        .columns.large-7.small-12.pull-5.text-center
           %p
             Для большего удобства вы получите карту MasterCard Standard для оплаты товаров и услуг, снятия и пополнения наличных. Карта выпускается 
             %em без платы 
@@ -64,13 +76,11 @@
             %br
             %a{href: "/debetovye-karty/"}
               Подробнее про карту
-        .columns.small-5
-          =image_tag "filer_public/2013/03/30/25d874620eb5d078da4c51d2b762319c3cf79ee5.png"
 
       .row.padding-40
-        .columns.small-5
+        .columns.large-5.small-3.small-centered.large-uncentered
           =image_tag "filer_public/2013/03/30/1fcb6319e540cd2a4feff793085402de0dbf2688.png"
-        .columns.small-7.text-center.padding-90
+        .columns.large-7.small-12.text-center.padding-20.large-padding-90
           %p
             Дополнительно — сервис Интернет-Банк 2TБанка позволяет оплачивать любые услуги онлайн без 
             %em комиссии

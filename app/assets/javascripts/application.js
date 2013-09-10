@@ -23,6 +23,7 @@
 //= require select2
 //= require select2_locale_ru
 //= require monkey_patching
+//= require tbank.kladr
 //= require_tree ./form
 //= require tbank.chars
 //= require infobubble-compiled
