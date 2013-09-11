@@ -156,6 +156,17 @@
               .icon
                 +icons-sprite(lock-blue)
 
+        &.hover
+          > a
+            background: #f7f7f7
+            color: $topbar-link-color
+            +text-shadow(none)
+
+            &:after
+              border:
+                color: $topbar-link-color transparent transparent transparent
+
+
       .dropdown
 
 
