@@ -2,8 +2,9 @@
   .row.logo-block-row
     .logo-block-absolute
       = image_tag "logo.png"
-  %ul{data: {orbit: "", options: "animation: fade; navigation_arrows: false; slide_number: false; timer_speed: 6000; resume_on_mouseout: false;"}}
-    %li#banner-slide-5
+  .preloader
+  %ul#main-page-slider{data: {orbit: "", options: "animation: fade; navigation_arrows: false; slide_number: false; timer_speed: 6000; resume_on_mouseout: false;"}}
+    %li#banner-slide-5{style: "display: none;"}
       .row
         #banner-image-5.banner-slide-image.columns.small-12
           .row
@@ -12,7 +13,7 @@
               %p
                 Удобный интернет-банк плюс выгодные условия обслуживания и привлекательные сервисы для бизнеса, выбрать и подключить которые можно в режиме онлайн, не выходя из собственного офиса
 
-    %li#banner-slide-6
+    %li#banner-slide-6{style: "display: none;"}
       .row
         #banner-image-6.banner-slide-image.columns.small-12
           .row
@@ -25,7 +26,7 @@
                   %i.icon.icon-bullet15
 
 
-    %li#banner-slide-8
+    %li#banner-slide-8{style: "display: none;"}
       #banner-image-8
         .row
           .banner-slide-image.columns.small-12
