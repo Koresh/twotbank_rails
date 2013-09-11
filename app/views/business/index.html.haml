@@ -1,13 +1,13 @@
 = render template: "business/blocks/product_banner/index"
 = render template: "business/blocks/under_banner/index"
-%section.section-bg-gray.padding-40
+%section.padding-40
   = render template: "shared/contacts"
 
-%section.section-bg-gray.padding-50.shadow-inset.section-proposals
+%section.padding-50.shadow-inset-top.section-proposals
   .row
     .columns.small-4.small-offset-1.hide-for-small
       %a{href: "/business/schet-dlya-biznesa/"}
-        =image_tag "/media/filer_public_thumbnails/filer_public/2013/05/17/box_schet.png__336x300_q85_crop_upscale.png"
+        =image_tag "filer_public_thumbnails/filer_public/2013/05/17/box_schet.png__336x300_q85_crop_upscale.png"
     .columns.large-6.large-offset-0.left.text-center.small-10.small-offset-1
       %h1
         %a{href: "/business/schet-dlya-biznesa/"} Счет для бизнеса
@@ -16,24 +16,24 @@
 
       %a.button.small{href: "/business/schet-dlya-biznesa/", title: "Счет для бизнеса"} Расскажите подробнее
 
-%section.section-bg-gray.padding-50.shadow-inset.section-proposals
+%section.padding-50.shadow-inset-top.section-proposals
   .row
-    .columns.large-6.large-offset-0.left.text-center.small-10.small-offset-1
+    .columns.large-5.large-offset-1.left.text-center.small-10.small-offset-1
       %h1
         %a{href: "/business/salary/"} Зарплатный проект
       %p
         Современный и удобный способ выплаты заработной платы вам и сотрудникам вашей компании без комиссий.
 
       %a.button.small{href: "/business/salary/", title: "Зарплатный проект"} Расскажите подробнее
-    .columns.small-4.small-offset-1.hide-for-small
+    .columns.small-4.small-offset-1.left.hide-for-small
       %a{href: "/business/salary/"}
-        =image_tag "/media/filer_public_thumbnails/filer_public/2013/05/17/box_zp-b.png__336x300_q85_crop_upscale.png"
+        =image_tag "filer_public_thumbnails/filer_public/2013/05/17/box_zp-b.png__336x300_q85_crop_upscale.png"
 
-%section.section-bg-gray.padding-50.shadow-inset.section-proposals
+%section.padding-50.shadow-inset-top.section-proposals
   .row
     .columns.small-4.small-offset-1.hide-for-small
       %a{href: "/business/overdraft/"}
-        =image_tag "/media/filer_public_thumbnails/filer_public/2013/05/17/box_over.png__336x300_q85_crop_upscale.png"
+        =image_tag "filer_public_thumbnails/filer_public/2013/05/17/box_over.png__336x300_q85_crop_upscale.png"
     .columns.large-6.large-offset-0.left.text-center.small-10.small-offset-1
       %h1
         %a{href: "/business/overdraft/"} Овердрафт
@@ -71,5 +71,5 @@
 
   = render template: "business/blocks/product_questionnaire/business"
 
-%section.section-bg-gray.padding-top-200
+%section.padding-top-200
   = render template: "shared/feeds"
