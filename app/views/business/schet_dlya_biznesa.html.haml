@@ -1,5 +1,114 @@
 = render template: "business/blocks/product_banner/schet_dlya_biznesa"
 = render template: "business/blocks/under_banner/schet_dlya_biznesa"
 
-%section.section-bg-gray.padding-top-200
-  = render template: "shared/feeds"
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Удобное управление финансами Вашего бизнеса
+
+  .row
+    .columns.small-10.small-centered
+      .row.text-center
+        .columns.small-3
+          %p
+            =image_tag "filer_public_thumbnails/filer_public/2013/04/03/1b2bba10b814c7b4ccdc6e638a99571e83f76727.png__150x150_q85_crop_upscale.png", :style => "width:70px"
+        .columns.small-3          
+          %p
+            =image_tag "filer_public_thumbnails/filer_public/2013/04/01/44d96b614162236d11c4f3ea60c91b3479e822d0.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+        .columns.small-3          
+          %p
+            =image_tag "filer_public_thumbnails/filer_public/2013/04/01/8e7f426bee2f7e28d2155cc68e29078998ba694c.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+        .columns.small-3          
+          %p
+            =image_tag "filer_public_thumbnails/filer_public/2013/04/12/ddbe86261c3e568f8800b0139b92c0e442850cdb_1.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+
+      .row.text-center
+        .columns.small-3
+          %p.small.padding-side-20
+            %strong
+              Интернет-Банк&nbsp;—
+            Удобный и&nbsp;надежный способ совершать платежи по&nbsp;вашему счету с&nbsp;любого компьютера в&nbsp;режиме 24/7 без посещения офиса банка
+        .columns.small-3
+          %p.small.padding-side-20
+            Открытие расчетного счета с&nbsp;возможностью
+            %strong
+              сразу получить овердрафт
+            &nbsp;— всего за&nbsp;1&nbsp;рабочий день
+        .columns.small-3
+          %p.small.padding-side-20
+            %strong
+              Корпоративная карта MasterCard
+            для инкассации выручки или оплаты представительских расходов
+        .columns.small-3
+          %p.small.padding-side-20
+            Доходный счет с&nbsp;режимом
+            %strong
+              «до&nbsp;востребования» под 8,5 годовых
+            начисляет ежедневно проценты на&nbsp;остаток ваших средств в&nbsp;рублях
+
+= render template: "business/blocks/product_information/schet_dlya_biznesa"
+
+%section.margin-bottom-50
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Дополнительные сервисы и возможности
+
+  .row
+    .columns.small-10.small-centered
+      .row.text-center
+        .columns.small-4
+          %p
+            =image_tag "filer_public_thumbnails/filer_public/2013/04/01/0363ab83e15a60043b4452f5d2d4b0bb3fea1153.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+        .columns.small-4          
+          %p
+            =image_tag "filer_public_thumbnails/filer_public/2013/04/03/15d7b8ad070e778ca90145a3767d23160e1d13d0.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+        .columns.small-4          
+          %p
+            =image_tag "filer_public_thumbnails/filer_public/2013/04/03/3c0788e5ebe2b8eaf18285f01ed8a770074f2851.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+
+      .row.text-center
+        .columns.small-4
+          %p.small.padding-side-20
+            Получайте SMS-уведомления об&nbsp;операциях по счету в&nbsp;режиме он-лайн на&nbsp;неограниченное количество телефонных номеров
+        .columns.small-4
+          %p.small.padding-side-20
+            Мы&nbsp;доставим ваши документы курьером, почтой России или службой экспресс-доставки в&nbsp;любую точку России
+        .columns.small-4
+          %p.small.padding-side-20
+            Клиентская поддержка. Мы&nbsp;всегда отвечаем на запросы клиентов, и&nbsp;решаем любые вопросы максимально быстро
+
+= render template: "business/blocks/product_documents/schet_dlya_biznesa"
+
+%section.section-bg-yelow.product-questionnaire-block.shadow-inset-top
+  .row
+    .columns.small-12
+      %h1.text-center
+        Как открыть Счет
+
+      %ul.product-questionnaire-infografic
+        %li
+          %i.icon.icon-what-watch
+          %i.icon.icon-small.icon-what-watch-small
+          %p
+            Заполняйте анкету на сайте. Это буквально 1 (одна!) минута
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow
+        %li
+          %i.icon.icon-what-phone
+          %i.icon.icon-small.icon-what-phone-small
+          %p
+            Мы позвоним Вам и поможем подготовить документы
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow
+        %li
+          %i.icon.icon-what-document
+          %i.icon.icon-small.icon-what-document-small
+          %p
+            Вы получите действующий расчетный счет с подключенной системой Интернет-банк
+
+  = render template: "business/blocks/product_questionnaire/business"
+
+%section.section-bg-white.padding-top-200
+  = render template: "business/blocks/product_feedbacks/inset"

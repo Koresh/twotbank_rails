@@ -33,10 +33,28 @@
   &.shadow-inset-top
     +box-shadow(inset 0 2px 2px 0 rgba(0,0,0,.2))
 
+  &.shadow-inset-top-outset-bottom
+    +box-shadow(inset 0 2px 3px 0 rgba(0,0,0,.2), 0 2px 3px 0 rgba(0,0,0,.2))
+
+.padding-side-20
+  padding: 
+    left: emCalc(20px)
+    right: emCalc(20px)
+
+.padding-10
+  padding: 
+    top: emCalc(10px)
+    bottom: emCalc(10px)
+
 .padding-20
   padding: 
     top: emCalc(20px)
     bottom: emCalc(20px)
+
+.padding-25
+  padding: 
+    top: emCalc(25px)
+    bottom: emCalc(25px)
 
 .padding-30
   padding: 
@@ -107,6 +125,10 @@
 .margin-bottom-40
   margin:
     bottom: emCalc(40px)
+
+.margin-bottom-50
+  margin:
+    bottom: emCalc(50px)
 
 h1.margin-bottom-40
   margin:
