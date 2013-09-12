@@ -1,0 +1,104 @@
+%section.bank-about-information
+  .row
+    .columns.small-12.large-3.bank-about-sidebar
+      .row
+        .logo-block.columns.small-4.large-12
+          = image_tag "logo.png"
+
+        .columns.small-8.large-12
+          %ul.side-nav.news-side-nav
+            %li
+              %a.dotted{href: "#", title: "Счет для бизнеса"} 
+                Счет для бизнеса
+              %ul.hash-nav
+                %li
+                  %a{href: "/business/documents-and-rates/4/", title: "Документы для открытия счета"}
+                    Документы для открытия счета
+                %li
+                  %a{href: "/business/documents-and-rates/5/", title: "Расчетно-кассовое обслуживание"} 
+                    Расчетно-кассовое обслуживание
+            %li
+              %a.dotted{href: "#", title: "Кредиты"} 
+                Кредиты
+              %ul.hash-nav
+                %li
+                  %a{href: "/business/documents-and-rates/58/", title: "Овердрафт"}
+                    Овердрафт
+            %li
+              %a.dotted{href: "#", title: "Депозиты"} 
+                Депозиты
+              %ul.hash-nav
+                %li
+                  %a{href: "/business/documents-and-rates/62/", title: "Доходный счет"}
+                    Доходный счет
+                %li
+                  %a{href: "/business/documents-and-rates/63/", title: "Вклад на срок"}
+                    Вклад на срок
+            %li
+              %a.dotted{href: "#", title: "Интернет-банк"} 
+                Интернет-банк
+              %ul.hash-nav
+                %li
+                  %a{href: "/business/documents-and-rates/65/", title: "Документы"}
+                    Документы
+                %li
+                  %a{href: "/business/documents-and-rates/69/", title: "Сертификат (USB-ключ)"} 
+                    Сертификат (USB-ключ)
+                %li
+                  %a{href: "/business/documents-and-rates/89/", title: "Полезная информация"} 
+                    Полезная информация
+            %li
+              %a.dotted{href: "#", title: "Корпоративные карты"} 
+                Корпоративные карты
+              %ul.hash-nav
+                %li
+                  %a{href: "/business/documents-and-rates/71/", title: "Бизнес-Карта"}
+                    Бизнес-Карта
+                %li
+                  %a{href: "/business/documents-and-rates/72/", title: "Карта для инкассации"} 
+                    Карта для инкассации
+            %li
+              %a{href: "/business/documents-and-rates/83/", title: "Зарплатный проект"} 
+                Зарплатный проект
+            %li
+              %a.dotted{href: "#", title: "Эквайринг"} 
+                Эквайринг
+              %ul.hash-nav
+                %li
+                  %a{href: "/business/documents-and-rates/75/", title: "Торговый эквайринг"}
+                    Торговый эквайринг
+                %li
+                  %a{href: "/business/documents-and-rates/76/", title: "Интернет-эквайринг"} 
+                    Интернет-эквайринг
+            %li
+              %a{href: "/business/documents-and-rates/85/", title: "Накопительный счет"} 
+                Накопительный счет
+
+    .columns.small-12.large-6
+      %h1 Документы и тарифы
+      %p.muted
+        В данном разделе в меню слева представлены документы, касающиеся конкретных продуктов/сервисов для юридических лиц. Выберите интересующую вас группу и необходимый продукт/сервис.
+      %p.muted
+        В меню справа вы можете ознакомиться с действующими Правилами и Тарифами комплексного банковского обслуживания юридических лиц, а также с ранее действующими версиями этих документов.
+
+    .columns.small-12.large-3.padding-top-20
+      %ul.side-nav.news-side-nav
+        %li
+          %a{href: "/business/documents-and-rates/87/", title: "Правила КБО"} 
+            Правила КБО
+        %li
+          %a{href: "/business/documents-and-rates/88/", title: "Тарифы"} 
+            Тарифы
+        %li
+          %a.dotted{href: "#", title: "Архивные документы"} 
+            Архивные документы
+          %ul.hash-nav
+            %li
+              %a{href: "/business/documents-and-rates/91/", title: "Правила КБО"}
+                Правила КБО
+            %li
+              %a{href: "/business/documents-and-rates/92/", title: "Тарифы"} 
+                Тарифы
+
+%section.padding-70
+  = render template: "shared/contacts"
