@@ -30,3 +30,14 @@ class Masks.Postindex extends Masks.Base
 
 class Masks.Datepif extends Masks.Base
   mask: "99.99.2013"
+
+class Masks.Time extends Masks.Base
+  mask: "99:99"
+
+
+$ ->
+  $(".mask-phone").each (index, container) ->
+    new Masks.Phone $(container)
+
+  $(".mask-time").each (index, container) ->
+    new Masks.Time $(container)

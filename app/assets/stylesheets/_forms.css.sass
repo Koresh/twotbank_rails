@@ -30,7 +30,7 @@ form
     margin:
       bottom: emCalc(20px)
 
-    input
+    input, textarea
       margin:
         bottom: emCalc(4px)
 
@@ -39,6 +39,15 @@ form
         size: emCalc(11px)
         family: "MyriadProSemiBold"
       text-transform: uppercase
+
+    .error-msg
+      font-size: emCalc(11px)
+      color: $alert-color
+      display: none
+
+    &.error
+      .error-msg
+        display: block
 
   .inline-fields
     font-size: emCalc(18px)

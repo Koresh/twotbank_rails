@@ -8,15 +8,15 @@
       .columns.small-7.large-12
         %h2.phone 8-800-100-94-34
   .columns.small-12.large-3
-    %a.button.radius.expand{href: "#"}
+    %a.button.radius.expand{href: "#", data: {reveal: {id: "modal-callback-form"}}}
       Пожалуйста, перезвоните
       %br.show-for-medium-up
       мне сами
   .columns.small-12.large-3
-    %a.button.radius.expand{href: "#"}
+    %a.button.radius.expand{href: "http://zingaya.com/widget/b6c6c9bd6e774ed391c5925e51ad9ee0", rel: "nofollow", onclick: "_gaq.push(['_trackEvent', 'button', 'call_with_site', 'click']); window.open(this.href +'?referrer='+escape(window.location.href), '_blank', 'width=230,height=175,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false"}
       Лучше
       %br.show-for-medium-up
       я позвоню с сайта
   .columns.small-12.large-3
-    %a.button.radius.expand{href: "#"}
+    %a.button.radius.expand{href: "#", onclick: "_gaq.push(['_trackEvent', 'button', 'chat_with_specialist', 'click']);"}
       Пожалуй, чат со специалистом удобнее

@@ -1,0 +1,31 @@
+#modal-callback-form.reveal-modal.tiny.confirm-modal
+  %h2 Заказ обратного звонка
+  %form#callback-form{action: "/ajax/callback/", method: "POST"}
+    %fieldset
+      .input-field.required
+        %input{name: "name", type: "text", placeholder: "Ярослав", tabindex: "1"}
+        %label.left
+          ИМЯ
+          %span.alert *
+        %span.right.error-msg
+          ЗАПОЛНИТЕ ПОЛЕ
+      .input-field.required
+        %input.mask-phone{name: "phone", type: "text", placeholder: "+7 (495) 123-45-67", tabindex: "2"}
+        %label.left
+          ТЕЛЕФОН
+          %span.alert *
+        %span.right.error-msg
+          ЗАПОЛНИТЕ ПОЛЕ
+      .input-field
+        %input.mask-time{name: "time", type: "text", placeholder: "19:00", tabindex: "3"}
+        %label 
+          УДОБНОЕ ВРЕМЯ ЗВОНКА
+      .input-field
+        %textarea{name: "comment", type: "text", placeholder: "Звоните...", tabindex: "4"}
+        %label 
+          КОММЕНТАРИЙ
+
+    .buttons
+      %input.button.medium{type: "submit", value: "Жду звонка"}
+
+  %a.close-reveal-modal ×
