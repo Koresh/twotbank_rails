@@ -1,2 +1,71 @@
 = render template: "business/blocks/product_banner/sms"
-= render template: "business/blocks/under_banner/index"
+
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Преимущества, которые вы получаете с SMS-информированием
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-10
+      .row
+        .columns.large-4.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/23/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Больше надежности
+              %p.small
+                Вы будете знать остаток на Счете после каждой транзакции.
+        .columns.large-4.small-12
+          .row
+            .columns.small-2.large-12 
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/23/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Больше возможностей
+              %p.small
+                Вы можете подключить неограниченное количество номеров к услуге SMS-информирования по одному Счету.
+        .columns.large-4.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/23/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Больше контроля
+              %p.small
+                В любом месте планеты, в любое время суток вы будете получать уведомления о транзакциях и балансе вашего Счета.
+
+%section.section-bg-blue-business.product-questionnaire-block.shadow-inset-top
+  .row
+    .columns.small-12
+      %h1.text-center
+        Как стать клиентом Банка
+      %ul.product-questionnaire-infografic
+        %li
+          %i.icon.icon-what-time-white
+          %i.icon.icon-small.icon-what-time-white-small
+          %p
+            Заполняйте анкету на сайте
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-mobile-white
+          %i.icon.icon-small.icon-what-mobile-white-small
+          %p
+            Менеджер Банка свяжется с вами по телефону
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-case-white
+          %i.icon.icon-small.icon-what-case-white-small
+          %p
+            Получите электронный ключ и доступ ко всем счетам
+
+  = render template: "business/blocks/product_questionnaire/business"
+
+%section.section-bg-white.padding-top-200
+  = render template: "business/blocks/product_feedbacks/normal"
