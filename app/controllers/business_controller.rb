@@ -35,4 +35,7 @@ class BusinessController < ApplicationController
   def vklad_na_srok
   end
 
+  def documents_and_rates
+  end
+
 end

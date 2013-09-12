@@ -51,6 +51,7 @@ TwotbankRails::Application.routes.draw do
   get 'business/schet-dlya-biznesa' => 'business#schet_dlya_biznesa'
   get 'business/sms'                => 'business#sms'
   get 'business/vklad-na-srok'      => 'business#vklad_na_srok'
+  get 'business/documents-and-rates' => 'business#documents_and_rates'
   get 'business/dohodniy-schet-dlya-biznesa' => 'business#dohodniy_schet_dlya_biznesa'
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
