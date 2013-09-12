@@ -45,6 +45,48 @@
           left: emCalc(15px)
           right: emCalc(15px)
 
+.accordion-nav
+  .title
+    position: relative
+
+.accordion-nav section
+  margin: 0.83333em
+
+.accordion-nav .side-nav .hash-nav
+  margin: 0
+  padding: 0
+
+.accordion-nav .side-nav
+  padding:
+    bottom: 0
+
+.accordion-nav .content
+  position: relative
+  left: 20px
+
+.accordion-nav .side-nav .hash-nav a
+  font-size: 1em
+
+.accordion-nav.auto
+  .title
+    a
+      color: $blue-link-color
+      text-decoration: none
+      border:
+        bottom: 1px dotted $blue-color
+      display: inline
+      font-size: 1em
+
+    &:before
+      position: absolute
+      content: ""
+      border:
+        width: 5px 0 5px 5px
+        color: transparent transparent transparent $body-font-color
+        style: solid
+      top: 7px
+      left: -18px
+
 @media #{$medium}
   .product-information-block
     [data-section=""], [data-section="auto"], .section-container.auto
