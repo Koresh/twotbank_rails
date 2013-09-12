@@ -1,2 +1,117 @@
 = render template: "business/blocks/product_banner/dohodniy_schet_dlya_biznesa"
 = render template: "business/blocks/under_banner/index"
+
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Преимущества, которые вы получаете с Доходным счетом
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-10
+      .row
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/3abc04cf5b800199c2f8b3078264c0941e427d0f.png__70x70_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Каждый день
+              %p.small
+                Проценты по&nbsp;Доходному счету начисляются исходя из&nbsp;объема средств на&nbsp;счете на&nbsp;утро каждого дня
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/7d2e0c50dc4865a7fb298be44ff168c9d8eb5b94.png__70x70_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Без ограничений
+              %p.small
+                Пополняйте Доходный счет в&nbsp;удобное для вас время через систему Интернет-Банк
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12      
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/2bf11cc8a130261bf38c560b149c67e9cfde5492.png__70x70_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Полная свобода
+              %p.small
+                Переводите средства с&nbsp;Доходного счета на&nbsp;расчетный счет в&nbsp;удобное для вас время&nbsp;без посещения офиса
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/09/08d0e120a06edaf7f8f69b10a4f5c36df08e4b93.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Без комиссий
+              %p.small
+                Открытие и&nbsp;ведение доходного счета&nbsp;— бесплатно
+
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Удобные сервисы, которые дают больше возможностей
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-10
+      .row
+        .columns.large-4.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/01/0363ab83e15a60043b4452f5d2d4b0bb3fea1153.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Получайте SMS-уведомления об&nbsp;операциях по&nbsp;счету в&nbsp;режиме он-лайн на&nbsp;неограниченное количество телефонных номеров
+        .columns.large-4.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/15d7b8ad070e778ca90145a3767d23160e1d13d0.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Мы&nbsp;доставим Ваши документы курьером, почтой России или службой экспресс-доставки в&nbsp;любую точку России
+        .columns.large-4.small-12
+          .row
+            .columns.small-2.large-12      
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/3c0788e5ebe2b8eaf18285f01ed8a770074f2851.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Клиентская поддержка. Мы&nbsp;всегда отвечаем на&nbsp;запросы клиентов, и&nbsp;решаем любые вопросы максимально быстро
+
+= render template: "business/blocks/product_documents/dohodniy_schet_dlya_biznesa"
+
+%section.section-bg-blue-business.product-questionnaire-block.shadow-inset-top
+  .row
+    .columns.small-12
+      %h1.text-center
+        Как разместить средства во Вклад
+      %ul.product-questionnaire-infografic
+        %li
+          %i.icon.icon-what-time-white
+          %i.icon.icon-small.icon-what-time-white-small
+          %p
+            Заполняйте анкету на сайте. Это буквально 1 (одна!) минута
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-mobile-white
+          %i.icon.icon-small.icon-what-mobile-white-small
+          %p
+            Мы позвоним Вам и откроем Доходный счет
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-case-white
+          %i.icon.icon-small.icon-what-case-white-small
+          %p
+            Вы получите дополнительный доход на остаток средств
+
+  = render template: "business/blocks/product_questionnaire/business"
+
+%section.section-bg-white.padding-top-200
+  = render template: "business/blocks/product_feedbacks/normal"

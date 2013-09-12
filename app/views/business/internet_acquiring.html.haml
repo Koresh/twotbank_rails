@@ -1,2 +1,125 @@
 = render template: "business/blocks/product_banner/internet_acquiring"
 = render template: "business/blocks/under_banner/index"
+
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Преимущества
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-10
+      .row
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Увеличение прибыли компании за счет выхода на новый клиентский сегмент
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Возможность принимать к оплате карты всех основных международных систем
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12      
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Работа с клиентами из любой точки мира
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Полная безопасность карточных расчетов
+
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+        Возможности и дополнительные сервисы
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-12
+      .row
+        .columns.large-2.small-12.large-offset-1
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Бесплатная установка программного обеспечения
+        .columns.large-2.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Обучение сотрудников
+        .columns.large-2.small-12
+          .row
+            .columns.small-2.large-12      
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/23/0363ab83e15a60043b4452f5d2d4b0bb3fea1153.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                SMS-информирование о зачислении на счет
+        .columns.large-2.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Индивидуальные тарифы
+        .columns.large-2.small-12.left
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/9f800c4f9be48717cc498d61f77015f9289ce066.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %p.small
+                Круглосуточная техническая поддержка
+
+= render template: "business/blocks/product_documents/internet_acquiring"
+
+%section.section-bg-blue-business.product-questionnaire-block.shadow-inset-top
+  .row
+    .columns.small-12
+      %h1.text-center
+        Как подключить интернет-эквайринг
+      %ul.product-questionnaire-infografic
+        %li
+          %i.icon.icon-what-time-white
+          %i.icon.icon-small.icon-what-time-white-small
+          %p
+            Заполняйте анкету на сайте. Это буквально 1 (одна!) минута
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-mobile-white
+          %i.icon.icon-small.icon-what-mobile-white-small
+          %p
+            Мы обеспечим вас необходимым оборудованием и научим работать с ним
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-case-white
+          %i.icon.icon-small.icon-what-case-white-small
+          %p
+            Начинайте принимать к оплате банковские карты
+
+  = render template: "business/blocks/product_questionnaire/business"
+
+%section.section-bg-white.padding-top-200
+  = render template: "business/blocks/product_feedbacks/normal"
