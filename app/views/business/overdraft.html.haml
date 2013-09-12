@@ -1,2 +1,75 @@
 = render template: "business/blocks/product_banner/overdraft"
 = render template: "business/blocks/under_banner/index"
+
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-11
+      .row
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/23/bf7afb70d6f33aa5b95931903af7b1ebbef916c7.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Достаточно просто открыть расчетный счет
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/23/1d4ff1eb36a9f06430b57c20c1b81b4a87f39615.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Решение о выдаче в течение 1-го рабочего дня
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12      
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/09/b54ffe8c8abcc062b97e4f2165f9889292a3cf0b.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Льготный период 2 дня по ставке 0%
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/23/64d35d29dec1cd2efa62246ac1d24ebf489da561.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Без комиссии за неиспользованный лимит и выдачу
+
+= render template: "business/blocks/product_information/overdraft"
+
+%section.section-bg-blue-business.product-questionnaire-block.shadow-inset-top
+  .row
+    .columns.small-12
+      %h1.text-center
+        Как получить Овердрафт
+      %ul.product-questionnaire-infografic
+        %li
+          %i.icon.icon-what-time-white
+          %i.icon.icon-small.icon-what-time-white-small
+          %p
+            Заполняйте анкету на сайте. Это буквально 1 (одна!) минута
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-mobile-white
+          %i.icon.icon-small.icon-what-mobile-white-small
+          %p
+            Мы позвоним и расскажем, как получить овердрафт за 1 день
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-case-white
+          %i.icon.icon-small.icon-what-case-white-small
+          %p
+            Вы получите финансовую поддержку в нужное вам время
+
+  = render template: "business/blocks/product_questionnaire/business"
+
+%section.section-bg-white.padding-top-200
+  = render template: "business/blocks/product_feedbacks/normal"
