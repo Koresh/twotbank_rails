@@ -1,2 +1,85 @@
 = render template: "business/blocks/product_banner/vklad_na_srok"
 = render template: "business/blocks/under_banner/index"
+
+%section.padding-40
+  .row
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-10
+      .row
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/03/30/5b53588e9106b169b5eaa69e432c0ebe9b978b8e.png__70x70_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Просто
+              %p.small
+                Без посещения офиса банка&nbsp;— просто пришлите Заявку по&nbsp;системе Интернет-Банк
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/2fae1e8ba9449442df9edea9f11182e785ac7794.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Любая валюта
+              %p.small
+                Российские рубли, доллары США и&nbsp;евро
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12      
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/26/0df7e11eadf9cdcfae81dd96146b98ab753c1c86png__160x160_q85_crop_upscale.png__160x160_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Любой срок
+              %p.small
+                Определяйте срок депозита с&nbsp;точностью до&nbsp;дня
+        .columns.large-3.small-12
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "filer_public_thumbnails/filer_public/2013/04/03/3abc04cf5b800199c2f8b3078264c0941e427d0f.png__70x70_q85_crop_upscale.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                Удобно
+              %p.small
+                Выплата процентов осуществляется по&nbsp;вашему выбору&nbsp;— ежемесячно или в&nbsp;конце срока
+
+= render template: "business/blocks/product_information/vklad_na_srok"
+
+= render template: "business/blocks/product_documents/vklad_na_srok"
+
+%section.section-bg-blue-business.product-questionnaire-block.shadow-inset-top
+  .row
+    .columns.small-12
+      %h1.text-center
+        Как разместить средства во Вклад
+      %ul.product-questionnaire-infografic
+        %li
+          %i.icon.icon-what-time-white
+          %i.icon.icon-small.icon-what-time-white-small
+          %p
+            Заполняйте анкету на сайте. Это буквально 1 (одна!) минута
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-mobile-white
+          %i.icon.icon-small.icon-what-mobile-white-small
+          %p
+            Мы позвоним Вам и откроем Доходный счет
+        %li.arrow.show-for-medium-up
+          %i.icon.icon-what-arrow-white
+        %li
+          %i.icon.icon-what-case-white
+          %i.icon.icon-small.icon-what-case-white-small
+          %p
+            Вы получите дополнительный доход на остаток средств
+
+  = render template: "business/blocks/product_questionnaire/business"
+
+%section.section-bg-white.padding-top-200
+  = render template: "business/blocks/product_feedbacks/normal"
