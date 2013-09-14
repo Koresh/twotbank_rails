@@ -1,62 +1,124 @@
 %section.product-information-block
   .row
     .columns.small-12
-
       .section-container.auto{data: {section: ""}}
-
         %section.active
           %p.title{data:{section:{title: ""}}}
             %a{href:"#panel1"}
               %span
                 О фонде
           .content{data:{section:{content:""}}}
-            %table{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
-              %tbody
-                %tr
-                  %td.small-6
-                    %strong
-                      Инвестиционная цель
-                    %br
-                    Потенциальная доходность, превышающая доход по банковским депозитам при умеренных рыночных рисках
-                  %td
-                    %strong
-                      Состав активов
-                    %br
-                    Квартиры и таунхаусы на территории Новой Москвы
-                %tr
-                  %td
-                    %strong
-                      Стратегия фонда
-                    %br
-                    Инвестиции в жилищное строительство, наиболее надежный и активно растущий сектор экономики
-                  %td
-                    %strong
-                      Горизонты инвестирования
-                    %br
-                    от 3 месяцев до 3 лет
-                %tr
-                  %td
-                    %strong
-                      Факторы доходности
-                    %br
-                    Сильная управленческая команда. Собственная система мониторинга и контроля рисков. Перспективная инвестиционная стратегия. Рост цен на жилье в Новой Москве. Увеличение стоимости конкретных объектов по мере их строительной готовности.
-                  %td
-                    %strong
-                      Подробнее о фонде
-                    %br
-                    Закрытый паевой инвестиционный фонд недвижимости «Новая Москва»
-                    %br
-                    Управляющая компания: Еврофинансы
-                    %br
-                    Сайт управляющей компании
-                    %br
-                    Аудитор: 2К Аудит
-                    %br
-                    Статистика фонда (по состоянию на 31.05.2013 ):
-                    %br
-                    Пай: 21 498.95 руб.
-                    %br
-                    СЧА: 346 071 218.00 руб.
+            .hide-for-small
+              %table.no-base-strips{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
+                %tbody
+                  %tr
+                    %td.padding-side-20.vertical-top.small-6.padding-top-20
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-01.55d918727f12.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Инвестиционная цель
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Потенциальная доходность, превышающая доход по банковским депозитам при умеренных рыночных рисках
+                    %td.padding-side-20.vertical-top.small-6.padding-top-20
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-02.533abd949377.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Состав активов
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Квартиры и таунхаусы на территории Новой Москвы
+                  %tr
+                    %td.padding-side-20.vertical-top.small-6
+                      =image_tag "https://2tbank.ru/static/images/galka.882bd211bfcc.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Стратегия фонда
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Инвестиции в жилищное строительство, наиболее надежный и активно растущий сектор экономики
+                    %td.padding-side-20.vertical-top.small-6
+                      =image_tag "https://2tbank.ru/static/images/calendar-icon-newmoscow.807f9051ffd6.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Горизонты инвестирования
+                      %div{style:"padding:6px 0 0 37px;"}
+                        от 3 месяцев до 3 лет
+                  %tr.border-none
+                    %td.padding-side-20.vertical-top.small-6
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-03.104a5bb8bca5.png", :style => "width:30px;margin-right:4px;"
+                      %strong
+                        Факторы доходности
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Сильная управленческая команда. Собственная система мониторинга и контроля рисков. Перспективная инвестиционная стратегия. Рост цен на жилье в Новой Москве. Увеличение стоимости конкретных объектов по мере их строительной готовности.
+                    %td.padding-side-20.vertical-top.small-6
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-info.7319fead1ff9.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Подробнее о фонде
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Закрытый паевой инвестиционный фонд недвижимости «Новая Москва»
+                        %br
+                        Управляющая компания: Еврофинансы
+                        %br
+                        Сайт управляющей компании
+                        %br
+                        Аудитор: 2К Аудит
+                        %br
+                        Статистика фонда (по состоянию на 31.05.2013 ):
+                        %br
+                        Пай: 21 498.95 руб.
+                        %br
+                        СЧА: 346 071 218.00 руб.
+            .show-for-small
+              %table.no-base-strips{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
+                %tbody
+                  %tr
+                    %td
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-01.55d918727f12.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Инвестиционная цель
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Потенциальная доходность, превышающая доход по банковским депозитам при умеренных рыночных рисках
+                  %tr
+                    %td
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-02.533abd949377.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Состав активов
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Квартиры и таунхаусы на территории Новой Москвы
+                  %tr
+                    %td
+                      =image_tag "https://2tbank.ru/static/images/galka.882bd211bfcc.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Стратегия фонда
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Инвестиции в жилищное строительство, наиболее надежный и активно растущий сектор экономики
+                  %tr
+                    %td
+                      =image_tag "https://2tbank.ru/static/images/calendar-icon-newmoscow.807f9051ffd6.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Горизонты инвестирования
+                      %div{style:"padding:6px 0 0 37px;"}
+                        от 3 месяцев до 3 лет
+                  %tr
+                    %td
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-03.104a5bb8bca5.png", :style => "width:30px;margin-right:4px;"
+                      %strong
+                        Факторы доходности
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Сильная управленческая команда. Собственная система мониторинга и контроля рисков. Перспективная инвестиционная стратегия. Рост цен на жилье в Новой Москве. Увеличение стоимости конкретных объектов по мере их строительной готовности.
+                  %tr
+                    %td
+                      =image_tag "https://2tbank.ru/static/images/icon-pai-info.7319fead1ff9.png", :style => "width:26px;margin-right:8px;"
+                      %strong
+                        Подробнее о фонде
+                      %div{style:"padding:6px 0 0 37px;"}
+                        Закрытый паевой инвестиционный фонд недвижимости «Новая Москва»
+                        %br
+                        Управляющая компания: Еврофинансы
+                        %br
+                        Сайт управляющей компании
+                        %br
+                        Аудитор: 2К Аудит
+                        %br
+                        Статистика фонда (по состоянию на 31.05.2013 ):
+                        %br
+                        Пай: 21 498.95 руб.
+                        %br
+                        СЧА: 346 071 218.00 руб.
 
 
 
@@ -68,91 +130,88 @@
                 %br
                 активов
           .content{data:{section:{content:""}}}
-            %table{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
-              %tbody
-                %tr
-                  %td.small-6
-                    %row
-                      .columns.small-6.text-center
-                        %strong
-                          Отчётная дата
-                      .columns.small-6.text-center.padding-0
-                        %strong
-                          Стоимость чистых активов
-                      .columns.small-12
-                        %table.black-border{style: "width: 100%", cellpadding: "1", cellspacing: "0"}
-                          %tbody.text-center
-                            %tr
-                              %td.small-6
-                                31.05.2013
-                              %td.small-6
-                                346 071 218,00 руб.
-                            %tr
-                              %td
-                                30.04.2013
-                              %td
-                                213 682 306,84 руб.
-                            %tr
-                              %td
-                                29.03.2013
-                              %td
-                                214 637 239,82 руб.
-                            %tr
-                              %td
-                                28.02.2013
-                              %td
-                                215 882 578,40 руб.
-                            %tr
-                              %td
-                                31.01.2013
-                              %td
-                                216 059 711,70 руб.
-                            %tr
-                              %td
-                                29.12.2012
-                              %td
-                                214 763 779,70 руб.
-                            %tr
-                              %td
-                                30.11.2012
-                              %td
-                                196 450 024,70 руб.
-                            %tr
-                              %td
-                                31.10.2012
-                              %td
-                                196 835 129,68 руб.
-                            %tr
-                              %td
-                                28.09.2012
-                              %td
-                                163 520 840,13 руб.
-                            %tr
-                              %td
-                                31.08.2012
-                              %td
-                                163 740 250,46 руб.
-                            %tr
-                              %td
-                                31.07.2012
-                              %td
-                                163 960 494,45 руб.
-                            %tr
-                              %td
-                                29.06.2012
-                              %td
-                                164 058 439,03 руб.
-                            %tr.border-none
-                              %td
-                                31.05.2012
-                              %td
-                                164 191 515,05 руб.
-                  %td.small-1
-                  %td.small-5.vertical-align-top
+            .row
+              .columns.large-6.padding-top-20
+                .row
+                  .columns.small-6.text-center
                     %strong
-                      Млн. руб.
-                    %br
-                    =image_tag "features/0001/01/graf-new1-moscow-pif.cb19cc5837c6.png"
+                      Отчётная дата
+                  .columns.small-6.text-center.padding-0
+                    %strong
+                      Стоимость чистых активов
+                  .columns.small-12
+                    %table.black-border{style: "width: 100%", cellpadding: "1", cellspacing: "0"}
+                      %tbody.text-center
+                        %tr
+                          %td.small-6
+                            31.05.2013
+                          %td.small-6
+                            346 071 218,00 руб.
+                        %tr
+                          %td
+                            30.04.2013
+                          %td
+                            213 682 306,84 руб.
+                        %tr
+                          %td
+                            29.03.2013
+                          %td
+                            214 637 239,82 руб.
+                        %tr
+                          %td
+                            28.02.2013
+                          %td
+                            215 882 578,40 руб.
+                        %tr
+                          %td
+                            31.01.2013
+                          %td
+                            216 059 711,70 руб.
+                        %tr
+                          %td
+                            29.12.2012
+                          %td
+                            214 763 779,70 руб.
+                        %tr
+                          %td
+                            30.11.2012
+                          %td
+                            196 450 024,70 руб.
+                        %tr
+                          %td
+                            31.10.2012
+                          %td
+                            196 835 129,68 руб.
+                        %tr
+                          %td
+                            28.09.2012
+                          %td
+                            163 520 840,13 руб.
+                        %tr
+                          %td
+                            31.08.2012
+                          %td
+                            163 740 250,46 руб.
+                        %tr
+                          %td
+                            31.07.2012
+                          %td
+                            163 960 494,45 руб.
+                        %tr
+                          %td
+                            29.06.2012
+                          %td
+                            164 058 439,03 руб.
+                        %tr.border-none
+                          %td
+                            31.05.2012
+                          %td
+                            164 191 515,05 руб.
+              .columns.large-5.padding-top-20
+                %strong
+                  Млн. руб.
+                %br
+                =image_tag "features/0001/01/graf-new1-moscow-pif.cb19cc5837c6.png"
 
         %section
           %p.title{data:{section:{title: ""}}}
@@ -160,27 +219,27 @@
               %span
                 Документы фонда
           .content{data:{section:{content:""}}}
-            %table{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
+            %table.no-base-strips{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
               %tbody
                 %tr
-                  %td
+                  %td.padding-25
                     %strong
-                      %a{href: "#"}
+                      %a{target: "_blank", href: "http://uk.eufn.ru/index.php?option=com_content&task=view&id=147&Itemid=120"}
                         Общая информация
                 %tr
-                  %td
+                  %td.padding-25
                     %strong
-                      %a{href: "#"}
+                      %a{target: "_blank", href: "http://uk.eufn.ru/index.php?option=com_content&task=view&id=145&Itemid=121"}
                         Документы
                 %tr
-                  %td
+                  %td.padding-25
                     %strong
-                      %a{href: "#"}
+                      %a{target: "_blank", href: "http://uk.eufn.ru/index.php?option=com_content&task=view&id=146&Itemid=122"}
                         Раскрытие информации
                 %tr
-                  %td
+                  %td.padding-25
                     %strong
-                      %a{href: "#"}
+                      %a{target: "_blank", href: "http://uk.eufn.ru/index.php?option=com_content&task=view&id=12&Itemid=31"}
                         О компании Еврофинансы
                     
                 
