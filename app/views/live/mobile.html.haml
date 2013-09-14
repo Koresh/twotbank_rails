@@ -1,46 +1,54 @@
 = render template: "live/blocks/product_banner/mobile"
 
-= render template: "live/blocks/under_banner/index"
-
 = render template: "live/blocks/product_services/mobile"
 
 %section.padding-40
-
   .row
-    .columns.small-10.small-centered
-      .row.text-center
-        .columns.small-4
-          %p
-            =image_tag "features/0001/01/7633b1ae1458d65bb14ac46bd41dc40ed2ee7d2c.png"
-        .columns.small-4          
-          %p
-            =image_tag "features/0001/01/d93a88228439a39bb28e65a8d7872b29276cead5.png"
-        .columns.small-4          
-          %p
-            =image_tag "features/0001/01/26e08f2f0d6900396c75884c1cdf022d599cecf9.png"
-
-      .row.text-center
-        .columns.small-4
-          %h4
-            Больше мобильности
-          %p.small
-            Мобильный сервис работает везде, где есть Интернет. Это делает вас абсолютно свободным. Все вопросы теперь решаются онлайн.
-        .columns.small-4
-          %h4
-            Больше времени
-          %p.small
-            Круглосуточный доступ без выходных и легкие инструменты оплаты созданы, чтобы у вас было больше времени для себя.
-        .columns.small-4
-          %h4
-            Больше контроля
-          %p.small
-            Звоните в любое время из любого места. Мы всегда быстро ответим по телефону, через браузер или в чате.
+    .columns.small-12.text-center
+      %h2.margin-bottom-20
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-10
+      .row
+        .columns.large-4.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "features/0001/01/7633b1ae1458d65bb14ac46bd41dc40ed2ee7d2c.png"
+            .columns.small-10.large-12.padding-side-20
+              %h4
+                Больше мобильности
+              %p.small
+                Мобильный сервис работает везде, где есть Интернет. Это делает вас абсолютно свободным. Все вопросы теперь решаются онлайн.
+        .columns.large-4.small-12.left
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "features/0001/01/d93a88228439a39bb28e65a8d7872b29276cead5.png"
+            .columns.small-10.large-12.padding-side-20
+              %h4
+                Больше времени
+              %p.small
+                Круглосуточный доступ без выходных и&nbsp;легкие инструменты оплаты созданы, чтобы у&nbsp;вас было больше времени для себя.
+        .columns.large-4.small-12.left
+          .row
+            .columns.small-2.large-12          
+              %p
+                =image_tag "features/0001/01/26e08f2f0d6900396c75884c1cdf022d599cecf9.png"
+            .columns.small-10.large-12.padding-side-20
+              %h4
+                Больше контроля
+              %p.small
+                Звоните в&nbsp;любое время из&nbsp;любого места. Мы&nbsp;всегда быстро ответим по&nbsp;телефону, через браузер или в&nbsp;чате.
 
 %section
   .row
     .columns.small-10.small-centered
       .row.padding-40
-        .columns.small-7.text-center.padding-top-180
+        .columns.large-5.small-12.text-center.right.padding-side-20
+          =image_tag "features/0001/01/2ed6946e91286e9ec3ffb6b48f19ad7213112c7d.png", :class => "small-4 large-12"
+        .columns.large-7.small-12.text-center
+          .padding-top-180.hide-for-small
+          .padding-top-20.show-for-small
           %h2
             Мобильный сервис
           %p
@@ -50,8 +58,6 @@
             %br
             %a{href: "/internet-bank/"}
               Подробнее про Интернет-Банк.
-        .columns.small-5
-          =image_tag "features/0001/01/2ed6946e91286e9ec3ffb6b48f19ad7213112c7d.png"
 
 %section.padding-40
 
