@@ -2,9 +2,9 @@
 // Foundation Variables
 //
 
-// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// The default font-size is set to 100% of the browser style sheet (usually 16)
 // for compatibility with browser-based text zoom or user-set defaults.
-$base-font-size: emCalc(18px) !default;
+$base-font-size: emCalc(18) !default;
 
 // $base-line-height is 24px while $base-font-size is 16px
 // $base-line-height: 150%;
@@ -352,7 +352,7 @@ $fieldset-padding: 0;//emCalc(20);
 $button-med: emCalc(6);
 // $button-tny: emCalc(7);
 $button-sml: emCalc(3);
-$button-lrg: emCalc(6px);
+$button-lrg: emCalc(6);
 
 // We use this to control the display property.
 
@@ -367,7 +367,7 @@ $button-lrg: emCalc(6px);
 $button-font-med: emCalc(16);
 // $button-font-tny: emCalc(11);
 $button-font-sml: emCalc(16);
-$button-font-lrg: emCalc(26px);
+$button-font-lrg: emCalc(26);
 $button-font-weight: normal;
 // $button-font-align: center;
 
@@ -834,7 +834,7 @@ $orbit-bullet-nav-color-active: $yelow-color;
 
 // $orbit-slide-number-bg: rgba(0,0,0,0);
 // $orbit-slide-number-font-color: #fff;
-// $orbit-slide-number-padding: emCalc(5px);
+// $orbit-slide-number-padding: emCalc(5);
 
 // Graceful Loading Wrapper and preloader
 
