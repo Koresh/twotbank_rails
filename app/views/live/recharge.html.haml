@@ -1,16 +1,14 @@
 = render template: "live/blocks/product_banner/recharge"
 
-= render template: "live/blocks/under_banner/index"
-
 = render template: "live/blocks/product_services/recharge"
 
 %section
   .row
     .columns.small-10.small-centered
       .row.padding-top-120
-        .columns.small-3
+        .columns.small-12.large-3.text-center{id:"salary"}
           =image_tag "service/0001/01/6e1b02004a4cd0992c09ff4ef06f53cc5599b7e1.png"
-        .columns.small-9
+        .columns.small-12.large-9
           %h2
             Перечислите зарплату на счет в 2ТБанке
           %p
@@ -19,9 +17,9 @@
             %a{href: "/clients/56/"}
               Инструкция по переводу зарплаты на ваш счет в 2ТБанке
       .row.padding-top-70
-        .columns.small-3
+        .columns.small-12.large-3.text-center{id:"cashless"}
           =image_tag "service/0001/01/35d3ed95a08ecb39931fd1945d4035bde5de29f8.png"
-        .columns.small-9
+        .columns.small-12.large-9
           %h2
             Сделайте безналичный перевод
           %p
@@ -30,9 +28,9 @@
             %a{href: "/clients/55/"}
               Инструкция по Безналичному переводу
       .row.padding-top-70
-        .columns.small-3
+        .columns.small-12.large-3.text-center{id:"in_bank_offices"}
           =image_tag "service/0001/01/7fdd104be92df899c5deedd885f06add882211c6.png"
-        .columns.small-9
+        .columns.small-12.large-9
           %h2
             Пополните счет в отделении банка
           %p
@@ -41,9 +39,9 @@
             %a{href: "/clients/55/"}
               Посмотреть на карте
       .row.padding-top-70
-        .columns.small-3
+        .columns.small-12.large-3.text-center{id:"cash_in"}
           =image_tag "service/0001/01/63af1802eaefea4ed925d5cf73f3e487a9a19d07.png"
-        .columns.small-9
+        .columns.small-12.large-9
           %h2
             Пополните счет через кэш-ин банкомат
           %p
@@ -54,7 +52,7 @@
 
 %section.padding-top-70
 
-%section.section-bg-gray.padding-70.shadow-inset.product-services-block
+%section.section-bg-gray.padding-70.product-services-block
   .row
     .columns.small-10.small-centered
       .row.text-center
@@ -64,7 +62,5 @@
         %h2
           %a{href: "Как снять наличные"}
             Как снять наличные
-
-%section.padding-top-70
 
 = render template: "live/blocks/product_feedbacks/credit_transfer"
