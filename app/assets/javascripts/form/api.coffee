@@ -119,17 +119,19 @@ class TBank.Api_test
 
     sendMailFinalStep: (model, callback) ->
 
-        request = $.ajax 
-          url:      @api_resourses.sendMailFinalStep
-          type:     "POST"
-          data:     model.toJSON()
-          dataType: "json"
+      callback true
 
-        request.done (result) =>
-          callback result.success
+        # request = $.ajax 
+        #   url:      @api_resourses.sendMailFinalStep
+        #   type:     "POST"
+        #   data:     model.toJSON()
+        #   dataType: "json"
 
-        request.fail (jqXHR, textStatus) =>
-          callback textStatus
+        # request.done (result) =>
+        #   callback result.success
+
+        # request.fail (jqXHR, textStatus) =>
+        #   callback textStatus
 
 
     sendMobileStep: (model, callback) ->

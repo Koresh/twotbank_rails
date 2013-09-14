@@ -49,6 +49,16 @@ form
       .error-msg
         display: block
 
+    .sub-inputs
+      font-size: 1.2em
+      padding:
+        top: emCalc(10)
+
+      .input-field
+        margin: 
+          bottom: emCalc(10)
+
+
   .inline-fields
     font-size: emCalc(18px)
     padding:
@@ -144,4 +154,30 @@ form
 
   .title
     padding: 7px 0
+
+form .input-field
+  .input-checkbox-list
+    text-transform: none
+    padding:
+      left: 34px
+    +clearfix
+    color: $body-font-color
+    font-family: "MyriadProRegular"
+
+    p
+      font-size: 13px
+      margin: 0
+
+    .custom.checkbox
+      margin: 
+        left: -34px
+      float: left
+
+    div.left
+      width: 100%
+
+    h6
+      font-size: 11px
+      font-family: "MyriadProSemiBold"
+      text-transform: uppercase
 

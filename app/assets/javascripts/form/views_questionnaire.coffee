@@ -646,7 +646,7 @@ class TBank.FinalBusiness extends TBank.StepView
     "change input[type='checkbox']": "openSubInputs"
 
   afterRender: ->
-    @$el.find(".adds_inputs").find("input").each (i, container) =>
+    @$el.find(".sub-inputs").find("input").each (i, container) =>
       @disabledHash.push $(container).attr "name"
 
     #console.log @disabledHash
@@ -662,11 +662,11 @@ class TBank.FinalBusiness extends TBank.StepView
     #console.log e.target
     $this = $(e.target)
     if $this.is(":checked")
-      $this.parents(".item").find(".adds_inputs").slideDown(150).find("input").each (i, container) =>
+      $this.parents(".input-field").find(".sub-inputs").slideDown(150).find("input").each (i, container) =>
         @disabledHash = _.uniq( _.without @disabledHash, $(container).attr "name" )
         
     else
-      $this.parents(".item").find(".adds_inputs").slideUp(150).find("input").each (i, container) =>
+      $this.parents(".input-field").find(".sub-inputs").slideUp(150).find("input").each (i, container) =>
         @disabledHash.push $(container).attr "name"
 
   stepvalidate: (callback) ->
@@ -674,15 +674,15 @@ class TBank.FinalBusiness extends TBank.StepView
     if $("#schet-dlya-biznesa-field").is(":visible")
       valid = true
     else
-      @$el.find(".item").not("#schet-dlya-biznesa-field").find("input[type='checkbox']").each (i, container) =>
+      @$el.find(".input-field").not("#schet-dlya-biznesa-field").find("input[type='checkbox']").each (i, container) =>
         #console.log container
         valid = true if $(container).is(":checked")
         return true
 
       if valid
-        $("#one_checkbox_valid").removeAttr "style"
+        $("#one_checkbox_valid").removeClass "alert"
       else
-        $("#one_checkbox_valid").css "color", "#FF0000"
+        $("#one_checkbox_valid").addClass "alert"
 
     callback( valid ) if typeof( callback ) is "function"
 
@@ -701,19 +701,6 @@ class TBank.FinalStep extends Backbone.View
     @api = options.api
     @sendmodel = options.sendmodel
 
-    @fbox_options =
-      padding : 0
-      closeBtn: false
-      scrolling: 'no'
-      autoResize: false
-      fitToView: false
-      helpers:
-        overlay :
-          locked : false
-          closeClick: false
-      keys:
-        close: []
-
 
   openStep: (callback) ->
 
@@ -723,10 +710,11 @@ class TBank.FinalStep extends Backbone.View
 
       #console.log status
       $("#preloader").hide()
+
       if status is "error"
         @gotoLastStep()
       else if status
-        @arboost()
+        #@arboost()
         @success status
       else
         @reject status
@@ -744,16 +732,16 @@ class TBank.FinalStep extends Backbone.View
     router.navigate "final", trigger: true
 
   success: (status) ->
-    $.fancybox.open @$el, @fbox_options
+    $('#maf_success').foundation 'reveal', 'open'
 
   reject: (status) ->
-    $.fancybox.open $("#maf_reject"), @fbox_options
+    $('#maf_success').foundation 'reveal', 'open'
 
   afterGotoStep: ->
 
 
   closeStep: (callback) ->
-    $.fancybox.close()
+    $('.reveal-modal').foundation 'reveal', 'close'
     callback() if typeof(callback) is "function"
     questView.clearLayout()
 
@@ -846,7 +834,7 @@ class TBank.Layout.Business extends TBank.Layout
   type: "business"
   steps: [
     {view: TBank.StartBusiness, el: '#form-main-step'},
-    {view: TBank.FinalBusiness, el: '#maf_full_form_main .step1'},
+    {view: TBank.FinalBusiness, el: '.questionnaire-step-block.step-1'},
     {view: TBank.FinalStepBusiness, el: "#maf_success"}
   ]
 

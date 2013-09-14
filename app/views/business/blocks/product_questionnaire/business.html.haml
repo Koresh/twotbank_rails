@@ -29,7 +29,16 @@
         %fieldset#form-main-step
           .row
             .columns.small-12.large-6.left
-              Город
+              %ul.inline-fields.inline-list.inline-select
+                %li.title
+                  Город
+                %li
+                  %select#baf_region{name: "baf_region"}
+                    %option{value: "Москва"}Москва
+                    %option{value: "Санкт-Петербург"}Санкт-Петербург
+                    %option{value: "Новороссийск"}Новороссийск
+                    %option{value: "Краснодар"}Краснодар
+                    %option{value: "Другой"}Другой
 
             .columns.small-12.large-6.left
               %ul.inline-fields.inline-list
@@ -44,15 +53,14 @@
                     %input#is_client_no{type: "radio", name: "baf_is_client", value: "no"}
                     Нет
           .row
-            .columns.small-12.large-3
+            .columns.small-12.large-3.input-field
               %input#baf_comp_name{name: "baf_comp_name", type: "text", placeholder: "Компания/ИП"}
-            .columns.small-12.large-3
+            .columns.small-12.large-3.input-field
               %input#baf_client_name{name: "baf_client_name", type: "text", placeholder: "Контактное лицо"}
-            .columns.small-12.large-3
+            .columns.small-12.large-3.input-field
               %input#baf_mobile_phone{name: "baf_mobile_phone", type: "text", placeholder: "+7 (916) 123-45-67"}
-            .columns.small-12.large-3
+            .columns.small-12.large-3.input-field
               %input#baf_email{name: "baf_email", type: "text", placeholder: "E-mail"}
-            .columns.small-12.large-4.left
 
           .row
             .columns.small-12.large-2.right.text-right
@@ -61,3 +69,123 @@
 
 
   .quest-main-bottom-bg
+  #maf_full_form.questionnaire-full-form{style: "display: none"}
+    .row.questionnaire-full-form-wrap
+      .small-12.columns.questionnaire-full-form-block
+
+        %a#questionnaire-close-btn.icon-btn-close-red{href: "#maf_close_form"}
+
+        / Step 1
+        .row.questionnaire-step-block.step-1{style: "display: none"}
+          .columns.small-12
+            %h3.subheader.text-center
+              Пожалуйста, отметьте банковские продукты, которые могут быть
+            %h3.subheader.text-center
+              Вам интересны (
+              %span#one_checkbox_valid<>
+                минимум один
+              ):
+
+            .row
+              .columns.small-12.large-6
+                #schet-dlya-biznesa-field.input-field
+                  %label.input-checkbox-list{for: "schet-dlya-biznesa"}
+                    %input#schet-dlya-biznesa{type: "checkbox", disabled: "disabled", name: "baf_product_schet", checked: "ckecked"}
+                    .left
+                      %h6.subheader РАСЧЕТНЫЙ СЧЕТ
+                      %p Бесплатное открытие и обслуживание, без комиссий за входящие и исходящие платежи в рублях.
+
+                .input-field
+                  %label.input-checkbox-list{for: "baf_product_zp"}
+                    %input#baf_product_zp{type: "checkbox", name: "baf_product_zp"}
+                    .left
+                      %h6.subheader ЗАРПЛАТНЫЙ ПРОЕКТ
+                      %p Современный и выгодный способ выпаты заработной платы ва и вашим сотрудникам.
+
+                      .sub-inputs.hide
+                        .row
+                          .input-field.columns.small-12.large-7
+                            %input#baf_size_of_state{type: "text", name: "baf_size_of_state", placeholder: "Размер штата, чел", value: ""}
+                        .row
+                          .input-field.columns.small-12.large-7
+                            %input#baf_fot{type: "text", name: "baf_fot", placeholder: "ФОТ, руб", value: ""}
+                        .row
+                          .input-field.columns.small-12.large-7
+                            %input#baf_salary_cards{type: "text", name:"baf_salary_cards", placeholder:"Желаемое кол-во карт, шт", value: ""}
+                            
+                .input-field
+                  %label.input-checkbox-list{for: "baf_product_inckas"}
+                    %input#baf_product_inckas{type: "checkbox", name: "baf_product_inckas"}
+                    .left
+                      %h6.subheader КАРТА ДЛЯ ИНКАСАЦИИ
+                      %p Самостоятельная инкассация торговой выручки через сеть банкоматов и пункты выдачи наличных.
+
+                      .sub-inputs.hide
+                        .row
+                          .input-field.columns.small-12.large-7
+                            %input#baf_encashment_cards{type: "text", name: "baf_encashment_cards", placeholder: "Желаемое кол-во карт, шт", value: ""}
+
+                .input-field
+                  %label.input-checkbox-list{for: "baf_product_dohod"}
+                    %input#baf_product_dohod{type: "checkbox", name: "baf_product_dohod"}
+                    .left
+                      %h6.subheader ДОХОДНЫЙ СЧЕТ
+                      %p Для хранения временно свободных средств компании по ставке 10% годовых в рублях.
+
+              .columns.small-12.large-6
+                .input-field
+                  %label.input-checkbox-list{for: "baf_product_overdraft"}
+                    %input#baf_product_overdraft{type: "checkbox", name: "baf_product_overdraft"}
+                    .left
+                      %h6.subheader ОВЕРДРАФТ
+                      %p 
+                        Возможность пополнить оюоротные средста компании в пределах установленного лимита.
+
+                      .sub-inputs.hide
+                        .row
+                          .input-field.columns.small-12.large-7
+                            %input#baf_date_registration{type: "text", name: "baf_date_registration", placeholder: "Дата госрегистрации", value: ""}
+                        .row
+                          .input-field.columns.small-12.large-7
+                            %input#baf_desire_overdraft{type: "text", name: "baf_desire_overdraft", placeholder: "Желаемый овердрафт", value: ""}
+
+                .input-field
+                  %label.input-checkbox-list{for: "baf_product_acquiring"}
+                    %input#baf_product_acquiring{type: "checkbox", name: "baf_product_acquiring"}
+                    .left
+                      %h6.subheader ЭКВАЙРИНГ
+                      %p Прием банковских карт в качестве средств оплаты за товары и услуги.
+
+                .input-field
+                  %label.input-checkbox-list{for: "baf_product_business_card"}
+                    %input#baf_product_business_card{type: "checkbox", name: "baf_product_business_card"}
+                    .left
+                      %h6.subheader БИЗНЕС КАРТА
+                      %p Для оплаты представительских, хозяйственных и командрировочных расходов в любой точке мира.
+
+                .input-field
+                  %label.input-checkbox-list{for: "baf_product_vklad_na_srok"}
+                    %input#baf_product_vklad_na_srok{type: "checkbox", name: "baf_product_vklad_na_srok"}
+                    .left
+                      %h6.subheader ВКЛАД НА СРОК
+                      %p Для сохранения и преумножения денежных средств.
+
+
+
+        .row.questionnaire-full-buttons-block
+          .columns.small-12.large-2.right
+            %a#other_step_submit.button.small.expand{href: "#final"}Отправить
+
+/ Modals
+#maf_close_form.reveal-modal.tiny.confirm-modal.text-center{data: {options: "closeOnBackgroundClick: false;"}}
+  %h2 Закрыть анкету?
+  %h3 Уверены в этом? Ваши данные будут потеряны
+  .buttons
+    %a#maf_close_form_no.button.medium{href: "#"} Нет
+    %a#maf_close_form_yes.button.medium{href: "#"} Да
+
+#maf_success.reveal-modal.tiny.confirm-modal.text-center{data: {options: "closeOnBackgroundClick: false;"}}
+  %h2 Поздравляем!
+  %h3 Ваша анкета принята. Сотрудник банка свяжется с вами для уточнения информации.
+  .buttons
+    %a#maf_final_button.button.medium{href: "#"} Продолжить

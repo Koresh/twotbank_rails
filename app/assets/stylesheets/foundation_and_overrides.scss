@@ -181,13 +181,13 @@ $h2-font-size: emCalc(24);
 $h3-font-size: emCalc(18);
 $h4-font-size: emCalc(18);
 $h5-font-size: emCalc(18);
-$h6-font-size: emCalc(16);
+$h6-font-size: emCalc(11);
 
 // Control how subheaders are styled.
 
 // $subheader-line-height: 1.4;
-// $subheader-font-color: lighten($header-font-color, 30%);
-// $subheader-font-weight: 300;
+$subheader-font-color: #222;
+$subheader-font-weight: normal;
 // $subheader-top-margin: .2em;
 // $subheader-bottom-margin: .5em;
 
