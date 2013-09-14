@@ -47,6 +47,42 @@
           top: emCalc(10)
           bottom: emCalc(10)
 
+.section-accordion
+  +box-shadow(0 1px 4px #cdcdcd)
+
+.section-accordion
+  .title
+    border-bottom: 1px solid #dedede
+    padding: emCalc(15) emCalc(20)
+    line-height: emCalc(24)
+    background-color: #f7f7f7
+    font-weight: bold
+
+.section-accordion
+  .active
+    .title
+      border-bottom: 0
+      padding-bottom: 0
+      background-color: #fff
+      font-family: $header-font-family
+
+.section-accordion
+  .title
+    a
+      text-decoration: none
+
+.section-accordion
+  .active
+    .title
+      a
+        color: #000
+        text-decoration: none
+
+.section-accordion
+  .content
+    padding: emCalc(20)
+
+
 .accordion-nav
   .title
     position: relative
