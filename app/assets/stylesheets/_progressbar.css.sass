@@ -8,16 +8,19 @@
   .progress-steps
     list-style: none
     margin:
-      left: emCalc(-40px)
-      right: emCalc(-40px)
+      left: emCalc(-40)
+      right: emCalc(-40)
 
     .item
       text-transform: uppercase
       color: #B2B2B2
       font:
-        size: emCalc(9px)
+        size: emCalc(9)
         family: "MyriadProSemiBold"
       line-height: 1.3
+
+      &.active
+        color: #1A1A1A
 
     .item-1, .item-3
       position: absolute
@@ -31,9 +34,6 @@
       margin:
         left: 53%
 
-      &.active
-        color: #1A1A1A
-
 .progress
   +box-shadow(1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset)
   margin:
@@ -43,7 +43,7 @@
     +box-shadow(1px 1px 1px 0 rgba(0, 0, 0, 0.5) inset)
     position: relative
     +transition-property(width)
-    +transition-duration(.2s)
+    +transition-duration(.5s)
     +transition-timing-function(ease-in)
 
     .bulet

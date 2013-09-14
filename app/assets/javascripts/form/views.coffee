@@ -161,12 +161,11 @@ class TBank.Layout extends Backbone.View
 
     if step isnt @step_count
 
-      step_width = 235*3 / (@step_count - 2)
+      step_width = 82 / (@step_count - 2)
+      p_width = 9 + step_width * ( step - 1 )
 
-      p_width = 75 + step_width * ( step - 1 )
-
-      $(".switcher .progress").animate width: p_width , "slow" , ->
-          $(".switcherBlock").find(".item").removeClass("activeSwitcher").eq(step - 1).addClass "activeSwitcher"
+      $("#questionnaire-progressbar").find(".meter").css({width: "#{p_width}%"})
+      .end().find(".progress-steps").children(".item").removeClass("active").eq(step - 1).addClass "active"
 
 
   clearLayout: ->
