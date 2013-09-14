@@ -10,95 +10,173 @@
               %span.table-header
                 Тарифы и документы
           .content{data:{section:{content:""}}}
-            %table.no-base-strips{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
-              %tbody.text-center
-                %tr
-                  %td.tr-header{:colspan => 1}
-                    Размер, мм (высота, ширина, глубина)
-                  %td.tr-header{:colspan => 4}
-                    Стоимость аренды (включая НДС), рублей за срок аренды
-                %tr
-                  %td
-                  %td
-                    1 день*
-                  %td
-                    1 месяц
-                    %br
-                    (30 дней)
-                  %td
-                    3 месяца
-                    %br
-                    (90 дней)
-                  %td
-                    6 месяца
-                    %br
-                    (180 дней)
-                  %td
-                    12 месяца
-                    %br
-                    (360 дней)
-                %tr
-                  %td
-                    105 × 93 × 350
-                  %td
-                    %strong
-                      50
-                  %td
-                    %strong
-                      1500
-                  %td
-                    %strong
-                      2700
-                  %td
-                    %strong
-                      4500
-                  %td
-                    %strong
-                      5400
-                %tr
-                  %td
-                    105 × 243 × 350
-                  %td
-                    %strong
-                      80
-                  %td
-                    %strong
-                      2400
-                  %td
-                    %strong
-                      5400
-                  %td
-                    %strong
-                      7200
-                  %td
-                    %strong
-                      9000
-                %tr
-                  %td
-                    625 × 260 × 350
-                  %td
-                    %strong
-                      140
-                  %td
-                    %strong
-                      4200
-                  %td
-                    %strong
-                      9000
-                  %td
-                    %strong
-                      16200
-                  %td
-                    %strong
-                      27000
-                %tr
-                  %td.text-left{:colspan => 5}
-                    %p
+            .hide-for-small
+              %table.no-base-strips{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
+                %tbody.text-center
+                  %tr
+                    %td.muted.padding-25{:colspan => 1}
+                      Размер, мм (высота, ширина, глубина)
+                    %td.muted{:colspan => 5}
+                      Стоимость аренды (включая НДС), рублей за срок аренды
+                  %tr
+                    %td.padding-25
+                    %td.padding-25{style:"vertical-align:top"}
+                      1 день*
+                    %td.padding-25
+                      1 месяц
+                      %br
+                      (30 дней)
+                    %td
+                      3 месяца
+                      %br
+                      (90 дней)
+                    %td
+                      6 месяца
+                      %br
+                      (180 дней)
+                    %td
+                      12 месяца
+                      %br
+                      (360 дней)
+                  %tr
+                    %td.padding-25
+                      105 × 93 × 350
+                    %td
+                      %strong
+                        50
+                    %td
+                      %strong
+                        1500
+                    %td
+                      %strong
+                        2700
+                    %td
+                      %strong
+                        4500
+                    %td
+                      %strong
+                        5400
+                  %tr
+                    %td.padding-25
+                      105 × 243 × 350
+                    %td
+                      %strong
+                        80
+                    %td
+                      %strong
+                        2400
+                    %td
+                      %strong
+                        5400
+                    %td
+                      %strong
+                        7200
+                    %td
+                      %strong
+                        9000
+                  %tr
+                    %td.padding-25
+                      625 × 260 × 350
+                    %td
+                      %strong
+                        140
+                    %td
+                      %strong
+                        4200
+                    %td
+                      %strong
+                        9000
+                    %td
+                      %strong
+                        16200
+                    %td
+                      %strong
+                        27000
+                  %tr
+                    %td.padding-40.text-left{:colspan => 5}
                       %a{href: "/clients/36/", target: "_blank"}
                         %strong Полезные документы
-                %tr
-                  %td.text-left{:colspan => 5}
-                    %p.small
-                      * — Залоговая стоимость ключа индивидуального банковского сейфа — 2000 рублей.
-
-      
+                  %tr
+                    %td.padding-25.text-left{:colspan => 5}
+                      %p.small
+                        * — Залоговая стоимость ключа индивидуального банковского сейфа — 2000 рублей.
+            .show-for-small
+              %table.no-base-strips{style: "width: 100%", cellpadding: "0", cellspacing: "0"}
+                %tbody.text-center
+                  %tr
+                    %td.padding-25.muted{:colspan => 4}
+                      Стоимость аренды (включая НДС), рублей
+                  %tr
+                    %td.padding-25.muted
+                      Cрок аренды
+                    %td.padding-25.muted{:colspan => 3}
+                      Размер, мм (высота, ширина, глубина)
+                  %tr
+                    %td.small-3.padding-25
+                    %td.small-3.padding-25
+                      105 × 93 × 350
+                    %td.small-3
+                      105 × 243 × 350
+                    %td.small-3
+                      625 × 260 × 350
+                  %tr
+                    %td.small-3.padding-25.text-left
+                      1 день*
+                    %td.small-3
+                      50
+                    %td.small-3
+                      80
+                    %td.small-3
+                      140
+                  %tr
+                    %td.small-3.padding-25.text-left
+                      1 месяц
+                      %span.small
+                        (30 дней)
+                    %td.small-3
+                      1500
+                    %td.small-3
+                      2400
+                    %td.small-3
+                      4200
+                  %tr
+                    %td.small-3.padding-25.text-left
+                      3 месяца
+                      %span.small
+                        (90 дней)
+                    %td.small-3
+                      2700
+                    %td.small-3
+                      5400
+                    %td.small-3
+                      9000
+                  %tr
+                    %td.small-3.padding-25.text-left
+                      6 месяцев
+                      %span.small
+                        (180 дней)
+                    %td.small-3
+                      4500
+                    %td.small-3
+                      7200
+                    %td.small-3
+                      16200
+                  %tr
+                    %td.small-3.padding-25.text-left
+                      12 месяцев
+                      %span.small
+                        (360 дней)
+                    %td.small-3
+                      5400
+                    %td.small-3
+                      9000
+                    %td.small-3
+                      27000
+                  %tr
+                    %td.padding-40.text-left{:colspan => 5}
+                      %a{href: "/clients/36/", target: "_blank"}
+                        %strong Полезные документы
+                  %tr
+                    %td.padding-25.text-left{:colspan => 5}
+                      %p.small
+                        * — Залоговая стоимость ключа индивидуального банковского сейфа — 2000 рублей.
