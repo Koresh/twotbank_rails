@@ -5,9 +5,10 @@
 %section
   .row
     .columns.small-10.small-centered
-      .row.padding-top-120
+      .row.padding-top-70
         .columns.small-12.large-3.text-center{id:"salary"}
           =image_tag "service/0001/01/6e1b02004a4cd0992c09ff4ef06f53cc5599b7e1.png"
+          .padding-top-30.show-for-small
         .columns.small-12.large-9
           %h2
             Перечислите зарплату на счет в 2ТБанке
@@ -19,6 +20,7 @@
       .row.padding-top-70
         .columns.small-12.large-3.text-center{id:"cashless"}
           =image_tag "service/0001/01/35d3ed95a08ecb39931fd1945d4035bde5de29f8.png"
+          .padding-top-30.show-for-small
         .columns.small-12.large-9
           %h2
             Сделайте безналичный перевод
@@ -30,24 +32,26 @@
       .row.padding-top-70
         .columns.small-12.large-3.text-center{id:"in_bank_offices"}
           =image_tag "service/0001/01/7fdd104be92df899c5deedd885f06add882211c6.png"
+          .padding-top-30.show-for-small
         .columns.small-12.large-9
           %h2
             Пополните счет в отделении банка
           %p
             При желании вы всегда можете обратиться к менеджеру 2ТБанка или банка-партнера. Это особенно удобно для пополнения счета на большие суммы. Это безопаснее и зачастую быстрее, чем множество раз отправлять купюры в кэш-ин банкомат.
           %p
-            %a{href: "/clients/55/"}
+            %a{href: "#map"}
               Посмотреть на карте
       .row.padding-top-70
         .columns.small-12.large-3.text-center{id:"cash_in"}
           =image_tag "service/0001/01/63af1802eaefea4ed925d5cf73f3e487a9a19d07.png"
+          .padding-top-30.show-for-small
         .columns.small-12.large-9
           %h2
             Пополните счет через кэш-ин банкомат
           %p
             Вы можете положить деньги на свой счет через банкомат банка-партнера с функцией кэш-ин.
           %p
-            %a{href: "/clients/55/"}
+            %a{href: "#map"}
               Посмотреть на карте
 
 %section.padding-top-70
@@ -60,7 +64,7 @@
           =image_tag "features/0001/01/cash-out.f84e5014b80f.png"
       .row.text-center
         %h2
-          %a{href: "Как снять наличные"}
+          %a{href: "/cash-withdrawal/"}
             Как снять наличные
 
 = render template: "live/blocks/product_feedbacks/credit_transfer"

@@ -1,37 +1,36 @@
-%section.section-bg-gray.padding-70.shadow-inset.product-services-block
-
+%section.section-bg-gray.padding-70.product-services-block
   .row
     .columns.small-12
       %h2.margin-bottom-20
         Пополнить счет, если вы здесь:
-
-  .row
-    .columns.small-10.small-centered
-      .row.text-center
-        .columns.small-4.small-offset-2
-          .small-5.margin-auto
-            %p
-              =image_tag "service/0001/01/1934bc6f275dc450f486b492a93a634d93dfed63.png"
-        .columns.small-3.left
-          .small-5.margin-auto
-            %p
-              =image_tag "service/0001/01/9365848c01a131510fb30dc9ef8e19f7e4382d6e.png"
-
-      .row.text-center
-        .columns.small-4.small-offset-2
-          %h4
-            1. Снимайте наличные бесплатно по всему миру
-          %p.small
-            Три раза каждый месяц вы можете снимать деньги через любые банкоматы в мире.
-            %br
-            %a{href: "#"}
-              Подробнее
-        .columns.small-4.left
-          %h4
-            2. Получайте наличные в отделении банка
-          %p.small
-            При желании вы всегда можете обратиться к менеджеру 2ТБанка или банка-партнера.
-            %br
-            %a{href: "#"}
-              Подробнее
-
+  .row.large-text-centred
+    .columns.small-12.large-centered.large-7
+      .row
+        .columns.large-6.small-12
+          .row
+            .columns.small-2.large-12
+              %p
+                =image_tag "service/0001/01/1934bc6f275dc450f486b492a93a634d93dfed63.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                1. Снимайте наличные бесплатно по всему миру
+              %p.small
+                Три раза каждый месяц вы можете снимать деньги через любые банкоматы в мире.
+              %p.small
+                %a.dashed{href:"#free"}
+                  Подробнее
+        .columns.large-6.small-12
+          .row
+            .columns.small-2.large-12 
+              %p
+                =image_tag "service/0001/01/9365848c01a131510fb30dc9ef8e19f7e4382d6e.png", :style => "width:70px"
+            .columns.small-10.large-12
+              %h4
+                2. Получайте наличные в отделении банка
+              %p.small
+                При желании вы всегда можете обратиться к менеджеру 2ТБанка или банка-партнера.
+              %p.small
+                %a.dashed{href:"#in_bank_offices"}
+                  Подробнее
+              / %p.small.muted
+              /   В этом городе нет офисов для снятия наличных
