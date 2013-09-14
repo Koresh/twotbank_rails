@@ -140,7 +140,7 @@
 
           &:hover
             background: $yelow-color
-            +text-shadow(#fff575 0 -1)
+            +text-shadow(#fff575 0 -1px)
             border-top:
               color: #fff89c
             color: $topbar-link-color
@@ -170,7 +170,14 @@
                 color: $topbar-link-color transparent transparent transparent
 
 
-      .dropdown
+    .dropdown li a
+      background: $gray-color
+      color: $topbar-dropdown-link-color
+
+      &:hover
+        background: #ababab
+        color: #fff
+
 
 
     .has-dropdown > a
@@ -192,10 +199,14 @@
             color: $topbar-link-color
 
     .top-bar-main-menu
-      ul li.active > a
-        background: $business-blue
-        color: $yelow-color
-        +text-shadow(#30a6e4 0 -1)
+      ul li
+        &.active > a
+          background: $business-blue
+          color: $yelow-color
+          +text-shadow(#30a6e4 0 -1)
+
+        & > a:hover
+          background: $business-blue
 
 
 
@@ -271,14 +282,16 @@
           background: $yelow-color
           color: $topbar-link-color
 
-      .top-bar-main-menu ul li.active > a
-        background: #f7f7f7
-        +text-shadow(none)
-        color: $blue-color
+      .top-bar-main-menu 
+        ul li.active > a
+          background: #f7f7f7
+          +text-shadow(none)
+          color: $blue-color
 
-        &:hover
-          background: $yelow-color
-          color: $topbar-link-color
+          &:hover
+            background: $yelow-color
+            color: $topbar-link-color
+
 
       .has-dropdown > a
         &, &:hover
