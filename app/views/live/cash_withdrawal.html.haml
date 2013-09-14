@@ -2,6 +2,22 @@
 
 = render template: "live/blocks/product_services/cash_withdrawal"
 
+%section.section-bg-blue.shadow-inset-top.padding-40
+  .row
+    .columns.small-12.map.mainPage.map-contacts
+      .format-choice-block
+        %header
+          %ul.text-center
+            %li
+              %a{href:"#"} Все офисы
+            %li
+              \/
+            %li
+              %a{href:"#"} Только офисы банка
+            %li
+      .sub-border-top.columns.small-11.small-centered.margin-bottom-30
+      = render template: "shared/map"
+
 %section
   .row
     .columns.small-10.small-centered

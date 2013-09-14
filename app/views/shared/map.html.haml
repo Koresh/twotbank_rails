@@ -1,3 +1,16 @@
+.Img
+  #map.google-map{style: "position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0); height: 242px;"}
+  .searchBlock
+    %p
+      Введите название улицы, рядом с&nbsp;которой вы ищете офис:
+    .textfield
+      %input#searchAdress.example.search-input{type:"text"}
+    .btn.text-right
+      %span
+        %input#searchOnMap.button.small{type: "submit", value:"Найти"}
+  %a#map-box-resize.btn1{href: "#", title: "Развернуть/Свернуть"}
+.sub-border-bottom.columns.small-11.small-centered
+
 :javascript
   var mapConfig = {
     geoIpCityId: 697,
@@ -8,30 +21,5 @@
       lng: 37.617761
     }
   }
-%section.section-bg-blue.shadow-inset-top.padding-40
-  .row
-    .columns.small-12.map.mainPage.map-contacts
-      .sub-border-top.columns.small-11.small-centered
-      %form.selectBlock1.custom.text-center.columns.small-5.small-centered
-        %span#office-string-cnt
-          2 офиса в 
-        %select#change-city-map.medium.text-left
-          %option{value: "957", lat: "55.755773", lng: "37.617761", selected: "selected"} Москве
-          %option{value: "973", lat: "59.938806", lng: "30.314278"} Санкт-Петербурге
-          %option{value: "988", lat: "45.039080", lng: "39.017231"} Краснодаре
-          %option{value: "989", lat: "44.721820", lng: "37.766536"} Новороссийске
-
-      .Img
-        #map.google-map{style: "position: relative; background-color: rgb(229, 227, 223); overflow: hidden; -webkit-transform: translateZ(0); height: 242px;"}
-        .searchBlock
-          %p
-            Введите название улицы, рядом с&nbsp;которой вы ищете офис:
-          .textfield
-            %input#searchAdress.example.search-input{type:"text"}
-          .btn.text-right
-            %span
-              %input#searchOnMap.button.small{type: "submit", value:"Найти"}
-        %a#map-box-resize.btn1{href: "#", title: "Развернуть/Свернуть"}
-      .sub-border-bottom.columns.small-11.small-centered
 
 %script{src: "https://maps-api-ssl.google.com/maps/api/js?sensor=false&language=ru", type: "text/javascript"}

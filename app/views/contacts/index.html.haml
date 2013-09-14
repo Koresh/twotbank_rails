@@ -84,8 +84,19 @@
               вс.
               %strong 10:00-15:00
 
-  
-= render template: "shared/map"
+%section.section-bg-blue.shadow-inset-top.padding-40
+  .row
+    .columns.small-12.map.mainPage.map-contacts
+      .sub-border-top.columns.small-11.small-centered
+      %form.selectBlock1.custom.text-center.columns.small-5.small-centered
+        %span#office-string-cnt
+          2 офиса в 
+        %select#change-city-map.medium.text-left
+          %option{value: "957", lat: "55.755773", lng: "37.617761", selected: "selected"} Москве
+          %option{value: "973", lat: "59.938806", lng: "30.314278"} Санкт-Петербурге
+          %option{value: "988", lat: "45.039080", lng: "39.017231"} Краснодаре
+          %option{value: "989", lat: "44.721820", lng: "37.766536"} Новороссийске  
+      = render template: "shared/map"
 
 
 %section.section-bg-gray.shadow-inset-top.padding-50
