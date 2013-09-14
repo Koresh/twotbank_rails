@@ -141,8 +141,8 @@ class TBank.Layout extends Backbone.View
       topMargin ?= 0
 
       headHeight =
-      if $('.head .tBlock').css('position') is 'fixed'
-        $('.head .tBlock').height()
+      if $('.contain-to-grid').css('position') is 'fixed'
+        $('.contain-to-grid').height()
       else
         0
 
