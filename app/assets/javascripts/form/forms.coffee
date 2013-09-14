@@ -617,6 +617,7 @@ class TBank.StartBusinessFrom extends Backbone.Form
   schema:
     baf_region:
       validators: ["required"]
+      defaults: 'Москва'
     baf_city:
       validators: ["country"]
     baf_comp_name:

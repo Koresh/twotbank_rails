@@ -602,18 +602,12 @@ class TBank.StartBusiness extends TBank.StepView
   afterRender: ->
     @$baf_region = $("#baf_region")
 
-    @$baf_region.trigger "change"
-
     @anotherCity()
-
-    #console.log @disabledHash
 
 
   schetForBusiness: (e) ->
 
     $this = $(e.target)
-
-    #console.log $this.val()
 
     if $this.val() is "yes"
       $("#schet-dlya-biznesa-field").hide()
@@ -622,7 +616,7 @@ class TBank.StartBusiness extends TBank.StepView
 
 
   anotherCity: ->
-    #console.log @$baf_region.val()
+    Foundation.libs.forms.refresh_custom_select(@$baf_region, true)
     if @$baf_region.val() is "Другой"
       $("#baf_cityfield").show()
       @disabledHash = _.uniq( _.without @disabledHash, "baf_city" )
