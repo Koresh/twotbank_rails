@@ -10,6 +10,7 @@
           .columns.small-12.text-center
             %h1 Анкета
 
+
         .progress-bar-block
           .row
             .columns.small-12
@@ -88,12 +89,13 @@
 
             .row
               .columns.small-12.large-6
-                #schet-dlya-biznesa-field.input-field
-                  %label.input-checkbox-list{for: "schet-dlya-biznesa"}
-                    %input#schet-dlya-biznesa{type: "checkbox", disabled: "disabled", name: "baf_product_schet", checked: "ckecked"}
-                    .left
-                      %h6.subheader РАСЧЕТНЫЙ СЧЕТ
-                      %p Бесплатное открытие и обслуживание, без комиссий за входящие и исходящие платежи в рублях.
+                - unless @is_business
+                  #schet-dlya-biznesa-field.input-field
+                    %label.input-checkbox-list{for: "schet-dlya-biznesa"}
+                      %input#schet-dlya-biznesa{type: "checkbox", disabled: "disabled", name: "baf_product_schet", checked: "ckecked"}
+                      .left
+                        %h6.subheader РАСЧЕТНЫЙ СЧЕТ
+                        %p Бесплатное открытие и обслуживание, без комиссий за входящие и исходящие платежи в рублях.
 
                 .input-field
                   %label.input-checkbox-list{for: "baf_product_zp"}

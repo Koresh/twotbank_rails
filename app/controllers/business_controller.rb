@@ -27,6 +27,7 @@ class BusinessController < ApplicationController
   end
 
   def schet_dlya_biznesa
+    @is_business = true
   end
 
   def sms
