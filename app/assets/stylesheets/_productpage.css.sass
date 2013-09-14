@@ -143,16 +143,22 @@
 
 // Feedback block
 .product-feedbacks-block
-  padding: emCalc(20) 0 emCalc(20)
+  // padding: emCalc(20) 0 emCalc(20)
 
   .feeds-block
     margin:
       bottom: emCalc(20)
 
-  .contacts-block
-    h6
-      margin:
-        bottom: 10px
+.contacts-block
+  padding: emCalc(20) 0 emCalc(40)
+
+  h2.phone
+    font-size: emCalc(22)
+
+  h6
+    margin:
+      bottom: 0
+    font-size: emCalc(14)
 
 .feeds-block
   border-bottom:
@@ -171,6 +177,10 @@
   .icon
     margin:
       bottom: emCalc(-10)
+
+.icon-cat-feedback
+  margin:
+    bottom: emCalc(-10)
 
 .addthis_default_style
   margin:
@@ -431,21 +441,18 @@
 
 
   // Feedback block
-  .product-feedbacks-block
-    .contacts-block
-      h3
-        margin:
-          top: emCalc(10)
+  //.product-feedbacks-block
+  .contacts-block
+    h6
+      margin:
+        bottom: 0
+        top: 0
+      font-size: emCalc(16)
 
-      h6
-        margin:
-          bottom: 0
-          top: 10px
-
-      h2.phone
-        margin:
-          top: emCalc(-8)
-        font-size: emCalc(26)
+    h2.phone
+      margin:
+        bottom: 0
+      font-size: emCalc(22)
 
   // Insured block
   .product-insured-block
@@ -459,14 +466,9 @@
   .large-text-centred
     text-align: center
 
-
-@media #{$medium}
-  .product-feedbacks-block
+  @media #{$medium}
     .contacts-block
       h2.phone
-        margin:
-          top: emCalc(-4)
-        font-size: emCalc(30)
+        font-size: emCalc(26)
       h6
-        margin:
-          top: 2px
+        font-size: emCalc(16)
