@@ -18,7 +18,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem "haml-rails"
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 gem 'compass-rails', github: 'Compass/compass-rails', branch: 'rails4-hack'
 gem 'zurb-foundation', github: 'zurb/foundation', branch: 'd68a860c89cfe29f8f9970b99dd8fc7f2ede917e'
