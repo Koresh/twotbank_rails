@@ -148,7 +148,7 @@
             %h2 Контактная информация
             %fieldset
               .row
-                .columns.small-12.large-6
+                .columns.small-12.large-6.reg-fieldset
                   %p Адрес прописки:
                   .row
                     .input-field.columns.small-12.large-6
@@ -181,8 +181,13 @@
                     %input#maf_register_date{name:"maf_register_date", type: "text", placeholder: "09.05.2000", tabindex: "1"}
                     %label Дата регистрации
 
-                .columns.small-12.large-6
+                .columns.small-12.large-6.loc-fieldset
                   %p Адрес проживания:
+                  .row
+                    .input-field.input-accept.columns.small-12
+                      %label{for: "maf_same_address"}
+                        %input#maf_same_address{type: "checkbox", name: "maf_same_address"}
+                        Совпадает с адресом прописки
                   .row
                     .input-field.columns.small-12.large-6
                       %input#maf_loc_index{name:"maf_loc_index", type: "text", placeholder: "123456", tabindex: "1"}
