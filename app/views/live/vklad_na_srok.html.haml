@@ -1,6 +1,316 @@
 = render template: "live/blocks/product_banner/vklad_na_srok"
 
-= render template: "live/blocks/under_banner/index"
+%section.section-bg-gray.padding-top-20
+  .row.calculator
+    .columns.small-12.large-centered.large-11
+      .row
+        .columns.large-12
+          %h1.text-center
+            Калькулятор вклада
+      .row.section-chars-block.padding-0
+        .columns.large-7.small-12.margin-bottom-50
+          %form.custom
+            .padding-20.border-bottom
+              %h2
+                Я вкладываю
+                %select#calc_select_currency.medium
+                  %option{value:"rur"}
+                    рубли
+                  %option{value:"usd"}
+                    доллары
+                  %option{value:"eur"}
+                    евро
+                %br
+                в размере
+                %strong#calc_summ0
+              .sliderBlock
+                #slider1
+                  .progress-bar-block
+                    .row
+                      .columns.small-12
+                        .nice.round.progress.small-12
+                          %span.meter{style: "width: 9%"}
+                            %i.bulet.icon-switcher-bullet
+                    %ul.row.text-center.progress-steps
+                      %li.columns.small-3.item.item-1.active
+                        10 000 RUR
+                      %li.columns.small-3.item.item-2
+                        200 000 RUR
+                      %li.columns.small-3.item.item-3
+                        1 000 000 RUR
+                      %li.columns.small-3.item.item-4
+                        10 000 000 RUR
+                  .summ_slider.rur{hidden:""}
+                    %span.small{style:"width:121px"} 10 000 RUR
+                    %span.small{style:"width:146px"} 200 000 RUR
+                    %span.small{style:"width:108px"} 1 000 000 RUR
+                    %span.small{style:"width:auto"} 10 000 000 RUR
+                  .summ_slider.usd{hidden:""}
+                    %span.small{style:"width:121px"} 500 USD
+                    %span.small{style:"width:146px"} 10 000 USD
+                    %span.small{style:"width:108px"} 50 000 USD
+                    %span.small{style:"width:auto"} 400 000 USD
+                  .summ_slider.eur{hidden:""}
+                    %span.small{style:"width:121px"} 500 EUR
+                    %span.small{style:"width:146px"} 10 000 EUR
+                    %span.small{style:"width:108px"} 50 000 EUR
+                    %span.small{style:"width:auto"} 400 000 EUR
+            .padding-20.border-bottom
+              %h2
+                На срок 
+                %span#calc_month0
+                мес. под 
+                %span.blue#calc_percent0
+                  \%
+              .sliderBlock
+                #slider2
+                  .progress-bar-block
+                    .row
+                      .columns.small-12
+                        .nice.round.progress.small-12
+                          %span.meter{style: "width: 9%"}
+                            %i.bulet.icon-switcher-bullet
+                    %ul.row.text-center.progress-steps
+                      %li.columns.small-3.item.item-1.active
+                        2 мес.
+                      %li.columns.small-3.item.item-2
+                        4 мес.
+                      %li.columns.small-3.item.item-3
+                        6 мес.
+                      %li.columns.small-3.item.item-4
+                        12 мес.
+            .padding-20.border-bottom
+              %h2
+                Ежемесячно пополняю
+                %br
+                на сумму
+                %strong#calc_addsumm0
+              .sliderBlock
+                #slider3
+                  .progress-bar-block
+                    .row
+                      .columns.small-12
+                        .nice.round.progress.small-12
+                          %span.meter{style: "width: 9%"}
+                            %i.bulet.icon-switcher-bullet
+                    %ul.row.text-center.progress-steps
+                      %li.columns.small-3.item.item-1.active
+                        2 мес.
+                      %li.columns.small-3.item.item-2
+                        4 мес.
+                      %li.columns.small-3.item.item-3
+                        6 мес.
+                      %li.columns.small-3.item.item-4
+                        12 мес.
+                  .addsumm_slider.rur{hidden:""}
+                    %span.small{style:"width:108px"} 0 RUR
+                    %span.small{style:"width:133px"} 20 000 RUR
+                    %span.small{style:"width:143px"} 60 000 RUR
+                    %span.small{style:"width:auto"} 90 000 RUR
+
+                  .addsumm_slider.usd{hidden:""}
+                    %span.small{style:"width:108px"} 0 USD
+                    %span.small{style:"width:135px"} 1 000 USD
+                    %span.small{style:"width:145px"} 2 000 USD
+                    %span.small{style:"width:auto"} 3 000 USD
+
+                  .addsumm_slider.eur{hidden:""}
+                    %span.small{style:"width:108px"} 0 EUR
+                    %span.small{style:"width:135px"} 1 000 EUR
+                    %span.small{style:"width:145px"} 2 000 EUR
+                    %span.small{style:"width:auto"} 3 000 EUR
+            .padding-top-20
+              %h2
+                %span.radio-block
+                  Хочу:
+                %span.padding-side-20.radio-block
+                  %label{for:"hold_percent_y"}
+                    накапливать проценты
+                    %input#hold_percent_y{type:"radio",name:"calc_hold_percent",checked:"checked"}
+                  %label{for:"calc_hold_percent"}
+                    снимать ежемесячно
+                    %input#calc_hold_percent{type:"radio",name:"calc_hold_percent"}
+
+        .columns.large-5.small-12.margin-bottom-50.text-center.padding-20
+          %h2
+            Вы получаете за 
+            %strong.blue#calc_total_month
+          .wallet
+            .wallet_t
+              %h2.receipt_t#calc_total_sum
+            .wallet_c
+              #calc_property
+            .wallet_b
+              .receipt_b#deposit_receipt_b
+                %p
+                  %span.muted.small
+                    Вклад:
+                  %strong#calc_total_vklad
+                %p
+                  %span.small
+                    %span.muted
+                      За
+                    %span#calc_total_month_2
+                    %span.muted
+                      начислено процентов:
+                  %strong#calc_total_percent
+
+:javascript
+  depositCalculatorSummRates = {
+    'rur': [
+      10000,
+      25000,
+      50000,
+      75000,
+      100000,
+      200000,
+      300000,
+      400000,
+      500000,
+      700000,
+      1000000,
+      2000000,
+      3000000,
+      5000000,
+      7000000,
+      10000000
+    ],
+    'usd': [
+      500,
+      1000,
+      2500,
+      5000,
+      7500,
+      10000,
+      15000,
+      20000,
+      30000,
+      40000,
+      50000,
+      80000,
+      100000,
+      200000,
+      300000,
+      400000
+    ],
+    'eur': [
+      500,
+      1000,
+      2500,
+      5000,
+      7500,
+      10000,
+      15000,
+      20000,
+      30000,
+      40000,
+      50000,
+      80000,
+      100000,
+      200000,
+      300000,
+      400000
+    ]
+  };
+  depositCalculatorPercents = {
+    'rur': [
+      '10.20',
+      '10.30',
+      '10.40',
+      '10.50',
+      '10.60',
+      '10.70',
+      '10.80'
+    ],
+    'usd': [
+      '4,57',
+      '4,60',
+      '4,63',
+      '4,67',
+      '4,70',
+      '4,80',
+      '4,90'
+    ],
+    'eur': [
+      '4,20',
+      '4,25',
+      '4,30',
+      '4,35',
+      '4,40',
+      '4,50',
+      '4,60'
+    ]
+  };
+  depositMonths = [
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    12
+  ];
+  depositCalculatorAddsummRates = {
+    'rur': [
+      0,
+      10000,
+      20000,
+      30000,
+      40000,
+      50000,
+      60000,
+      70000,
+      80000,
+      90000,
+      100000
+    ],
+    'usd': [
+      0,
+      300,
+      600,
+      1000,
+      1300,
+      1600,
+      2000,
+      2300,
+      2600,
+      3000,
+      3300
+    ],
+    'eur': [
+      0,
+      300,
+      600,
+      1000,
+      1300,
+      1600,
+      2000,
+      2300,
+      2600,
+      3000,
+      3300
+    ]
+  };
+  depositCalculatorProperties = {
+    'rur': {},
+    'usd': {},
+    'eur': {}
+  };
+  depositCalculatorProperties['rur']['ipad'] = [25000, 65000, '/images/media/deposit/0001/01/b3c78e148556bd3bdef365a10ccfb83c386942ce.png', [  'айпад',  'айпада',  'айпадов'  ]];
+  depositCalculatorProperties['rur']['imac'] = [80000, 450000, '/images/media/deposit/0001/01/e615bb606428d39879f6b6f3d70eb5ae05b3de3d.png', [  'аймак',  'аймака',  'аймаков'  ]];
+  depositCalculatorProperties['rur']['car'] = [750000, 2000000, '/images/media/deposit/0001/01/352bec1672a6901ca1c215b067346f7e19279c0a.png', [  'смарт',  'смарта',  'смартов'  ]];
+  depositCalculatorProperties['rur']['yacht'] = [2500000, 5000000, '/images/media/deposit/0001/01/8051f1153417fc0f52bd6be8179c05dbc49375b0.png', [  'яхта',  'яхты',  'яхт'  ]];
+  depositCalculatorProperties['rur']['house'] = [7000000, 20000000, '/images/media/deposit/0001/01/5d568a6a363dd4afcc0df16f3e61e151ff45fa38.png', [  'дом',  'дома',  'домов'  ]];
+  depositCalculatorProperties['usd']['ipad'] = [700, 2030, '/images/media/deposit/0001/01/b3c78e148556bd3bdef365a10ccfb83c386942ce.png', [  'айпад',  'айпада',  'айпадов'  ]];
+  depositCalculatorProperties['usd']['imac'] = [2500, 14060, '/images/media/deposit/0001/01/e615bb606428d39879f6b6f3d70eb5ae05b3de3d.png', [  'аймак',  'аймака',  'аймаков'  ]];
+  depositCalculatorProperties['usd']['car'] = [23440, 62500, '/images/media/deposit/0001/01/352bec1672a6901ca1c215b067346f7e19279c0a.png', [  'смарт',  'смарта',  'смартов'  ]];
+  depositCalculatorProperties['usd']['yacht'] = [78120, 156250, '/images/media/deposit/0001/01/8051f1153417fc0f52bd6be8179c05dbc49375b0.png', [  'яхта',  'яхты',  'яхт'  ]];
+  depositCalculatorProperties['usd']['house'] = [218750, 625000, '/images/media/deposit/0001/01/5d568a6a363dd4afcc0df16f3e61e151ff45fa38.png', [  'дом',  'дома',  'домов'  ]];
+  depositCalculatorProperties['eur']['ipad'] = [610, 1580, '/images/media/deposit/0001/01/b3c78e148556bd3bdef365a10ccfb83c386942ce.png', [  'айпад',  'айпада',  'айпадов'  ]];
+  depositCalculatorProperties['eur']['imac'] = [1950, 10970, '/images/media/deposit/0001/01/e615bb606428d39879f6b6f3d70eb5ae05b3de3d.png', [  'аймак',  'аймака',  'аймаков'  ]];
+  depositCalculatorProperties['eur']['car'] = [18300, 48780, '/images/media/deposit/0001/01/352bec1672a6901ca1c215b067346f7e19279c0a.png', [  'смарт',  'смарта',  'смартов'  ]];
+  depositCalculatorProperties['eur']['yacht'] = [60980, 121950, '/images/media/deposit/0001/01/8051f1153417fc0f52bd6be8179c05dbc49375b0.png', [  'яхта',  'яхты',  'яхт'  ]];
+  depositCalculatorProperties['eur']['house'] = [170730, 487800, '/images/media/deposit/0001/01/5d568a6a363dd4afcc0df16f3e61e151ff45fa38.png', [  'дом',  'дома',  'домов'  ]];
 
 = render template: "live/blocks/product_information/vklad_na_srok"
 

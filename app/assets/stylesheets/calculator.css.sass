@@ -1,0 +1,73 @@
+// Place all the styles related to the o_banke controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.wallet_t
+  background: url("https://2tbank.ru/static/images/wallet_t.8b79f3def667.png") no-repeat 50% 0%
+  height: 63px
+  position: relative
+
+.receipt_t
+  font-size: 36px
+  background: url("https://2tbank.ru/static/images/receipt_t.fdd0fc4f4043.png") no-repeat 50% 0%
+  padding-top: 10px
+  margin: 0
+  height: 63px
+  position: absolute
+  width: 280px
+  left: 30px
+
+.wallet_c
+  background: url("https://2tbank.ru/static/images/wallet_c.447c35f8577c.png") no-repeat 50% 0%
+  height: 246px
+  padding-top: 20px
+  position: relative
+
+  .Img
+    width: 250px
+    padding-left: 30px
+    height: 160px
+
+.wallet_b
+  position: relative
+  overflow: hidden
+  height: 160px
+  width: 280px
+  left: 30px
+
+.receipt_b
+  background: url("https://2tbank.ru/static/images/receipt_b.34df70072cd7.png") no-repeat 50% 0%
+  height: 160px
+  padding-top: 40px
+  position: absolute
+  width: 280px
+
+  p
+    margin-bottom: 3px
+
+.radio-block
+  +inline-block
+  vertical-align: top
+
+.calculator label
+  color: #000
+
+.calculator .progress-bar-block
+  margin:
+    top: 20px
+    bottom: 0
+
+.calculator form.custom
+  width: 450px
+
+.calculator form.custom .custom.dropdown
+  +inline-block
+  height: emCalc(26)
+
+  .selector
+    height: emCalc(26)
+
+  .current,a
+    line-height: emCalc(22)
+
+  &.medium
+    max-width: 160px

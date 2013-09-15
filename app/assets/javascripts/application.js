@@ -29,6 +29,7 @@
 //= require tbank.chars
 //= require infobubble-compiled
 //= require tbank.contacts
+//= require tbank.depositCalculator
 //= require tbank.mapObjects
 //= require_tree ./widgets
 //= require placeholders
