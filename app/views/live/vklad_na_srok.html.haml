@@ -1,15 +1,15 @@
 = render template: "live/blocks/product_banner/vklad_na_srok"
 
-%section.section-bg-gray.padding-top-20
+%section.section-bg-gray
   .row.calculator
-    .columns.small-12.large-centered.large-11
+    .columns.small-12.large-centered.large-11.padding-top-20
       .row
         .columns.large-12
           %h1.text-center
             Калькулятор вклада
       .row.section-chars-block.padding-0
         .columns.large-7.small-12.margin-bottom-50
-          %form.custom
+          %form.custom.columns.small-centered.large-uncentered
             .padding-20.border-bottom
               %h2
                 Я вкладываю
@@ -124,28 +124,29 @@
                     %input#calc_hold_percent{type:"radio",name:"calc_hold_percent"}
 
         .columns.large-5.small-12.margin-bottom-50.text-center.padding-20
-          %h2
-            Вы получаете за 
-            %strong.blue#calc_total_month
-          .wallet
-            .wallet_t
-              %h2.receipt_t#calc_total_sum
-            .wallet_c
-              #calc_property
-            .wallet_b
-              .receipt_b#deposit_receipt_b
-                %p
-                  %span.muted.small
-                    Вклад:
-                  %strong#calc_total_vklad
-                %p
-                  %span.small
-                    %span.muted
-                      За
-                    %span#calc_total_month_2
-                    %span.muted
-                      начислено процентов:
-                  %strong#calc_total_percent
+          .wallet-wrapper.columns.small-centered.large-uncentered
+            %h2
+              Вы получаете за 
+              %strong.blue#calc_total_month
+            .wallet
+              .wallet_t
+                %h2.receipt_t#calc_total_sum
+              .wallet_c
+                #calc_property
+              .wallet_b
+                .receipt_b#deposit_receipt_b
+                  %p
+                    %span.muted.small
+                      Вклад:
+                    %strong#calc_total_vklad
+                  %p
+                    %span.small
+                      %span.muted
+                        За
+                      %span#calc_total_month_2
+                      %span.muted
+                        начислено процентов:
+                    %strong#calc_total_percent
 
 :javascript
   depositCalculatorSummRates = {
