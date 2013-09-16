@@ -1,0 +1,61 @@
+.row.questionnaire-delivery-type-change-block.section-bg-gray.padding-70.no-shadow
+  .columns.small-12
+    %h2.text-center Выбор способа получения карты
+    .row
+      .columns.small-4.text-right.small-offset-2.inline-fields
+        %label{for: "maf_way_to_get_courier"}
+          %input#maf_way_to_get_courier{type: "radio", name: "maf_way_to_get", value: "courier", data:{block: ".questionnaire-delivery-courier-block"}}
+          Курьером 
+      .columns.small-4.left.text-left.inline-fields
+        %label{for: "maf_way_to_get_office"}
+          %input#maf_way_to_get_office{type: "radio", name: "maf_way_to_get", value: "office", checked: "checked", data:{block: ".questionnaire-delivery-type-change"}}
+          В офисе
+
+    .row.questionnaire-delivery-courier-block{style: "display: none"}
+      .columns.small-3.inline-fields
+        %label{for: "maf_delivery_living"}
+          %input#maf_delivery_living{type: "radio", name: "maf_delivery_type", value: "living", checked: "checked"}
+          На адрес проживания
+      .columns.small-3.inline-fields
+        %label{for: "maf_delivery_register"}
+          %input#maf_delivery_register{type: "radio", name: "maf_delivery_type", value: "register",}
+          На адрес прописки
+      .columns.small-5.input-field.left
+        %input#maf_delivery_address{type: "text", name: "maf_delivery_address", tabindex: "1"}
+        %label адрес доставки
+
+    .row.questionnaire-delivery-type-change
+      %ul.columns.small-12.text-center
+        %li
+          %a.dashed.active{href: "#", data:{index: "0"}}Москва 
+        %li
+          %a.dashed{href: "#", data:{index: "1"}}Санкт-Петербург 
+        %li
+          %a.dashed{href: "#", data:{index: "2"}}Краснодар 
+        %li
+          %a.dashed{href: "#", data:{index: "3"}}Новороссийск
+      .columns.small-11.small-offset-1.left.large-9.large-offset-3.questionnaire-delivery-type-block
+        .item.active
+          .inline-fields
+            %label{for: "maf_city_office_957"}
+              %input#maf_city_office_957{type: "radio", name: "maf_city_office", value: "119334, Москва, Ленинский проспект, 30", checked: "checked"}
+              119334, Москва, Ленинский проспект, 30
+          .inline-fields
+            %label{for: "maf_city_office_957"}
+              %input#maf_city_office_957{type: "radio", name: "maf_city_office", value: "123610, Москва, Краснопресненская набережная, 12"}
+              123610, Москва, Краснопресненская набережная, 12
+        .item
+          .inline-fields
+            %label{for: "maf_city_office_973"}
+              %input#maf_city_office_973{type: "radio", name: "maf_city_office", value: "191186, Санкт-Петербург, Аптекарский пер., 4, помещение 14Н, лит. А"}
+              191186, Санкт-Петербург, Аптекарский пер., 4, помещение 14Н, лит. А
+        .item
+          .inline-fields
+            %label{for: "maf_city_office_988"}
+              %input#maf_city_office_988{type: "radio", name: "maf_city_office", value: "350000, Краснодар, ул. Красноармейская/Гоголя, 43/68"}
+              350000, Краснодар, ул. Красноармейская/Гоголя, 43/68
+        .item
+          .inline-fields
+            %label{for: "maf_city_office_989"}
+              %input#maf_city_office_989{type: "radio", name: "maf_city_office", value: "353900, Новороссийск, ул. Советов, 7"}
+              353900, Новороссийск, ул. Советов, 7

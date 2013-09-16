@@ -1,8 +1,8 @@
-%section.section-bg-yelow.product-questionnaire-block
+%section.section-bg-yelow.product-questionnaire-block.shadow-inset
   .row
     .columns.small-12
       %h1.text-center
-        Как получить кредит
+        Как стать клиентом Банка
 
       %ul.product-questionnaire-infografic
         %li
@@ -11,7 +11,7 @@
           %p
             %strong
               Заполняйте анкету
-            на сайте. Это буквально 4 минуты! (потребуется паспорт)
+            на сайте. Это буквально 10 (десять!) минут.
         %li.arrow.show-for-medium-up
           %i.icon.icon-what-arrow
         %li
@@ -26,7 +26,8 @@
           %i.icon.icon-what-document
           %i.icon.icon-small.icon-what-document-small
           %p
-            %strong Получите
-            свой договор и карту!
+            А представитель Банка
+            %strong бесплатно
+            доставит вам договор и карту. 
 
-  = render template: "live/blocks/product_questionnaire/anket_type/credit", locals: {teaser: "и получите кредит", anket_title: "Заполните заявку и получите кредит"}
+  = render template: "live/blocks/product_questionnaire/anket_type/deposite", locals: {teaser: "и станьте клиентом Банка", anket_title: "Заполните анкету и откройте счет прямо сейчас"}

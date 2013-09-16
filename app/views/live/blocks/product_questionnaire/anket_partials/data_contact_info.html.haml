@@ -1,0 +1,74 @@
+.columns.small-12
+  %h2 Контактная информация
+  %fieldset
+    .row
+      .columns.small-12.large-6.reg-fieldset
+        %p Адрес прописки:
+        .row
+          .input-field.columns.small-12.large-6
+            %input#maf_reg_index{name:"maf_reg_index", type: "text", placeholder: "123456", tabindex: "1"}
+            %label Индекс
+          .input-field.input-accept.columns.small-12.large-6
+            %label{for: "maf_reg_index_forgot"}
+              %input#maf_reg_index_forgot{name:"maf_reg_index_forgot", type: "checkbox", name: "maf_reg_index_forgot"}
+              Не помню 
+        .input-field
+          %input#maf_reg_region{name:"maf_reg_region", type: "text", placeholder: "Москва", tabindex: "1"}
+          %label Регион, область, край
+        .input-field
+          %input#maf_reg_city{name:"maf_reg_city", type: "text", placeholder: "Зеленоград", tabindex: "1"}
+          %label город, район
+        .input-field
+          %input#maf_reg_town{name:"maf_reg_town", type: "text", placeholder: "Терехово", tabindex: "1"}
+          %label Населенный пункт
+        .input-field
+          %input#maf_reg_street{name:"maf_reg_street", type: "text", placeholder: "Юных Ленинцев", tabindex: "1"}
+          %label Улица
+        .row
+          .input-field.columns.small-12.large-6
+            %input#maf_reg_house{name:"maf_reg_house", type: "text", placeholder: "33", tabindex: "1"}
+            %label Дом/корпус/строение
+          .input-field.columns.small-12.large-6
+            %input#maf_reg_flat{name:"maf_reg_flat", type: "text", placeholder: "123", tabindex: "1"}
+            %label Квартира
+        .input-field
+          %input#maf_register_date{name:"maf_register_date", type: "text", placeholder: "09.05.2000", tabindex: "1"}
+          %label Дата регистрации
+
+      .columns.small-12.large-6.loc-fieldset
+        %p Адрес проживания:
+        .row
+          .input-field.input-accept.columns.small-12
+            %label{for: "maf_same_address"}
+              %input#maf_same_address{type: "checkbox", name: "maf_same_address"}
+              Совпадает с адресом прописки
+        .row
+          .input-field.columns.small-12.large-6
+            %input#maf_loc_index{name:"maf_loc_index", type: "text", placeholder: "123456", tabindex: "1"}
+            %label Индекс
+          .input-field.input-accept.columns.small-12.large-6
+            %label{for: "maf_loc_index_forgot"}
+              %input#maf_loc_index_forgot{name:"maf_loc_index_forgot", type: "checkbox", name: "maf_loc_index_forgot"}
+              Не помню 
+        .input-field
+          %input#maf_loc_region{name:"maf_loc_region", type: "text", placeholder: "Москва", tabindex: "1"}
+          %label Регион, область, край
+        .input-field
+          %input#maf_loc_city{name:"maf_loc_city", type: "text", placeholder: "Зеленоград", tabindex: "1"}
+          %label город, район
+        .input-field
+          %input#maf_loc_town{name:"maf_loc_town", type: "text", placeholder: "Терехово", tabindex: "1"}
+          %label Населенный пункт
+        .input-field
+          %input#maf_loc_street{name:"maf_loc_street", type: "text", placeholder: "Юных Ленинцев", tabindex: "1"}
+          %label Улица
+        .row
+          .input-field.columns.small-12.large-6
+            %input#maf_loc_house{name:"maf_loc_house", type: "text", placeholder: "33", tabindex: "1"}
+            %label Дом/корпус/строение
+          .input-field.columns.small-12.large-6
+            %input#maf_loc_flat{name:"maf_loc_flat", type: "text", placeholder: "123", tabindex: "1"}
+            %label Квартира
+
+
+    = render template: "live/blocks/product_questionnaire/anket_partials/contact_phones/#{phones}"

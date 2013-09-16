@@ -1,0 +1,61 @@
+.columns.small-12
+  %h2 Дополнительная информация
+  %fieldset
+    = render template: "live/blocks/product_questionnaire/anket_partials/data_delivery_type"
+
+    .row
+      .columns.small-12.large-5
+        .input-field
+          %input#maf_codeword{name: "maf_codeword", type: "text", placeholder: "Пример: Байкал", tabindex: "4"}
+          %label Кодовое слово для идентификации 
+        .input-field
+          %input#maf_check_code{name: "maf_check_code", type: "text", placeholder: "12345", tabindex: "7"}
+          %label
+            Код, присланный по sms
+            %span#maf_check_code_error.right.error{style: "display: none;"} Код введен неверно
+
+        - if promo
+          .input-field
+            %input#maf_promo_code{name: "maf_promo_code", type: "text", tabindex: "7"}
+            %label Промо-код
+
+      .columns.small-12.large-7.input-field
+        %ul.inline-fields.inline-list
+          %li
+            %strong SMS-информирование
+          %li
+            %label{for: "maf_is_sms_yes"}
+              %input#maf_is_sms_yes{type: "radio", name: "maf_is_sms", value: "yes", checked: "checked"}
+              Да 
+          %li
+            %label{for: "maf_is_sms_no"}
+              %input#maf_is_sms_no{type: "radio", name: "maf_is_sms", value: "no"}
+              Нет
+
+        - if currency
+          %ul.inline-fields.inline-list
+            %li
+              %strong Валюта счета
+            %li
+              %label{for: "maf_currency_rur"}
+                %input#maf_currency_rur{type: "checkbox", name: "maf_currency_rur", value: "yes", checked: "checked"}
+                Рубли 
+            %li
+              %label{for: "maf_currency_usd"}
+                %input#maf_currency_usd{type: "checkbox", name: "maf_currency_usd", value: "yes"}
+                Доллары 
+            %li
+              %label{for: "maf_currency_eur"}
+                %input#maf_currency_eur{type: "checkbox", name: "maf_currency_eur", value: "yes"}
+                Евро
+
+        - if calltime
+          %ul.inline-fields.inline-list.inline-select
+            %li.title
+              Удобное время для звонка:
+            %li
+              %select#maf_call_time{name: "maf_call_time"}
+                %option{value: "С 10:00 до 13:00"}С 10:00 до 13:00
+                %option{value: "С 13:00 до 16:00"}С 13:00 до 16:00
+                %option{value: "С 16:00 до 19:00"}С 16:00 до 19:00
+                %option{value: "С 19:00 до 21:00"}С 19:00 до 21:00

@@ -1,0 +1,40 @@
+%fieldset#form-main-step
+  .row
+    .columns.small-12.large-3
+      %input#maf_last_name{name: "maf_last_name", type: "text", placeholder: "Фамилия"}
+    .columns.small-12.large-3
+      %input#maf_first_name{name: "maf_first_name", type: "text", placeholder: "Имя"}
+    .columns.small-12.large-3
+      %input#maf_second_name{name: "maf_second_name", type: "text", placeholder: "Отчество"}
+    .columns.small-12.large-3
+      %input#maf_mobile_phone{name: "maf_mobile_phone", type: "text", placeholder: "+7 (916) 123-45-67"}
+  .row
+    .columns.small-12.large-3
+      %input#maf_birth_date{name: "maf_birth_date", type: "text", placeholder: "Дата рождения"}
+    .columns.small-12.large-3
+      %input#maf_email{name: "maf_email", type: "text", placeholder: "Электронная почта"}
+    .columns.small-12.large-4.left
+      %ul.inline-fields.inline-list
+        %li
+          Пол:
+        %li
+          %label{for: "maf_sex_female"}
+            %input#maf_sex_female{type: "radio", name: "maf_sex", value: "Женский"}
+            Ж
+        %li
+          %label{for: "maf_sex_female"}
+            %input#maf_sex_male{type: "radio", name: "maf_sex", value: "Мужской", checked: "checked"}
+            М
+    .columns.small-12.large-12
+      .input-field.input-accept
+        %label{for: "maf_accept_rules"}
+          %input#maf_accept_rules{type: "checkbox", name: "maf_accept_rules", value: "yes"}
+          Указывая свои данные в этой анкете, я даю свое согласие на их обработку Банком.
+          %a#maf_accept_conditions_link.dashed{href:"#"} Подробнее
+
+  .row
+    .columns.small-12.large-2.right.text-right
+      %a#first_step_submit.button.small.expand{href:"#step2"} Далее
+
+    .sendAgain.columns.small-12.large-3.right.text-right{style: "display: none"}
+      %a#send_sms_again.button.small.expand{href:"#"}Повторить отправку SMS

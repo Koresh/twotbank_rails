@@ -114,39 +114,7 @@
           %option{value: "1", data: {title: "пингвина"}} пингвина
           %option{value: "2", data: {title: "жирафа"}} жирафа
 
-%section.section-bg-yelow.product-questionnaire-block.shadow-inset
-  .row
-    .columns.small-12
-      %h1.text-center
-        Как стать клиентом Банка
-
-      %ul.product-questionnaire-infografic
-        %li
-          %i.icon.icon-what-watch
-          %i.icon.icon-small.icon-what-watch-small
-          %p
-            %strong
-              Заполняйте анкету
-            на сайте. Это буквально 10 (десять!) минут.
-        %li.arrow.show-for-medium-up
-          %i.icon.icon-what-arrow
-        %li
-          %i.icon.icon-what-phone
-          %i.icon.icon-small.icon-what-phone-small
-          %p
-            Менеджер Банка
-            %strong свяжется с вами по телефону.
-        %li.arrow.show-for-medium-up
-          %i.icon.icon-what-arrow
-        %li
-          %i.icon.icon-what-document
-          %i.icon.icon-small.icon-what-document-small
-          %p
-            А представитель Банка
-            %strong бесплатно
-            доставит вам договор и карту. 
-
-  = render template: "live/blocks/product_questionnaire/deposite"
+= render template: "live/blocks/product_questionnaire/index"
 
 %section.section-bg-gray.padding-top-200
   = render template: "shared/feeds"

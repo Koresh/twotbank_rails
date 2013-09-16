@@ -360,8 +360,9 @@ class TBank.Step4 extends TBank.StepView
 
   # Костыль, чтобы убрасть доставку курьером
   hideCourier: ->
-    $("#maf_way_to_get_courier").hide().parent().hide().next().hide()
-    $("#maf_way_to_get_office").hide().parent().hide()
+    #$("#maf_way_to_get_courier").parents(".inline-fields").hide()
+    #$("#maf_way_to_get_office").parents(".inline-fields").hide().parent().addClass("text-center").html("<div clas='input-field'>В офисе</div>")
+    $("#maf_way_to_get_office").parents(".inline-fields").parent().addClass("text-center").html("<div class='columns small-12 input-field'>В офисе</div>")
 
 
   afterGotoStep: ->

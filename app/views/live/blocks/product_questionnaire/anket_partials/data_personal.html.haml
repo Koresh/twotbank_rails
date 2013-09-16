@@ -1,0 +1,57 @@
+.columns.small-12
+  %h2 Персональные данные
+  %p
+    Пожалуйста, продолжите заполнение всех полей анкеты. Чтобы сэкономить ваше время при оформлении банковского договора, в отделении Банка или через Call-центр, необходимо вводить информацию точно как в паспорте. Важно точно указать большие и маленькие буквы, сокращения и знаки препинания.
+  %p
+    На основе введенных вами данных в Банке будет подготовлен договор, который вам останется только подписать! Договор можно будет получить в отделении Банка.
+
+  %fieldset
+    .row
+      .columns.small-12.large-6.input-field
+        %input{name: "maf_zagran_fio", type: "text", placeholder: "Petrov Petr", tabindex: "1"}
+        %label Фамилия Имя латинскими символами (как в загран. паспорте)
+      .columns.small-12.large-6.input-field
+        %input{name: "", type: "text", placeholder: "Петров Петр Петрович", tabindex: "2"}
+        %label Ф.И.О. Если менялись
+    .row
+      .columns.small-12.large-6.input-field
+        %input{name: "maf_passport_seria", type: "text", placeholder: "9900", tabindex: "3"}
+        %label Серия паспорта
+      .columns.small-12.large-6.input-field
+        %input{name: "maf_passport_organisation", type: "text", placeholder: "Центральным РУВД", tabindex: "6"}
+        %label Выдан
+    .row
+      .columns.small-12.large-6.input-field
+        %input{name: "maf_passport_number", type: "text", placeholder: "123456", tabindex: "4"}
+        %label Номер паспорта
+      .columns.small-12.large-6.input-field
+        %input{name: "maf_passport_code", type: "text", placeholder: "123-456", tabindex: "7"}
+        %label Код подразделения
+    .row
+      .columns.small-12.large-6.input-field
+        %input{name: "maf_passport_issue", type: "text", placeholder: "19.07.2002", tabindex: "5"}
+        %label Дата выдачи
+      .columns.small-12.large-6.input-field
+        %input{name: "maf_birth_place", type: "text", placeholder: "г.Москва", tabindex: "8"}
+        %label Место рождения (как в паспорте)
+    .row
+      .columns.small-12.large-6.input-field
+        .row
+          .columns.small-8
+            %small
+              Принадлежите ли Вы (или Ваши родственники) к лицам, определенным в соответствии со 
+              %a#maf_foreign_relations_link.dashed{href: "#"}ст. 7.3. 115-ФЗ
+              ?
+          .columns.small-4.text-right
+            %ul.inline-fields.inline-list
+              %li
+                %label{for: "maf_foreign_relations_yes"}
+                  %input#maf_foreign_relations_yes{type: "radio", name: "maf_foreign_relations_flag", value: "yes"}
+                  Да
+              %li
+                %label{for: "maf_foreign_relations_no"}
+                  %input#maf_foreign_relations_no{type: "radio", name: "maf_foreign_relations_flag", value: "no", checked: "checked"}
+                  Нет
+
+      #maf_foreign_relations_field.columns.small-12.large-6.input-field{style: "display: none"}
+        %textarea#maf_foreign_relations{placeholder: "Дополнительные сведения", name: "maf_foreign_relations", tabindex: "9"}
