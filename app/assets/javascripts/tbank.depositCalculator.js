@@ -206,5 +206,7 @@ var objDepositCalculator = {
 };
 
 $(function() {
-  objDepositCalculator.init();
+  if ($('#slider1').length) {
+    objDepositCalculator.init();
+  }
 });

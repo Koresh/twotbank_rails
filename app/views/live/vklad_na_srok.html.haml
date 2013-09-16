@@ -383,7 +383,12 @@
 
 %section.padding-top-200
 
-= render template: "shared/map"
+%section.section-bg-blue.shadow-inset-top.padding-40
+  .row
+    .columns.small-12.map.mainPage.map-contacts
+      .sub-border-top.columns.small-11.small-centered
+      = render template: "shared/map_header"
+      = render template: "shared/map"
 
 = render template: "live/blocks/product_insured/vklad_na_srok"
 

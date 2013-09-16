@@ -7,17 +7,17 @@
     .columns.small-12.map.mainPage.map-contacts
       .format-choice-block
         %header
-          %ul.text-center
+          %ul.text-center#map-type
             %li
-              %a{href:"#"} Все офисы
-            %li
-              \/
-            %li
-              %a{href:"#"} Только офисы банка
+              %a#all-offices{href:"#"} Все офисы
             %li
               \/
             %li
-              %a{href:"#"} Кеш-ины
+              %a#bank-offices{href:"#"} Только офисы банка
+            %li
+              \/
+            %li
+              %a#cash-ins{href:"#"} Кеш-ины
       .sub-border-top.columns.small-11.small-centered.margin-bottom-30
       = render template: "shared/map"
 
