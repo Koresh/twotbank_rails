@@ -14,8 +14,6 @@ $ ->
     index = $(this).data("index")
     $(".format-choice-block").find(".content-item").eq(index).addClass "active"
 
-    false
-
   $(".questionnaire-delivery-type-change").find("ul").find("a").on "click", (e) ->
 
     e.preventDefault()
