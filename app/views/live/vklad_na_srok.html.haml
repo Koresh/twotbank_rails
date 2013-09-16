@@ -22,103 +22,95 @@
                     евро
                 %br
                 в размере
-                %strong#calc_summ0
+                %strong#calc_summ
+                  0
               .sliderBlock
-                #slider1
-                  .progress-bar-block
-                    .row
-                      .columns.small-12
-                        .nice.round.progress.small-12
-                          %span.meter{style: "width: 9%"}
-                            %i.bulet.icon-switcher-bullet
-                    %ul.row.text-center.progress-steps
-                      %li.columns.small-3.item.item-1.active
-                        10 000 RUR
-                      %li.columns.small-3.item.item-2
-                        200 000 RUR
-                      %li.columns.small-3.item.item-3
-                        1 000 000 RUR
-                      %li.columns.small-3.item.item-4
-                        10 000 000 RUR
-                  .summ_slider.rur{hidden:""}
-                    %span.small{style:"width:121px"} 10 000 RUR
-                    %span.small{style:"width:146px"} 200 000 RUR
-                    %span.small{style:"width:108px"} 1 000 000 RUR
-                    %span.small{style:"width:auto"} 10 000 000 RUR
-                  .summ_slider.usd{hidden:""}
-                    %span.small{style:"width:121px"} 500 USD
-                    %span.small{style:"width:146px"} 10 000 USD
-                    %span.small{style:"width:108px"} 50 000 USD
-                    %span.small{style:"width:auto"} 400 000 USD
-                  .summ_slider.eur{hidden:""}
-                    %span.small{style:"width:121px"} 500 EUR
-                    %span.small{style:"width:146px"} 10 000 EUR
-                    %span.small{style:"width:108px"} 50 000 EUR
-                    %span.small{style:"width:auto"} 400 000 EUR
+                .progress-bar-block
+                  #slider1.noUiSlider
+                  %ul.row.text-center.progress-steps.summ_slider.rur.hidden
+                    %li.columns.small-3.item.item-1{style:"width:121px"}
+                      10 000 RUR
+                    %li.columns.small-3.item.item-2{style:"width:146px"}
+                      200 000 RUR
+                    %li.columns.small-3.item.item-3{style:"width:108px"}
+                      1 000 000 RUR
+                    %li.columns.small-3.item.item-4{style:"width:auto"}
+                      10 000 000 RUR
+                  %ul.row.text-center.progress-steps.summ_slider.usd.hidden
+                    %li.columns.small-3.item.item-1{style:"width:121px"}
+                      500 USD
+                    %li.columns.small-3.item.item-2{style:"width:146px"}
+                      10 000 USD
+                    %li.columns.small-3.item.item-3{style:"width:108px"}
+                      50 000 USD
+                    %li.columns.small-3.item.item-4{style:"width:auto"}
+                      400 000 USD
+                  %ul.row.text-center.progress-steps.summ_slider.eur.hidden
+                    %li.columns.small-3.item.item-1{style:"width:121px"}
+                      500 EUR
+                    %li.columns.small-3.item.item-2{style:"width:146px"}
+                      10 000 EUR
+                    %li.columns.small-3.item.item-3{style:"width:108px"}
+                      50 000 EUR
+                    %li.columns.small-3.item.item-4{style:"width:auto"}
+                      400 000 EUR
             .padding-20.border-bottom
               %h2
                 На срок 
-                %span#calc_month0
+                %span#calc_month
+                  0
                 мес. под 
-                %span.blue#calc_percent0
-                  \%
+                %span.blue#calc_percent
+                  0 %
               .sliderBlock
-                #slider2
-                  .progress-bar-block
-                    .row
-                      .columns.small-12
-                        .nice.round.progress.small-12
-                          %span.meter{style: "width: 9%"}
-                            %i.bulet.icon-switcher-bullet
-                    %ul.row.text-center.progress-steps
-                      %li.columns.small-3.item.item-1.active
-                        2 мес.
-                      %li.columns.small-3.item.item-2
-                        4 мес.
-                      %li.columns.small-3.item.item-3
-                        6 мес.
-                      %li.columns.small-3.item.item-4
-                        12 мес.
+                .progress-bar-block
+                  #slider2.noUiSlider
+                  %ul.row.text-center.progress-steps
+                    %li.columns.small-3.item.item-1{style:"width:133px"}
+                      2 мес.
+                    %li.columns.small-3.item.item-2{style:"width:153px"}
+                      4 мес.
+                    %li.columns.small-3.item.item-3{style:"width:125px"}
+                      6 мес.
+                    %li.columns.small-3.item.item-4{style:"width:auto"}
+                      12 мес.
             .padding-20.border-bottom
               %h2
                 Ежемесячно пополняю
                 %br
                 на сумму
-                %strong#calc_addsumm0
+                %strong#calc_addsumm
+                  0
               .sliderBlock
-                #slider3
-                  .progress-bar-block
-                    .row
-                      .columns.small-12
-                        .nice.round.progress.small-12
-                          %span.meter{style: "width: 9%"}
-                            %i.bulet.icon-switcher-bullet
-                    %ul.row.text-center.progress-steps
-                      %li.columns.small-3.item.item-1.active
-                        2 мес.
-                      %li.columns.small-3.item.item-2
-                        4 мес.
-                      %li.columns.small-3.item.item-3
-                        6 мес.
-                      %li.columns.small-3.item.item-4
-                        12 мес.
-                  .addsumm_slider.rur{hidden:""}
-                    %span.small{style:"width:108px"} 0 RUR
-                    %span.small{style:"width:133px"} 20 000 RUR
-                    %span.small{style:"width:143px"} 60 000 RUR
-                    %span.small{style:"width:auto"} 90 000 RUR
-
-                  .addsumm_slider.usd{hidden:""}
-                    %span.small{style:"width:108px"} 0 USD
-                    %span.small{style:"width:135px"} 1 000 USD
-                    %span.small{style:"width:145px"} 2 000 USD
-                    %span.small{style:"width:auto"} 3 000 USD
-
-                  .addsumm_slider.eur{hidden:""}
-                    %span.small{style:"width:108px"} 0 EUR
-                    %span.small{style:"width:135px"} 1 000 EUR
-                    %span.small{style:"width:145px"} 2 000 EUR
-                    %span.small{style:"width:auto"} 3 000 EUR
+                .progress-bar-block
+                  #slider3.noUiSlider
+                  %ul.row.text-center.progress-steps.addsumm_slider.rur.hidden
+                    %li.columns.small-3.item.item-1{style:"width:108px"}
+                      0 RUR
+                    %li.columns.small-3.item.item-2{style:"width:133px"}
+                      30 000 RUR
+                    %li.columns.small-3.item.item-3{style:"width:143px"}
+                      60 000 RUR
+                    %li.columns.small-3.item.item-4{style:"width:auto"}
+                      90 000 RUR
+                  %ul.row.text-center.progress-steps.addsumm_slider.usd.hidden
+                    %li.columns.small-3.item.item-1{style:"width:108px"}
+                      0 USD
+                    %li.columns.small-3.item.item-2{style:"width:135px"}
+                      1 000 USD
+                    %li.columns.small-3.item.item-3{style:"width:145px"}
+                      2 000 USD
+                    %li.columns.small-3.item.item-4{style:"width:auto"}
+                      3 000 USD
+                  %ul.row.text-center.progress-steps.addsumm_slider.eur.hidden
+                    %li.columns.small-3.item.item-1{style:"width:108px"}
+                      0 EUR
+                    %li.columns.small-3.item.item-2{style:"width:135px"}
+                      1 000 EUR
+                    %li.columns.small-3.item.item-3{style:"width:145px"}
+                      2 000 EUR
+                    %li.columns.small-3.item.item-4{style:"width:auto"}
+                      3 000 EUR
             .padding-top-20
               %h2
                 %span.radio-block

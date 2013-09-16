@@ -1,0 +1,104 @@
+	.noUiSlider,
+	.noUiSlider * {
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+		box-sizing: border-box;
+-webkit-user-select: none;
+   -moz-user-select: none;
+	-ms-user-select: none;
+		display: block;
+		cursor: default;
+	}
+	.noUiSlider {
+		position: relative;
+	}
+	.noUiSlider a {
+		position: absolute;
+		z-index: 1;
+	}
+	.noUiSlider a:nth-child(2) {
+		background: inherit !important;
+	}
+	.noUiSlider.vertical a {
+		width: 100%;
+		bottom: 0;
+	}
+	.noUiSlider.horizontal a {
+		height: 100%;
+		right: 0;
+	}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	.noUiSlider:before,
+	body.TOUCH,
+	.noUiSlider div {
+		-ms-touch-action: none;
+	}
+	.noUiSlider:before {
+		display: block;
+		position: absolute;
+		width: 150%;
+		left: -25%;
+		height: 400%;
+		top: -150%;
+		content: "";
+		z-index: -1;
+	}
+	.noUiSlider.vertical:before {
+		width: 400%;
+		left: -150%;
+		height: 150%;
+		top: -25%;
+	}
+}
+	.noUiSlider {
+		border: 0px solid #ccc;
+		border-radius: 10px;
+		background: #009fe3;
+		-webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+		-moz-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+		box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+	}
+	.noUiSlider.connect a,
+	.noUiSlider.connect.lower {
+		background: #b2a98f;
+	}
+	.noUiSlider,
+	.noUiSlider.connect.lower a {
+
+	}
+	.noUiSlider.disabled,
+	.noUiSlider.disabled.connect.lower a {
+		background: #ccc;
+		box-shadow: none;
+	}
+	.noUiSlider div {
+		height: 22px;
+		width: 22px;
+		border-radius: 3px;
+		background: url(/assets/icons-se9b891fe23.png) no-repeat;
+		background-position: 0 -2231px;
+	}
+	.noUiSlider.disabled div {
+		background: transparent;
+	}
+	.noUiSlider.horizontal {
+		height: 10px;
+		margin-bottom: 10px;
+	}
+	.noUiSlider.horizontal div {
+		margin: -7px 0 0 -11px;
+	}
+	.noUiSlider.horizontal a {
+		border-radius: 10px;
+		background-color: #cfcfcf;
+		-webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+		-moz-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+		box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;		
+	}
+	.noUiSlider.vertical {
+		width: 10px;
+		height: 300px;
+	}
+	.noUiSlider.vertical div {
+		margin: -9px 0 0 -5px;
+	}
