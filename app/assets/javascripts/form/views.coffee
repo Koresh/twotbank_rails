@@ -186,6 +186,7 @@ class TBank.StepView extends Backbone.View
   change_checkbox: (e) ->
     $target = $ e.target
     $target.parent().find(".checkbox").addClass("checked") if $target.is(":checked")
+    @errorCleaner $target.parents ".input-field"
 
   change_radio: (e) ->
     $target = $ e.target
@@ -196,13 +197,13 @@ class TBank.StepView extends Backbone.View
   trimField: (e) ->
     target = $ e.target
     target.val $.trim(target.val())
-    @errorCleaner target
+    @errorCleaner target.parent ".input-field"
 
   errorSelectClean: (e) ->
     $(e.target).parent(".input-field").removeClass "error"
 
   errorCleaner: ($target) ->
-    $target.parent(".input-field").removeClass "error"
+    $target.removeClass "error"
 
 
   initialize:(options) ->
@@ -308,11 +309,11 @@ class TBank.StepView extends Backbone.View
 
   setError: (key) ->
     $input = $("input[name=#{key}], select[name=#{key}]")
-    $input.parent().addClass "error"
+    $input.parents(".input-field").first().addClass "error"
 
   clearError: (key) ->
     $input = $("input[name=#{key}], select[name=#{key}]")
-    $input.parent().removeClass "error"
+    $input.parents(".input-field").first().removeClass "error"
 
 
   openStep: (step_count, callback) ->

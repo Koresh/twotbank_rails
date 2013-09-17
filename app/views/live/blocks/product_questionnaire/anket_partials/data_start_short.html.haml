@@ -9,22 +9,6 @@
     .columns.small-12.large-3.input-field
       %input#maf_mobile_phone{name: "maf_mobile_phone", type: "text", placeholder: "+7 (916) 123-45-67"}
   .row
-    .columns.small-12.large-3.input-field
-      %input#maf_birth_date{name: "maf_birth_date", type: "text", placeholder: "Дата рождения"}
-    .columns.small-12.large-3.input-field
-      %input#maf_email{name: "maf_email", type: "text", placeholder: "Электронная почта"}
-    .columns.small-12.large-4.left.input-field
-      %ul.inline-fields.inline-list
-        %li
-          Пол:
-        %li
-          %label{for: "maf_sex_female"}
-            %input#maf_sex_female{type: "radio", name: "maf_sex", value: "Женский"}
-            Ж
-        %li
-          %label{for: "maf_sex_female"}
-            %input#maf_sex_male{type: "radio", name: "maf_sex", value: "Мужской", checked: "checked"}
-            М
     .columns.small-12.large-12
       .input-field.input-accept
         %label{for: "maf_accept_rules"}
@@ -34,7 +18,4 @@
 
   .row
     .columns.small-12.large-2.right.text-right
-      %a#first_step_submit.button.small.expand{href:"#step2"} Далее
-
-    .sendAgain.columns.small-12.large-3.right.text-right{style: "display: none"}
-      %a#send_sms_again.button.small.expand{href:"#"}Повторить отправку SMS
+      %a.button.small.expand{href:"#final"} Отправить

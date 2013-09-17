@@ -11,33 +11,10 @@
             %h1
               = anket_title
 
-        = render template: "live/blocks/product_questionnaire/anket_partials/progressbar"
-
-        = render template: "live/blocks/product_questionnaire/anket_partials/data_start"
-
-
+        = render template: "live/blocks/product_questionnaire/anket_partials/data_start_short"
 
   .quest-main-bottom-bg
-  #maf_full_form.questionnaire-full-form{style: "display: none"}
-    .row.questionnaire-full-form-wrap
-      .small-12.columns.questionnaire-full-form-block
-
-        %a#questionnaire-close-btn.icon-btn-close-red{href: "#maf_close_form"}
-
-        / Step 1
-        .row.questionnaire-step-block.step-1{style: "display: none"}
-          = render template: "live/blocks/product_questionnaire/anket_partials/data_personal"
-
-        / Step 2
-        .row.questionnaire-step-block.step-2{style: "display: none"}
-          = render template: "live/blocks/product_questionnaire/anket_partials/data_contact_info", locals: {phones: "personal_phone"}
-
-        / Step 3
-        .row.questionnaire-step-block.step-3{style: "display: none"}
-          = render template: "live/blocks/product_questionnaire/anket_partials/data_additional", locals: {promo: true, calltime: true, currency: true}
-
-        = render template: "live/blocks/product_questionnaire/anket_partials/step_buttons"
-
+  
 / Modals
 = render template: "live/blocks/product_questionnaire/anket_modals/modal_close"
 
