@@ -1,0 +1,156 @@
+%fieldset.columns.small-12
+  %h2 Укажите имеющиеся кредиты в других банках, условия по которым Вы хотите улучшить
+  %ul#current-credits-list.no-bullet
+    %li.item
+      .row.info-first
+        .input-field.columns.small-12.large-6
+          %select#maf_credit_type_1.maf-credit-type{name: "maf_credit_type_1"}
+            %option{value:"", disabled: "disabled", selected: "selected"}Выберите из списка
+            %option{value:"Целевой потребительский кредит", key:"credit_aim"}Целевой потребительский кредит
+            %option{value:"Кредит наличными", key:"credit_cash"}Кредит наличными
+            %option{value:"Кредитная карта", key:"credit_card"}Кредитная карта  
+          %label Тип кредита
+        
+        .input-field.columns.small-12.large-6
+          %input#maf_bank_1{type: "text",name: "maf_bank_1", placeholder: "Сбербанк"}
+          %label Каким банком выдан
+            
+      .row.info-second{style: "display: none"}
+        .input-field.columns.small-12.large-2      
+          %input#maf_credit_total_1{type: "text", name: "maf_credit_total_1", placeholder: "500000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Первоначальная сумма  кредита, руб.", card: "Текущий кредитный лимит, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_payment_1{type: "text", name: "maf_credit_payment_1", placeholder: "30000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Размер месячного платежа, руб.", card: "Средний размер месячного платежа, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_year_1.mask-year{type: "text", name: "maf_credit_year_1", placeholder: "2010", value: ""}
+          %label{data: {text: {cash: "Когда был получен кредит (год)", card: "Когда была оформлена карта (год)"}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_sum_1{type: "text", name: "maf_credit_sum_1", placeholder: "200000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Сумма необходимая для полного погашения долга, руб.", card: "Сумма необходимая для полного погашения долга, руб."}}}
+        
+        .input-field.columns.small-12.large-2.left           
+          %input#maf_loan_rate_1.mask-rate{type: "text", name: "maf_loan_rate_1", placeholder: "10.3%", value: ""}
+          %label{data: {text: {cash: "% ставка по кредиту", card: "% ставка по кредиту"}}}
+
+    %li.item{style: "display:none"}
+      .row.info-first
+        .input-field.columns.small-12.large-6
+          %select#maf_credit_type_2.maf-credit-type{name: "maf_credit_type_2"}
+            %option{value:"", disabled: "disabled", selected: "selected"}Выберите из списка
+            %option{value:"Целевой потребительский кредит", key:"credit_aim"}Целевой потребительский кредит
+            %option{value:"Кредит наличными", key:"credit_cash"}Кредит наличными
+            %option{value:"Кредитная карта", key:"credit_card"}Кредитная карта  
+          %label
+            Тип кредита
+            %a.dashed.remove-current-credit-link{href:"#"}
+              УБРАТЬ КРЕДИТ
+        
+        .input-field.columns.small-12.large-6
+          %input#maf_bank_2{type: "text",name: "maf_bank_2", placeholder: "Сбербанк"}
+          %label Каким банком выдан
+            
+      .row.info-second{style: "display: none"}
+        .input-field.columns.small-12.large-2      
+          %input#maf_credit_total_2{type: "text", name: "maf_credit_total_2", placeholder: "500000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Первоначальная сумма  кредита, руб.", card: "Текущий кредитный лимит, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_payment_2{type: "text", name: "maf_credit_payment_2", placeholder: "30000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Размер месячного платежа, руб.", card: "Средний размер месячного платежа, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_year_2.mask-year{type: "text", name: "maf_credit_year_2", placeholder: "2010", value: ""}
+          %label{data: {text: {cash: "Когда был получен кредит (год)", card: "Когда была оформлена карта (год)"}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_sum_2{type: "text", name: "maf_credit_sum_2", placeholder: "200000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Сумма необходимая для полного погашения долга, руб.", card: "Сумма необходимая для полного погашения долга, руб."}}}
+        
+        .input-field.columns.small-12.large-2.left           
+          %input#maf_loan_rate_2.mask-rate{type: "text", name: "maf_loan_rate_2", placeholder: "10.3%", value: ""}
+          %label{data: {text: {cash: "% ставка по кредиту", card: "% ставка по кредиту"}}}
+
+    %li.item{style: "display:none"}
+      .row.info-first
+        .input-field.columns.small-12.large-6
+          %select#maf_credit_type_3.maf-credit-type{name: "maf_credit_type_3"}
+            %option{value:"", disabled: "disabled", selected: "selected"}Выберите из списка
+            %option{value:"Целевой потребительский кредит", key:"credit_aim"}Целевой потребительский кредит
+            %option{value:"Кредит наличными", key:"credit_cash"}Кредит наличными
+            %option{value:"Кредитная карта", key:"credit_card"}Кредитная карта  
+          %label
+            Тип кредита
+            %a.dashed.remove-current-credit-link{href:"#"}
+              УБРАТЬ КРЕДИТ
+        
+        .input-field.columns.small-12.large-6
+          %input#maf_bank_3{type: "text",name: "maf_bank_3", placeholder: "Сбербанк"}
+          %label Каким банком выдан
+            
+      .row.info-second{style: "display: none"}
+        .input-field.columns.small-12.large-2      
+          %input#maf_credit_total_3{type: "text", name: "maf_credit_total_3", placeholder: "500000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Первоначальная сумма  кредита, руб.", card: "Текущий кредитный лимит, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_payment_3{type: "text", name: "maf_credit_payment_3", placeholder: "30000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Размер месячного платежа, руб.", card: "Средний размер месячного платежа, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_year_3.mask-year{type: "text", name: "maf_credit_year_3", placeholder: "2010", value: ""}
+          %label{data: {text: {cash: "Когда был получен кредит (год)", card: "Когда была оформлена карта (год)"}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_sum_3{type: "text", name: "maf_credit_sum_3", placeholder: "200000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Сумма необходимая для полного погашения долга, руб.", card: "Сумма необходимая для полного погашения долга, руб."}}}
+        
+        .input-field.columns.small-12.large-2.left           
+          %input#maf_loan_rate_3.mask-rate{type: "text", name: "maf_loan_rate_3", placeholder: "10.3%", value: ""}
+          %label{data: {text: {cash: "% ставка по кредиту", card: "% ставка по кредиту"}}}
+
+    %li.item{style: "display:none"}
+      .row.info-first
+        .input-field.columns.small-12.large-6
+          %select#maf_credit_type_4.maf-credit-type{name: "maf_credit_type_4"}
+            %option{value:"", disabled: "disabled", selected: "selected"}Выберите из списка
+            %option{value:"Целевой потребительский кредит", key:"credit_aim"}Целевой потребительский кредит
+            %option{value:"Кредит наличными", key:"credit_cash"}Кредит наличными
+            %option{value:"Кредитная карта", key:"credit_card"}Кредитная карта  
+          %label
+            Тип кредита
+            %a.dashed.remove-current-credit-link{href:"#"}
+              УБРАТЬ КРЕДИТ
+        
+        .input-field.columns.small-12.large-6
+          %input#maf_bank_4{type: "text",name: "maf_bank_4", placeholder: "Сбербанк"}
+          %label Каким банком выдан
+            
+      .row.info-second{style: "display: none"}
+        .input-field.columns.small-12.large-2      
+          %input#maf_credit_total_4{type: "text", name: "maf_credit_total_4", placeholder: "500000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Первоначальная сумма  кредита, руб.", card: "Текущий кредитный лимит, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_payment_4{type: "text", name: "maf_credit_payment_4", placeholder: "30000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Размер месячного платежа, руб.", card: "Средний размер месячного платежа, руб."}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_year_4.mask-year{type: "text", name: "maf_credit_year_4", placeholder: "2010", value: ""}
+          %label{data: {text: {cash: "Когда был получен кредит (год)", card: "Когда была оформлена карта (год)"}}}
+        
+        .input-field.columns.small-12.large-2            
+          %input#maf_credit_sum_4{type: "text", name: "maf_credit_sum_4", placeholder: "200000", value: "", maxlength: "8"}
+          %label{data: {text: {cash: "Сумма необходимая для полного погашения долга, руб.", card: "Сумма необходимая для полного погашения долга, руб."}}}
+        
+        .input-field.columns.small-12.large-2.left           
+          %input#maf_loan_rate_4.mask-rate{type: "text", name: "maf_loan_rate_4", placeholder: "10.3%", value: ""}
+          %label{data: {text: {cash: "% ставка по кредиту", card: "% ставка по кредиту"}}}
+
+    %li
+      %a#add-current-credit-link.dashed{href: "#"}Добавить кредит
+        
+    

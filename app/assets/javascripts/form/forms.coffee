@@ -611,6 +611,15 @@ class TBank.Form42 extends Backbone.Form
     maf_credit_sum_4:
       validators: ["number"]
 
+    maf_loan_rate_1:
+      validators: ["required"]
+    maf_loan_rate_2:
+      validators: ["required"]
+    maf_loan_rate_3:
+      validators: ["required"]
+    maf_loan_rate_4:
+      validators: ["required"]
+
 
 class TBank.StartBusinessFrom extends Backbone.Form
   cookie_name: 'StartBusinessFrom'

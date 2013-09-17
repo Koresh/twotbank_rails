@@ -1,10 +1,10 @@
-.columns.small-12
+%fieldset.columns.small-12
   .row
     .columns.small-12.large-6
       %h2 Статус и сфера деятельности
       .input-field
         %select#maf_education{name: "maf_education"}
-          %option{value: ""} Выберите из списка
+          %option{value: "", disabled: "disabled", selected: "selected"} Выберите из списка
           %option{value: "Начальное / среднее", key: "school"} Начальное / среднее
           %option{value: "Неполное высшее", key: "patly_university"} Неполное высшее
           %option{value: "Высшее", key: "university"} Высшее
@@ -13,7 +13,7 @@
         %label Образование
       .input-field
         %select#maf_family_status{name: "maf_family_status"}
-          %option{value: ""} Выберите из списка
+          %option{value: "", disabled: "disabled", selected: "selected"} Выберите из списка
           %option{value: "Холост / не замужем", key: "free"} Холост / не замужем
           %option{value: "Гражданский брак", key: "civil_union"} Гражданский брак
           %option{value: "Женат / замужем", key: "married"} Женат / замужем
@@ -25,7 +25,7 @@
         %label Количество детей
       .input-field
         %select#maf_work{name: "maf_work"}
-          %option{value: "", idle: "false"} Выберите из списка
+          %option{value: "", idle: "false", disabled: "disabled", selected: "selected"} Выберите из списка
           %option{value: "Индивидуальный предприниматель", key: "ip", idle: "false"} Индивидуальный предприниматель
           %option{value: "Руководящий работник", key: "top_manager", idle: "false"} Руководящий работник
           %option{value: "Руководитель среднего звена", key: "manager", idle: "false"} Руководитель среднего звена
@@ -40,7 +40,7 @@
         %label Название организации
       .input-field
         %select#maf_work_expirience{name: "maf_work_expirience"}
-          %option{value: ""} Выберите из списка
+          %option{value: "", disabled: "disabled", selected: "selected"} Выберите из списка
           %option{value: "Менее 3-х месяцев", key: "under_3m"} Менее 3-х месяцев
           %option{value: "От 3 месяцев до 1 года", key: "3m_1y"} От 3 месяцев до 1 года
           %option{value: "От 1 до 3 лет", key: "1y_3y"} От 1 до 3 лет

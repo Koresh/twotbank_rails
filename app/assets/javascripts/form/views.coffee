@@ -181,7 +181,7 @@ class TBank.StepView extends Backbone.View
   _modelBinder: undefined
 
   events: =>
-    _.extend {"change input[type='text']":"trimField", "change input[type='checkbox']":"change_checkbox", "change input[type='radio']":"change_radio"}, @originalEvents, @additionalEvents
+    _.extend {"change input[type='text']":"trimField", "change select":"errorSelectClean", "change input[type='checkbox']":"change_checkbox", "change input[type='radio']":"change_radio"}, @originalEvents, @additionalEvents
 
   change_checkbox: (e) ->
     $target = $ e.target
@@ -193,9 +193,17 @@ class TBank.StepView extends Backbone.View
     $("input[name='#{name}']").parent().find(".radio").removeClass("checked")
     $target.parent().find(".radio").addClass("checked").trigger("change") if $target.is(":checked")
 
-  trimField: (e)->
+  trimField: (e) ->
     target = $ e.target
     target.val $.trim(target.val())
+    @errorCleaner target
+
+  errorSelectClean: (e) ->
+    $(e.target).parent(".input-field").removeClass "error"
+
+  errorCleaner: ($target) ->
+    $target.parent(".input-field").removeClass "error"
+
 
   initialize:(options) ->
 

@@ -1,0 +1,15 @@
+%fieldset.columns.small-12
+  %h2 Информация о кредите, доходах и расходах
+  %p
+    Укажите информацию честно, это увеличит  шансы на одобрение заявки
+  .row
+    .input-field.columns.small-12.large-6
+      %input#maf_credit_sum{type: "text",name: "maf_credit_sum", placeholder: "300000", maxlength: "8"}
+      %label Желаемая сумма кредита, руб.
+    .input-field.columns.small-12.large-6
+      %input#maf_monthly_income{type: "text",name: "maf_monthly_income", placeholder: "600000", maxlength: "8"}
+      %label Общий месячный персональный доход: заработная плата и дополнительно получаемые доходы, руб.
+  .row
+    .input-field.columns.small-12.large-6.left
+      %input#maf_monthly_spending{type: "text",name: "maf_monthly_spending", placeholder: "40000", maxlength: "8"}
+      %label Месячные расходы: расходы по кредитам и другие обязательные платежи, руб.

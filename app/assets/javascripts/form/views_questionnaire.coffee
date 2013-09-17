@@ -458,8 +458,8 @@ class TBank.Step4Transfer extends TBank.Step4Credit
     index = $("input[name='maf_city_office']:checked").parents(".offices").index(".offices")
     @$el.find(".citySelect").find("span").eq(index).trigger "click"
 
-    $addCredit  = $ "#addCredit"
-    $creditInfo = @$el.find(".creditInfo")
+    $add_credit  = $ "#add-current-credit-link"
+    $current_credits_item = $("#current-credits-list").children(".item")
 
 
     @c_type_hash = [
@@ -472,9 +472,9 @@ class TBank.Step4Transfer extends TBank.Step4Credit
 
     for arr in @c_type_hash
       $this = $("##{arr[0]}")
-      if $this.val() isnt ""
-        $(this).parents(".creditInfo").show()
-        $addCredit.hide() if not $creditInfo.filter(":hidden").length
+      if $this.val() and ($this.val() isnt "")
+        $(this).parents(".item").show()
+        $add_credit.hide() if not $current_credits_item.filter(":hidden").length
         for key in arr
           @rmDisabledHash null, name: key
 
@@ -483,43 +483,44 @@ class TBank.Step4Transfer extends TBank.Step4Credit
           @addDisabledHash null, name: key
 
 
-    $addCredit.on "click", (e) =>
+    $add_credit.on "click", (e) =>
       e.preventDefault()
       $this   = $ e.target
-      index   = $creditInfo.filter(":hidden").first().index ".creditInfo"
-      $creditInfo.filter(":hidden").first().show()
-      $addCredit.hide() if not $creditInfo.filter(":hidden").length
+      index   = $current_credits_item.filter(":hidden").first().index()
+      $current_credits_item.filter(":hidden").first().show()
+      $add_credit.hide() if not $current_credits_item.filter(":hidden").length
+
 
       for key in @c_type_hash[index - 1]
         @rmDisabledHash null, name: key
 
-      #console.log @disabledHash
 
 
 
-    @$el.find(".deleteCredit").on "click", (e) =>
+    @$el.find(".dashed.remove-current-credit-link").on "click", (e) =>
       e.preventDefault()
       $this   = $ e.target
-      $parent = $this.parents(".creditInfo").hide()
+      $parent = $this.parents(".item").hide()
 
-      index = $parent.index(".creditInfo")
+      index = $parent.index()
 
-      if $parent.siblings(".creditInfo").filter(":visible").length > 1
-        $addCredit.show()
+      if $parent.siblings(".item").filter(":visible").length > 1
+        $add_credit.show()
 
       for key in @c_type_hash[index - 1]
         @addDisabledHash null, name: key
 
         $("##{key}").parent().removeClass("error")
 
-      #console.log @disabledHash
 
 
-    @$el.find(".maf_credit_type").on "change", (e) =>
+    @$el.find(".maf-credit-type").on "change", (e) =>
       $this   = $ e.target
       key     = $this.find("option:selected").attr "key"
-      $items  = $this.parents(".creditInfo").find(".item").last()
-      $labels = $items.find(".txt2")
+      $items  = $this.parents(".info-first").next(".info-second")
+      $labels = $items.find("label")
+
+      $this.parents(".item").find('.input-field.error').removeClass "error"
 
 
       if ( key isnt "credit_card" ) and ( key isnt "null" )
@@ -820,11 +821,12 @@ class TBank.Layout.Transfer extends TBank.Layout
   type: "transfer"
   steps: [
     {view: TBank.StartForm, el: '#form-main-step'},
-    {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
-    {view: TBank.ContactFormHomePhone, el: '#maf_full_form_main .step2'}
-    {view: TBank.Step4Transfer, el: '#maf_full_form_main .step3'}
+    {view: TBank.PersonalForm, el: '.questionnaire-step-block.step-1'},
+    {view: TBank.ContactFormHomePhone, el: '.questionnaire-step-block.step-2'}
+    {view: TBank.Step4Transfer, el: '.questionnaire-step-block.step-3'}
     {view: TBank.FinalStepTransfer, el: '#maf_success'}
   ]
+  
 class TBank.Layout.Business extends TBank.Layout
   type: "business"
   steps: [

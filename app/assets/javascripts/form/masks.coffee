@@ -34,6 +34,9 @@ class Masks.Datepif extends Masks.Base
 class Masks.Time extends Masks.Base
   mask: "99:99"
 
+class Masks.Rate extends Masks.Base
+  mask: "99.9%"
+
 
 $ ->
   $(".mask-phone").each (index, container) ->
@@ -41,3 +44,9 @@ $ ->
 
   $(".mask-time").each (index, container) ->
     new Masks.Time $(container)
+
+  $(".mask-year").each (index, container) ->
+    new Masks.Year $(container)
+
+  $(".mask-rate").each (index, container) ->
+    new Masks.Rate $(container)
