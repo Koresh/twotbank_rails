@@ -154,414 +154,416 @@
 
 
 
-//_________________________________
-//banners
-.orbit-container
-  .btn-links-block
-    a
-      padding: 8px 15px
+//
+.lt-ie9
+  .show-for-small
+    display: none
 
-    i
-      margin:
-        right: emCalc(10)
+  .orbit-container
+    .btn-links-block
+      a
+        padding: 8px 15px
 
-  .orbit-slides-container 
-    > li
-      h1
-        font-size: emCalc(32)
-
-  .banner-slide-content
-    padding:
-      top: emCalc(80)
-
-#banner-image-1
-  background:
-    image: image-url("banners/banner1.png")
-    position: left bottom
-    repeat: no-repeat
-
-#banner-image-2
-  background:
-    image: image-url("banners/banner5.png")
-    position: left bottom
-    repeat: no-repeat
-
-#banner-image-3
-  background:
-    image: image-url("banners/banner4.png")
-    position: left bottom
-    repeat: no-repeat
-
-#banner-image-5
-  background:
-    image: image-url("banners/banner6.png")
-    position: 10% 40%
-    repeat: no-repeat
-
-#banner-image-6
-  background:
-    image: image-url("banners/_banner6_obj1.png")
-    position: 20% bottom
-    repeat: no-repeat
-
-#banner-image-8
-  background:
-    image: image-url("banners/banner7.png")
-    position: 50% bottom
-    repeat: no-repeat
-  height: 100%
-//header
-.logo-block-absolute
-  img
-    width: 100%
-
-.product-banner-block
-  .discription
-    margin:
-      bottom: 0
-//icons
-.icon-documents
-  +icons-sprite(documents)
-  height: icons-sprite-height(documents)
-  width: icons-sprite-width(documents)
-//productpage
-.product-services-block
-  ul
-    li
-      +grid-column(2)
-      float: none
-      text-align: center
-      +inline-block(top)
-      white-space: normal
-
-      p
-        display: block
-        padding: 0
-        font-size: 1em
-
-      img
-        display: inline
-        width: emCalc(70)
-        height: emCalc(70)
-        margin: 0
+      i
         margin:
-          bottom: 10px
+          right: emCalc(10)
 
-      p, img
+    .orbit-slides-container 
+      > li
+        h1
+          font-size: emCalc(32)
+
+    .banner-slide-content
+      padding:
+        top: emCalc(80)
+
+  #banner-image-1
+    background:
+      image: image-url("banners/banner1.png")
+      position: left bottom
+      repeat: no-repeat
+
+  #banner-image-2
+    background:
+      image: image-url("banners/banner5.png")
+      position: left bottom
+      repeat: no-repeat
+
+  #banner-image-3
+    background:
+      image: image-url("banners/banner4.png")
+      position: left bottom
+      repeat: no-repeat
+
+  #banner-image-5
+    background:
+      image: image-url("banners/banner6.png")
+      position: 10% 40%
+      repeat: no-repeat
+
+  #banner-image-6
+    background:
+      image: image-url("banners/_banner6_obj1.png")
+      position: 20% bottom
+      repeat: no-repeat
+
+  #banner-image-8
+    background:
+      image: image-url("banners/banner7.png")
+      position: 50% bottom
+      repeat: no-repeat
+    height: 100%
+
+  .logo-block-absolute
+    img
+      width: 100%
+
+  .product-banner-block
+    .discription
+      margin:
+        bottom: 0
+
+  .icon-documents
+    +icons-sprite(documents)
+    height: icons-sprite-height(documents)
+    width: icons-sprite-width(documents)
+
+  .product-services-block
+    ul
+      li
+        +grid-column(2)
         float: none
-// Product information block
-.product-documents-block
-  margin:
-    bottom: emCalc(30)
-  .documents-block-list
+        text-align: center
+        +inline-block(top)
+        white-space: normal
 
+        p
+          display: block
+          padding: 0
+          font-size: 1em
+
+        img
+          display: inline
+          width: emCalc(70)
+          height: emCalc(70)
+          margin: 0
+          margin:
+            bottom: 10px
+
+        p, img
+          float: none
+  
+  .product-documents-block
+    margin:
+      bottom: emCalc(30)
+    .documents-block-list
+
+      li
+        +grid-column(2.5)
+        float: none
+        +inline-block(top)
+        text-align: center
+        margin: 0
+
+        p
+          float: none
+
+        .icon
+          float: none
+          +inline-block(top)
+          margin:
+            bottom: emCalc(20)
+            left: 0
+
+      &.columns-5
+        li
+          +grid-column(2.3)
+          float: none
+          +inline-block(top)
+
+      a
+        padding: 0
+  
+  .product-questionnaire-infografic
+    list-style: none
+    padding: 0
+    margin:
+      bottom: emCalc(40)
     li
-      +grid-column(2.5)
-      float: none
-      +inline-block(top)
+      float: left
+      +grid-column(3.2)
       text-align: center
-      margin: 0
-
-      p
-        float: none
 
       .icon
-        float: none
-        +inline-block(top)
-        margin:
-          bottom: emCalc(20)
-          left: 0
+        +inline-block
 
-    &.columns-5
-      li
-        +grid-column(2.3)
-        float: none
-        +inline-block(top)
+      .icon-small
+        display: none
 
-    a
-      padding: 0
-// Product questionary
-.product-questionnaire-infografic
-  list-style: none
-  padding: 0
-  margin:
-    bottom: emCalc(40)
-  li
-    float: left
-    +grid-column(3.2)
+      p
+        float: none
+  
+  
+  .contacts-block
+    h6
+      margin:
+        bottom: 0
+        top: 0
+      font-size: emCalc(16)
+
+    h2.phone
+      margin:
+        bottom: 0
+      font-size: emCalc(22)
+  
+  .product-insured-block
+    padding:
+      bottom: emCalc(80)
+    .addthis_default_style
+      margin:
+        bottom: 0
+  .large-text-centred
     text-align: center
 
-    .icon
-      +inline-block
+  form
+    .progress-bar-block
+      padding:
+        top: 0
 
-    .icon-small
-      display: none
-
-    p
-      float: none
-// Feedback block
-//.product-feedbacks-block
-.contacts-block
-  h6
-    margin:
-      bottom: 0
-      top: 0
-    font-size: emCalc(16)
-
-  h2.phone
-    margin:
-      bottom: 0
-    font-size: emCalc(22)
-// Insured block
-.product-insured-block
-  padding:
-    bottom: emCalc(80)
-  .addthis_default_style
-    margin:
-      bottom: 0
-.large-text-centred
-  text-align: center
-//progressbar
-form
-  .progress-bar-block
-    padding:
-      top: 0
-
-    .progress-steps
-      margin:
-        left: -2.25em
-        right: -2.25em
-
-      .item
-        font:
-          size: emCalc(11)
-
-      .item-1, .item-3
-        position: relative
-
-      .item-2
+      .progress-steps
         margin:
-          left: 0
+          left: -2.25em
+          right: -2.25em
 
-      .item-3
-        margin:
-          left: 0
-//questionary
-.questionnaire
-  .quest-main-block
-    padding: 0 65px
-.questionnaire-full-form-wrap
-  padding: 0 emCalc(25)
-//section
-.product-information-block
-  [data-section=""], [data-section="auto"], .section-container.auto
-    > section, > .section, > [data-section-region]
-      > .title
-        border:
-          color: transparent
+        .item
+          font:
+            size: emCalc(11)
 
-      > .content
-        border-left-width: 0
-        border-right-width: 0
-        margin:
-          top: 0
-        padding:
-          left: 0
-          right: 0
-          top: emCalc(10)
-          bottom: emCalc(10)
-//sections
-.section-bg-gray,
-.section-bg-dark-gray,
-.section-bg-yelow
-  &.padding-70
-    padding: emCalc(70) 0
-.large-padding-90
-  padding: 
-    top: emCalc(90)
-    bottom: emCalc(90)
-//topbar
-.top-bar
-  .title-area .name h1
-    display: none
-.top-bar
-  .icon-switcher
-    display: none
-  .top-bar-section
-    > ul
-      > li 
-        > a:not(.button)
-          +box-shadow(none)
+        .item-1, .item-3
+          position: relative
 
-    .has-dropdown > a
-      &:hover
-        &:after
+        .item-2
+          margin:
+            left: 0
+
+        .item-3
+          margin:
+            left: 0
+
+  .questionnaire
+    .quest-main-block
+      padding: 0 65px
+  .questionnaire-full-form-wrap
+    padding: 0 emCalc(25)
+
+  .product-information-block
+    [data-section=""], [data-section="auto"], .section-container.auto
+      > section, > .section, > [data-section-region]
+        > .title
           border:
-            color: transparent transparent transparent #fff
-  .top-bar-main-menu
-    padding: 0
+            color: transparent
 
-    ul 
-      li
-        > a
-          +box-shadow(none)
+        > .content
+          border-left-width: 0
+          border-right-width: 0
+          margin:
+            top: 0
+          padding:
+            left: 0
+            right: 0
+            top: emCalc(10)
+            bottom: emCalc(10)
 
-          &:hover
-            background-color: #019fe3 // Old browser
-            +filter-gradient(#019fe3, #41b8ea, vertical) // IE6-9
-            +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
+  .section-bg-gray,
+  .section-bg-dark-gray,
+  .section-bg-yelow
+    &.padding-70
+      padding: emCalc(70) 0
+  .large-padding-90
+    padding: 
+      top: emCalc(90)
+      bottom: emCalc(90)
+
+  .top-bar
+    .title-area .name h1
+      display: none
+  .top-bar
+    .icon-switcher
+      display: none
+    .top-bar-section
+      > ul
+        > li 
+          > a:not(.button)
             +box-shadow(none)
-            color: white
 
-      li.active > a:hover
-        background-color: #019fe3 // Old browser
-        +filter-gradient(#019fe3, #41b8ea, vertical) // IE6-9
-        +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
-        +box-shadow(none)
-        color: white
-
-      li.active > a
-        background: none
-  .top-bar-menu-sub, .dropdown
-    li
-      a
-        font-size: emCalc(14)
-        +box-shadow(none)
-
+      .has-dropdown > a
         &:hover
-          background-color: #019fe3 // Old browser
-          +filter-gradient(#019fe3, #41b8ea, vertical) // IE6-9
+          &:after
+            border:
+              color: transparent transparent transparent #fff
+    .top-bar-main-menu
+      padding: 0
+
+      ul 
+        li
+          > a
+            +box-shadow(none)
+
+            &:hover
+              background-color: #019fe3 
+              +filter-gradient(#019fe3, #41b8ea, vertical) 
+              +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
+              +box-shadow(none)
+              color: white
+
+        li.active > a:hover
+          background-color: #019fe3 
+          +filter-gradient(#019fe3, #41b8ea, vertical) 
           +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
           +box-shadow(none)
           color: white
-.business
-  .top-bar-section
-    > ul > li > a:not(.button), li a:not(.button), > ul > li > a:not(.button).bank-link
-      background: #f7f7f7
-      color: $topbar-link-color
-      +text-shadow(none)
-      +box-shadow(none)
 
-      &:hover
-        background: $yelow-color
+        li.active > a
+          background: none
+    .top-bar-menu-sub, .dropdown
+      li
+        a
+          font-size: emCalc(14)
+          +box-shadow(none)
+
+          &:hover
+            background-color: #019fe3 
+            +filter-gradient(#019fe3, #41b8ea, vertical) 
+            +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
+            +box-shadow(none)
+            color: white
+  .business
+    .top-bar-section
+      > ul > li > a:not(.button), li a:not(.button), > ul > li > a:not(.button).bank-link
         color: $topbar-link-color
-
-    .top-bar-main-menu 
-      ul li.active > a
-        background: #f7f7f7
         +text-shadow(none)
-        color: $blue-color
+        +box-shadow(none)
 
         &:hover
           background: $yelow-color
           color: $topbar-link-color
 
+      .top-bar-main-menu 
+        ul li.active > a
+          background: #f7f7f7
+          +text-shadow(none)
+          color: $blue-color
 
-    .has-dropdown > a
-      &, &:hover
-        &:after
-          border:
-            color: transparent transparent transparent $topbar-link-color
+          &:hover
+            background: $yelow-color
+            color: $topbar-link-color
 
 
-    > ul > li > a:not(.button).bank-link
-      color: $blue-color
+      .has-dropdown > a
+        &, &:hover
+          &:after
+            border:
+              color: transparent transparent transparent $topbar-link-color
 
-      .icon
-        +icons-sprite(lock-blue)
-//type
-h2
-  font-size: emCalc(24)
-h3
-  font-size: emCalc(18)
-//live
-.section-mobile-banner
+
+      > ul > li > a:not(.button).bank-link
+        color: $blue-color
+
+        .icon
+          +icons-sprite(lock-blue)
+
   h2
-    margin:
-      top: emCalc(20)
-.section-proposals
-  &.padding-50
-    padding: emCalc(50) 0
-  h1
-    margin:
-      bottom: 0.3em
-  p
-    margin: 
-      bottom: 2.5em
-.section-chars-block
-  form.columns
-    margin:
-      left: -5%
-    width: 30%
-  .selector-block
-    padding:
-      top: 90px
-  .char-item
-    +clearfix
+    font-size: emCalc(24)
+  h3
+    font-size: emCalc(18)
 
-    .content
-      float: left
-      width: 45%
+  .section-mobile-banner
+    h2
+      margin:
+        top: emCalc(20)
+  .section-proposals
+    &.padding-50
+      padding: emCalc(50) 0
+    h1
+      margin:
+        bottom: 0.3em
+    p
+      margin: 
+        bottom: 2.5em
+  .section-chars-block
+    form.columns
+      margin:
+        left: -5%
+      width: 30%
+    .selector-block
       padding:
-        top: 70px
-      text-align: left
+        top: 90px
+    .char-item
+      +clearfix
 
-    .image
-      float: left
-      width: 55%
-      text-align: left
+      .content
+        float: left
+        width: 45%
+        padding:
+          top: 70px
+        text-align: left
 
-      img
-        width: 100%
-//o_banke
-.douments-block
-  li
-    padding:
-      left: 64px
-  .icon
-    margin:
-      left: -64px
-.documents-inline-block-list
-  li
-    +grid-column(4)
-    float: none
-    +inline-block(top)
-    width: 32%
+      .image
+        float: left
+        width: 55%
+        text-align: left
 
+        img
+          width: 100%
+
+  .douments-block
+    li
+      padding:
+        left: 64px
     .icon
       margin:
-        bottom: 5px
-        left: 0
+        left: -64px
+  .documents-inline-block-list
+    li
+      +grid-column(4)
       float: none
-//press_centre
-.news-list
-  margin: 0 emCalc(-20)
-  li
-    width: 49%
-    margin:
-      bottom: emCalc(40)
-.press-post-block
-  &.row
-    margin:
-      top: emCalc(-40)
-      left: emCalc(-40)
+      +inline-block(top)
+      width: 32%
 
-    &:before
-      display: block
+      .icon
+        margin:
+          bottom: 5px
+          left: 0
+        float: none
 
-    &.simple
-      margin: 
-        top: 0
-  .content-list
-    padding:
-      left: emCalc(25)
-      top: emCalc(40)
-      right: emCalc(25)
-    margin:
-      bottom: emCalc(70)
-  &.simple .content-list
+  .news-list
+    margin: 0 emCalc(-20)
+    li
+      width: 49%
+      margin:
+        bottom: emCalc(40)
+  .press-post-block
+    &.row
+      margin:
+        top: emCalc(-40)
+        left: emCalc(-40)
+
+      &:before
+        display: block
+
+      &.simple
+        margin: 
+          top: 0
     .content-list
       padding:
-        left: emCalc(15)
-        top: emCalc(30)
-        right: emCalc(15)
+        left: emCalc(25)
+        top: emCalc(40)
+        right: emCalc(25)
+      margin:
+        bottom: emCalc(70)
+    &.simple .content-list
+      .content-list
+        padding:
+          left: emCalc(15)
+          top: emCalc(30)
+          right: emCalc(15)
