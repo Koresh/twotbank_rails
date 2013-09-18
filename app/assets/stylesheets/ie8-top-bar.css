@@ -50,13 +50,12 @@
 }
 .lt-ie9 .top-bar-section li a:not(.button):hover { }
 .lt-ie9 .top-bar-section .has-dropdown > a { padding-right: 35px !important; }
+.lt-ie9 .business .top-bar-section .has-dropdown > a { padding-right: 35px !important; }
 .lt-ie9 .top-bar-section .has-dropdown > a:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
-  border: solid 5px;
-  margin-top: -2.5px; 
+  border: none;
+  content: "\00bb";
+  margin-top: -12px;
+  right: 5px; 
 }
 .lt-ie9 .top-bar-section .has-dropdown.moved { position: relative; }
 .lt-ie9 .top-bar-section .has-dropdown.moved > .dropdown { visibility: hidden; }
