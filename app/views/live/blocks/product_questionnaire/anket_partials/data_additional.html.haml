@@ -6,10 +6,10 @@
     .row
       .columns.small-12.large-5
         .input-field
-          %input#maf_codeword{name: "maf_codeword", type: "text", placeholder: "Пример: Байкал", tabindex: "4"}
+          %input#maf_codeword{name: "maf_codeword", type: "text", placeholder: "Пример: Байкал", tabindex: "5"}
           %label Кодовое слово для идентификации 
         .input-field
-          %input#maf_check_code{name: "maf_check_code", type: "text", placeholder: "12345", tabindex: "7"}
+          %input#maf_check_code{name: "maf_check_code", type: "text", placeholder: "12345", tabindex: "6", maxlength: "5"}
           %label
             Код, присланный по sms
             %span#maf_check_code_error.right.error{style: "display: none;"} Код введен неверно

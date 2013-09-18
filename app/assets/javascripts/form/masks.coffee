@@ -12,6 +12,9 @@ class Masks.Base
 class Masks.Phone extends Masks.Base
   mask: "+7 (999) 999-99-99"
 
+class Masks.Spainphone extends Masks.Base
+  mask: "+34 999999999"
+
 class Masks.Date extends Masks.Base
   mask: "99.99.9999"
 

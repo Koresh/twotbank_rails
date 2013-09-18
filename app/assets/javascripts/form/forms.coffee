@@ -305,6 +305,60 @@ class TBank.Form31 extends Backbone.Form
       validators: ["phone"]
       mask: "phone"
 
+class TBank.Form31spain extends Backbone.Form
+  cookie_name: 'Form31'
+  schema:
+    maf_reg_index:
+      validators: ["number"]
+      mask: "postindex"
+    maf_reg_index_forgot:
+      validators: []
+    maf_reg_region:
+      validators: ["address"]
+    maf_reg_city:
+      validators: ["address"]
+    maf_reg_town:
+      validators: []
+    maf_reg_street:
+      validators: ["address"]
+    maf_reg_house:
+      validators: ["addressnum"]
+    maf_reg_flat:
+      validators: ["addressnum"]
+    maf_register_date:
+      validators: ['date']
+      mask: "date"
+    maf_same_address:
+      validators: []
+      dependent_keys: ["maf_loc_index", "maf_loc_index_forgot", "maf_loc_index_forgot", "maf_loc_region", "maf_loc_city", "maf_loc_town", "maf_loc_street", "maf_loc_house", "maf_loc_flat"]
+    maf_loc_index:
+      validators: ["number"]
+      mask: "postindex"
+    maf_loc_index_forgot:
+      validators: []
+    maf_loc_region:
+      validators: ["address"]
+    maf_loc_city:
+      validators: ["address"]
+    maf_loc_town:
+      validators: []
+    maf_loc_street:
+      validators: ["address"]
+    maf_loc_house:
+      validators: ["addressnum"]
+    maf_loc_flat:
+      validators: ["addressnum"]
+    maf_connect_mobile:
+      validators: ["spainphone"]
+      mask: "spainphone"
+    maf_connect_phone_home:
+      validators: []
+    maf_connect_phone_name:
+      validators: ["simpletext"]
+    maf_connect_phone:
+      validators: ["phone"]
+      mask: "phone"
+
 class TBank.Form41 extends Backbone.Form
   cookie_name: 'Form41'
   schema:
@@ -408,38 +462,15 @@ class TBank.Form41spain extends Backbone.Form
       validators: ["number"]
     maf_monthly_spending:
       validators: ["number"]
-
-    maf_way_to_get:
-      validators: ['required']
-      defaults: "office"
-    maf_delivery_address:
-      validators: ['required']
-    maf_city_office:
-      validators: []
-      defaults: "119334, Москва, Ленинский проспект, 30"
-    maf_delivery_city_office:
-      validators: []
-    maf_delivery_type:
-      validators: ['required']
-      defaults: "living"
     maf_is_sms:
       validators: ['required']
       defaults: "yes"
-    maf_currency_rur:
-      validators: []
-      defaults: true
-    maf_currency_usd:
-      validators: []
-      defaults: false
-    maf_currency_eur:
-      validators: []
-      defaults: false
     maf_codeword:
       validators: ['codeword']
     maf_check_code:
       validators: ['checkcode']
-    maf_promo_code:
-      validators: []
+    maf_code_agent:
+      validators: ["number"]
 
     maf_work_index:
       validators: ["number"]

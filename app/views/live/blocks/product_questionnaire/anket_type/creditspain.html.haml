@@ -1,0 +1,51 @@
+%form#questionnaire.questionnaire.custom{autocomplete: "off", data: {form: {type: "creditspain"}}}
+  #questionnaire-fixed.quest-nav-fixed.text-center
+    %a#teaser_short{href: "#"}Заполните заявку
+    = teaser
+  .quest-main-top-corner
+  .quest-main-center-bg
+    .row
+      .quest-main-block.columns.small-12
+        .row
+          .columns.small-12.text-center
+            %h1
+              = anket_title
+
+        = render template: "live/blocks/product_questionnaire/anket_partials/progressbar"
+
+        = render template: "live/blocks/product_questionnaire/anket_partials/data_start"
+
+
+
+  .quest-main-bottom-bg
+  #maf_full_form.questionnaire-full-form{style: "display: none;"}
+    .row.questionnaire-full-form-wrap
+      .small-12.columns.questionnaire-full-form-block
+
+        %a#questionnaire-close-btn.icon-btn-close-red{href: "#maf_close_form"}
+
+        / Step 1
+        .row.questionnaire-step-block.step-1{style: "display: none"}
+          = render template: "live/blocks/product_questionnaire/anket_partials/data_personal"
+
+        / Step 2
+        .row.questionnaire-step-block.step-2{style: "display: none"}
+          = render template: "live/blocks/product_questionnaire/anket_partials/data_contact_info", locals: {phones: "spain_phone"}
+
+        / Step 3
+        .row.questionnaire-step-block.step-3{style: "display: none;"}
+          
+          = render template: "live/blocks/product_questionnaire/anket_partials/data_work_info"
+
+          = render template: "live/blocks/product_questionnaire/anket_partials/data_credit_info"
+
+          = render template: "live/blocks/product_questionnaire/anket_partials/data_additional_spain"
+
+        = render template: "live/blocks/product_questionnaire/anket_partials/step_buttons"
+
+/ Modals
+= render template: "live/blocks/product_questionnaire/anket_modals/modal_close"
+
+= render template: "live/blocks/product_questionnaire/anket_modals/modal_success"
+
+= render template: "live/blocks/product_questionnaire/anket_modals/modal_reject"

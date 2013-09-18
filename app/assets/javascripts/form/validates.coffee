@@ -32,6 +32,9 @@ class Validates.Name extends Validates.Base
 class Validates.Phone extends Validates.Base
   regular: /^\+\d\s\([\d]{3}\)\s[\d]{3}\-[\d]{2}\-[\d]{2}$/
 
+class Validates.Spainphone extends Validates.Base
+  regular: /^(\+\d\d\s\d{9})*$/
+
 class Validates.Date extends Validates.Base
   regular: /^[\d]{2}\.[\d]{2}\.[\d]{4}$/
 

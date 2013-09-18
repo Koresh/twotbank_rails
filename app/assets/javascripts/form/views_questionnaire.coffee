@@ -175,6 +175,7 @@ class TBank.PersonalForm extends TBank.StepView
 
   afterRender: ->
     @model.on "change:maf_foreign_relations_flag", =>
+      # console.log "Changed!"
       @relationsChange()
 
     @model.trigger "change:maf_foreign_relations_flag"
@@ -310,6 +311,21 @@ class TBank.ContactFormHomePhone extends TBank.StepView
 #      @sendmodel.setRegisterAddress @addressForm.getRegisterAddress()
 
 
+class TBank.ContactSpain extends TBank.ContactFormHomePhone
+  _model: TBank.Form31spain
+
+  afterGotoStep: ->
+
+  afterRender: ->
+
+    @changeHomePhone()
+
+    @addressForm = new TBank.AddressForm
+      container: @el
+      model: @model
+      is_sync: true
+
+
 
 class TBank.Step4 extends TBank.StepView
   _model: TBank.Form4
@@ -321,13 +337,15 @@ class TBank.Step4 extends TBank.StepView
 
 
   deliveryChange: (e) ->
+    # console.log $(e.target).val()
+    # console.log @sendmodel.getLivingAddress()
     if $(e.target).val() is "living"
       $("#maf_delivery_address").val( @sendmodel.getLivingAddress() ).trigger "change"
     else
       $("#maf_delivery_address").val( @sendmodel.getRegisterAddress() ).trigger "change"
 
   stepvalidate: (callback) ->
-    #console.log 'stepvalidatedate'
+    # console.log 'stepvalidatedate'
     @api.checkCode @sendmodel.get('mobile_phone'), @model.get('maf_check_code'), (status)=>
       if status
         $('#maf_check_code_error').hide()
@@ -360,13 +378,12 @@ class TBank.Step4 extends TBank.StepView
 
   # Костыль, чтобы убрасть доставку курьером
   hideCourier: ->
-    #$("#maf_way_to_get_courier").parents(".inline-fields").hide()
-    #$("#maf_way_to_get_office").parents(".inline-fields").hide().parent().addClass("text-center").html("<div clas='input-field'>В офисе</div>")
     $("#maf_way_to_get_office").parents(".inline-fields").parent().addClass("text-center").html("<div class='columns small-12 input-field'>В офисе</div>")
+    @disabledHash.push "maf_delivery_address"
 
 
   afterGotoStep: ->
-    $("input[name='maf_delivery_type']").trigger "change"
+    # $("input[name='maf_delivery_type']").trigger "change"
 
 
   afterRender: ->
@@ -445,8 +462,8 @@ class TBank.Step4Transfer extends TBank.Step4Credit
 
 
   afterRender: ->
-    @model.on "change", =>
-      #console.log @model.toJSON()
+    # @model.on "change", =>
+    #   #console.log @model.toJSON()
 
     @work_hash = ["maf_work_title","maf_work_expirience","maf_work_phone","maf_work_phone_add"]
 
@@ -583,6 +600,7 @@ class TBank.Step4CreditSpain extends TBank.Step4Credit
       @setError('maf_staying_from')
       valid &&= false
 
+    # console.log valid
 
     if valid
       super(callback)
@@ -863,8 +881,8 @@ class TBank.Layout.CreditSpain extends TBank.Layout
   type: 'creditspain'
   steps: [
     {view: TBank.StartForm, el: '#form-main-step'},
-    {view: TBank.PersonalForm, el: '#maf_full_form_main .step1'},
-    {view: TBank.ContactFormHomePhone, el: '#maf_full_form_main .step2'}
-    {view: TBank.Step4CreditSpain, el: '#maf_full_form_main .step3'}
+    {view: TBank.PersonalForm, el: '.questionnaire-step-block.step-1'},
+    {view: TBank.ContactSpain, el: '.questionnaire-step-block.step-2'}
+    {view: TBank.Step4CreditSpain, el: '.questionnaire-step-block.step-3'}
     {view: TBank.FinalStepCredit, el: '#maf_success'}
   ]

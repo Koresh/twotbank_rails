@@ -1,0 +1,18 @@
+%p Контакты для связи со мной:
+.row
+  .columns.small-12.large-6.input-field
+    %input#maf_connect_mobile{name:"maf_connect_mobile", type: "text", placeholder: "+34 123456789", tabindex: "16"}
+    %label Контакты для связи в Испании
+
+.row
+  .columns.small-12.large-12
+    .input-field.input-accept
+      %label{for: "maf_connect_phone_home"}
+        %input#maf_connect_phone_home{type: "checkbox", name: "maf_connect_phone_home", value: "yes"}
+        Есть домашний телефон
+  #maf_connect_phone_name_field.columns.small-12.large-6.input-field
+    %input#maf_connect_phone_name{name:"maf_connect_phone_name", type: "text", placeholder: "Фамилия Имя Отчество", tabindex: "17"}
+    %label ФИО контактного лица (знакомый, родственник)
+  .columns.small-12.large-6.input-field.left
+    %input#maf_connect_phone{name:"maf_connect_phone", type: "text", placeholder: "+7 (495) 123-45-67", tabindex: "18"}
+    %label#maf_connect_phone_title Телефон контактного лица

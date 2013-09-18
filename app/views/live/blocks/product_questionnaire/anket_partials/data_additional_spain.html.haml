@@ -1,0 +1,59 @@
+.columns.small-12
+  %h2 Дополнительная информация
+  %fieldset
+    .row
+      .columns.small-12.large-6.input-field
+        %input#maf_visa_from{type: "text", name: "maf_visa_from", placeholder: "", value: "", tabindex: "1"}
+        %label Срок действия визы с
+
+      .columns.small-12.large-6.input-field
+        %input#maf_visa_to{type: "text", name: "maf_visa_to", placeholder: "", value: "", tabindex: "2"}
+        %label Срок действия визы до
+
+    .row
+      .columns.small-12.large-6.input-field
+        %input#maf_staying_from{type: "text", name: "maf_staying_from", placeholder: "", value: "", tabindex: "3"}
+        %label Срок пребывания в стране с
+
+      .columns.small-12.large-6.input-field
+        %input#maf_staying_to{type: "text", name: "maf_staying_to", placeholder: "", value: "", tabindex: "4"}
+        %label Срок пребывания в стране до
+
+    .row
+      .columns.small-12.large-6.input-field
+        %input#maf_hotel_name{type: "text", name: "maf_hotel_name", placeholder: "", value: "", tabindex: "5"}
+        %label Название отеля
+
+      .columns.small-12.large-6.input-field
+        %input#maf_hotel_address{type: "text", name: "maf_hotel_address", placeholder: "", value: "", tabindex: "6"}
+        %label Адрес отеля
+
+    .row
+      .columns.small-12.large-5
+        .input-field
+          %input#maf_codeword{name: "maf_codeword", type: "text", placeholder: "Пример: Байкал", tabindex: "7"}
+          %label Кодовое слово для идентификации 
+
+
+        .input-field
+          %input#maf_code_agent{name: "maf_code_agent", type: "text", placeholder: "", tabindex: "8"}
+          %label Номер вашего агента (если не помните - 0)
+
+        .input-field
+          %input#maf_check_code{name: "maf_check_code", type: "text", placeholder: "12345", tabindex: "9"}
+          %label
+            Код, присланный по sms
+            %span#maf_check_code_error.right.error{style: "display: none;"} Код введен неверно
+
+      .columns.small-12.large-7.input-field
+        %ul.inline-fields.inline-list
+          %li
+            %strong SMS-информирование
+          %li
+            %label{for: "maf_is_sms_yes"}
+              %input#maf_is_sms_yes{type: "radio", name: "maf_is_sms", value: "yes", checked: "checked"}
+              Да 
+          %li
+            %label{for: "maf_is_sms_no"}
+              %input#maf_is_sms_no{type: "radio", name: "maf_is_sms", value: "no"}
+              Нет    
