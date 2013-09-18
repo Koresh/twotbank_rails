@@ -14,8 +14,7 @@ class LiveController < ApplicationController
   def credit_account
   end
 
-  def tvklad
-    
+  def dohodniy_schet_plus
   end
 
   def credit_landing
