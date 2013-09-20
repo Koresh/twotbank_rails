@@ -46,6 +46,11 @@ form
       display: none
 
     &.error
+      h2
+        color: $alert-color
+      p
+        color: $alert-color
+        
       .error-msg
         display: block
 
@@ -164,9 +169,19 @@ form .input-field
     color: $body-font-color
     font-family: "MyriadProRegular"
 
+    h2
+      font-size: 1.8em
+      margin:
+        top: -3px
+
     p
       font-size: 13px
       margin: 0
+
+      &.medium
+        font-size: 14px
+        margin: 
+          bottom: emCalc(10)
 
     .custom.checkbox
       margin: 

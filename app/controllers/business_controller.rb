@@ -39,4 +39,8 @@ class BusinessController < ApplicationController
   def documents_and_rates
   end
 
+  def buhsoft
+    
+  end
+
 end

@@ -790,7 +790,7 @@ class TBank.BuhsoftStep extends TBank.StepView
 
     #console.log "123123123"
 
-    $(".buhsoft-products").find(".item").find("input[type='checkbox']").each (i, container) =>
+    $("#buhsoft-products-list").find(".input-field").find("input[type='checkbox']").each (i, container) =>
       #console.log container
       valid = true if $(container).is(":checked")
       return true
