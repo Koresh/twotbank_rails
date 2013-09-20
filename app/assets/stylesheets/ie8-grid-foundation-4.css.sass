@@ -393,15 +393,10 @@
       bottom: emCalc(90)
   //topbar
   .top-bar
-    .title-area .name h1
-      display: none
-  .top-bar
-    .icon-switcher
-      display: none
     .top-bar-section
       > ul
         > li 
-          > a:not(.button)
+          > a
             +box-shadow(none)
 
       .has-dropdown > a
@@ -409,75 +404,13 @@
           &:after
             border:
               color: transparent transparent transparent #fff
-    .top-bar-main-menu
-      padding: 0
 
-      ul 
-        li
-          > a
-            +box-shadow(none)
-
-            &:hover
-              background-color: #019fe3 // Old browser
-              +filter-gradient(#019fe3, #41b8ea, vertical) // IE6-9
-              +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
-              +box-shadow(none)
-              color: white
-
-        li.active > a:hover
-          background-color: #019fe3 // Old browser
-          +filter-gradient(#019fe3, #41b8ea, vertical) // IE6-9
-          +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
-          +box-shadow(none)
-          color: white
-
-        li.active > a
-          background: none
-    .top-bar-menu-sub, .dropdown
-      li
-        a
-          font-size: emCalc(14)
-          +box-shadow(none)
-
-          &:hover
-            background-color: #019fe3 // Old browser
-            +filter-gradient(#019fe3, #41b8ea, vertical) // IE6-9
-            +background-image(linear-gradient(top, #019fe3 0%,#0ea4e5 26%,#34b2e9 74%,#41b8ea 100%))
-            +box-shadow(none)
-            color: white
   .business
     .top-bar-section
-      > ul > li > a:not(.button), li a:not(.button), > ul > li > a:not(.button).bank-link
-        color: $topbar-link-color
-        +text-shadow(none)
-        +box-shadow(none)
-
-        &:hover
-          background: $yelow-color
-          color: $topbar-link-color
-
-      .top-bar-main-menu 
-        ul li.active > a
-          background: #f7f7f7
-          +text-shadow(none)
-          color: $blue-color
-
-          &:hover
-            background: $yelow-color
-            color: $topbar-link-color
-
-
-      .has-dropdown > a
-        &, &:hover
-          &:after
-            border:
-              color: transparent transparent transparent $topbar-link-color
-
-
-      > ul > li > a:not(.button).bank-link
-        color: $blue-color
-
+      > ul > li > a.bank-link
         .icon
+          +icons-sprite(lock-white)
+        &:hover .icon
           +icons-sprite(lock-blue)
   //type
   h2

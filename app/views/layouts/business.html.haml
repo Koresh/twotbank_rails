@@ -21,6 +21,8 @@
   = javascript_include_tag "vendor/custom.modernizr"
   = csrf_meta_tag
 
+  /[if IE 8 ] <script src="/assets/selectivizr-min.js"></script>
+
 %body.business
 
   = render template: "shared/topbar_business"
