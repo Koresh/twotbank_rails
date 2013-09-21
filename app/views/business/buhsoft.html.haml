@@ -9,8 +9,53 @@
 
   = render template: "business/blocks/product_questionnaire/anket_type/buhsoft"
 
-%section.section-bg-blue-business.shadow-inset.margin-top-230
+%section.section-bg-blue-business.shadow-inset.margin-top-230{:style => "margin-bottom:-100px"}
   .row
-    .columns.small-12
-      %h1.text-center
-        Специальное предложение для начинающих предпринимателей
+    .columns.small-12.large-12
+      %h1.text-center.buhsoft-cat-title
+        Специальное предложение
+        %br
+        для начинающих предпринимателей
+    .columns.small-8.large-8.left.large-offset-2
+      .row
+        .columns.large-6.buhsoft-cat
+          = image_tag "katten.ac40b49bcca6.png"
+        .columns.large-6.text-center.buhsoft-text
+          %p.padding-top-100
+            Дополнительно 0,7% годовых начисляется ежедневно на остаток на расчетном счете.
+  .quest-main-top-corner
+  .quest-main-center-bg
+    .row
+      .quest-main-block.columns.small-12
+        .row
+          .columns.small-12.text-center.buhsoft-text
+            %h1 Свяжитесь с нами
+            %p любым удобным способом, и мы расскажем как открыть счёт.
+        %section.padding-top-10.small-10.large-10.large-offset-1
+          .row.contacts-block
+            .columns.small-12.large-3
+              .row
+                .columns.small-3.large-12
+                  %h6 Позвоните нам:
+                .columns.small-6.large-12
+                  %h2.phone 8-800-100-94-34
+                .columns.small-3.large-12
+                  %h6.phone +7 (495) 223-38-88
+            .columns.small-12.large-3
+              %a.button.radius.expand{href: "#", data: {reveal: {id: "modal-callback-form"}}}
+                Мы
+                %br
+                перезвоним вам
+            .columns.small-12.large-3
+              %a.button.radius.expand{href: "http://zingaya.com/widget/b6c6c9bd6e774ed391c5925e51ad9ee0", rel: "nofollow", onclick: "_gaq.push(['_trackEvent', 'button', 'call_with_site', 'click']); window.open(this.href +'?referrer='+escape(window.location.href), '_blank', 'width=230,height=175,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false"}
+                Лучше
+                %br
+                я позвоню с сайта
+            .columns.small-12.large-3
+              %a.button.radius.expand{href: "#", onclick: "_gaq.push(['_trackEvent', 'button', 'chat_with_specialist', 'click']);"}
+                Чат
+                %br
+                со специалистом
+  .quest-main-bottom-bg
+
+%div{:style => "height:180px;background:#fff"}
