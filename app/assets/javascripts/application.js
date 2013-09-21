@@ -23,6 +23,7 @@
 //= require jquery.nouislider.min
 //= require select2
 //= require select2_locale_ru
+//= require scroll-navigate
 //= require monkey_patching
 // require tbank.kladr
 //= require tbank.kladr_test

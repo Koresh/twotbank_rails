@@ -1,10 +1,5 @@
 = render template: "live/blocks/product_banner/dohodniy_schet_plus"
 %section.padding-40
-  .row
-    .columns.small-12.text-center
-      %h2.margin-bottom-20
-        Собирайте и преумножайте свои средства с максимальной выгодой!
-
   .row.large-text-centred
     .columns.small-12.large-centered.large-10
       .row
@@ -40,7 +35,7 @@
             .columns.small-10.large-12
               %p.small
                 Получайте дополнительный доход по повышенной процентной ставке на премиальных счетах!
-                %a#scroll-to-table{href: "#"} Подробнее
+                %a#scroll-to-table.js-scroll-navigate{href: "#dohodniy-schet-plus-stavki"} Подробнее
                 \.
         
         
@@ -48,6 +43,7 @@
         
 
 = render template: "live/blocks/product_services/dohodniy_schet_plus"
+#dohodniy-schet-plus-stavki
 = render template: "live/blocks/product_information/dohodniy_schet_plus"
 
 %section
