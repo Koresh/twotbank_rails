@@ -1,4 +1,5 @@
 TwotbankRails::Application.routes.draw do
+  get "errors/error_404"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -54,6 +55,9 @@ TwotbankRails::Application.routes.draw do
   get 'business/documents-and-rates' => 'business#documents_and_rates'
   get 'business/dohodniy-schet-dlya-biznesa' => 'business#dohodniy_schet_dlya_biznesa'
   get 'business/special/buhsoft'    => 'business#buhsoft'
+
+  #404
+  get '*not_found' => 'errors#error_404' #unless Rails.application.config.consider_all_requests_local
   
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
