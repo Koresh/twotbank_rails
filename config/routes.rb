@@ -47,6 +47,7 @@ TwotbankRails::Application.routes.draw do
 
   #press-centre
   get 'press-centre'           => 'press_centre#index'
+  get 'business/press-centre'           => 'press_centre#index'
   get 'press-centre/press'     => 'press_centre#press'
   get 'press-centre/news'      => 'press_centre#news'
   get 'press-centre/press/155' => 'press_centre#news_item'

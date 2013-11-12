@@ -1,5 +1,7 @@
 class PressCentreController < ApplicationController
 
+  layout :set_layout
+
   def index
     
   end
@@ -14,6 +16,15 @@ class PressCentreController < ApplicationController
 
   def news
     
+  end
+
+  def set_layout
+    "application"
+    if request.path === "/business/press-centre"
+      "business"
+    end
+
+
   end
 
 end
