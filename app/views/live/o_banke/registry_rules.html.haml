@@ -1,0 +1,89 @@
+%section.padding-top-30.bank-about-page
+  .row
+    .columns.small-12.large-3.bank-about-sidebar
+      .row
+        .logo-block.columns.small-4.large-10
+          = image_tag "logo-black.png"
+
+        .columns.small-8.large-12
+          %ul.side-nav
+            %li
+              %a{href: "/o-banke/", title: "О банке"} 
+                Информация о Банке
+            %li
+              %a{href: "/o-banke/info/", title: "Раскрытие информации"} 
+                Раскрытие информации
+            %li
+              %a{href: "/o-banke/financial-statements/", title: "Финансовая отчетность"} 
+                Финансовая отчетность
+            %li
+              %a{href: "/o-banke/requisites/", title: "Реквизиты"} 
+                Реквизиты
+            %li.active Правила ведения реестра владельцев акций Банка 
+
+    .columns.small-12.large-9.margin-bottom-40
+      %h1 Правила ведения реестра владельцев акций Банка
+      %section.statement-section
+        %ul.statements-documents-list
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p
+              %a{target: "_blank", href: "/media/download/436.pdf", title: "Правила ведения Реестра Банк-Т (ОАО)"} Правила ведения Реестра Банк-Т (ОАО)
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Анкета зарегистрированного лица (для физических лиц)
+              %a{target: "_blank", href: "/media/download/435.pdf", title: "Приложение 1"} Приложение 1
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Анкета зарегистрированного лица (для юридических лиц)
+              %a{target: "_blank", href: "/media/download/437.pdf", title: "Приложение 2"} Приложение 2
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Передаточное распоряжение
+              %a{target: "_blank", href: "/media/download/438.pdf", title: "Приложение 3"} Приложение 3
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Залоговое распоряжение
+              %a{target: "_blank", href: "/media/download/439.pdf", title: "Приложение 4"} Приложение 4
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Распоряжение на блокирование/разблокирование операций по лицевому счету
+              %a{target: "_blank", href: "/media/download/440.pdf", title: "Приложение 5"} Приложение 5
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Выписка из реестра акционеров
+              %a{target: "_blank", href: "/media/download/447.pdf", title: "Приложение 6"} Приложение 6
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Уведомление о проведенной операции
+              %a{target: "_blank", href: "/media/download/441.pdf", title: "Приложение 7"} Приложение 7
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Справка о наличии на лицевом счете указанного количества ценных бумаг
+              %a{target: "_blank", href: "/media/download/442.pdf", title: "Приложение 8"} Приложение 8
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Историческая выписка с лицевого счета
+              %a{target: "_blank", href: "/media/download/443.pdf", title: "Приложение 9"} Приложение 9
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Запрос на выдачу информации из реестра
+              %a{target: "_blank", href: "/media/download/444.pdf", title: "Приложение 10"} Приложение 10
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Правила внутреннего документооборота и контроля Банк–Т (ОАО)
+              %a{target: "_blank", href: "/media/download/445.pdf", title: "Приложение 11"} Приложение 11
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %a{target: "_blank", href: "/media/download/446.pdf", title: "Приложения 1-2 к Правилам документооборота"} Приложения 1-2 к Правилам документооборота
+            .columns.small-4.empty
+
+
+%section.product-feedbacks-block
+  = render template: "shared/feeds"
+  = render template: "shared/contacts"

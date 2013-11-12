@@ -1,0 +1,114 @@
+%section.padding-top-30.bank-about-page
+  .row
+    .columns.small-12.large-3.bank-about-sidebar
+      .row
+        .logo-block.columns.small-4.large-10
+          = image_tag "logo-black.png"
+
+        .columns.small-8.large-12
+          %ul.side-nav
+            %li
+              %a{href: "/o-banke/", title: "О банке"} 
+                Информация о Банке
+            %li
+              %a{href: "/o-banke/info/", title: "Раскрытие информации"} 
+                Раскрытие информации     
+            %li.active
+              Финансовая отчетность
+              %ul.hash-nav
+                %li
+                  %a{href: "#"}
+                    Годовой отчет за 2012 год
+                %li
+                  %a{href: "#"}
+                    Отчет банка по МСФО
+                %li
+                  %a{href: "#"}
+                    Баланс по РСБУ
+                %li
+                  %a{href: "#"}
+                    Балансы оборотно-сальдовой ведомости по форме 101
+                %li
+                  %a{href: "#"}
+                    Отчет о прибылях и убытках по РСБУ
+                %li
+                  %a{href: "#"}
+                    Отчеты о прибылях и убытках (форма 102)
+                %li
+                  %a{href: "#"}
+                    Расчет собственных средств (капитала) банка (форма 134)
+                %li
+                  %a{href: "#"}
+                    Информация об обязательных нормативах (форма 135)
+
+            %li
+              %a{href: "/o-banke/requisites/", title: "Реквизиты"} 
+                Реквизиты
+            %li
+              %a{href: "/o-banke/registry-rules/", title: "Правила ведения реестра владельцев акций Банка "} 
+                Правила ведения реестра владельцев акций Банка 
+
+    .columns.small-12.large-9.margin-bottom-40
+      %h1 Финансовая отчетность
+      %section.statement-section
+        %h2 Годовой отчет за 2012 год
+        %ul.statements-documents-list
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-txt
+              %p Бухгалтерский баланс
+              %a{hfer: "/media/download/F806.TXT", target: "_blank", title: "Отчет банка по МСФО"} ф.806 на 01.01.2013
+            .columns.small-4
+              %i.icon.icon-docs-txt
+              %p Отчет о прибылях и убытках
+              %a{hfer: "/media/download/F807.TXT", target: "_blank", title: "Отчет банка по МСФО"} ф.807 за 2012 год
+            .columns.small-4
+              %i.icon.icon-docs-txt
+              %p Отчет об уровне достаточности капитала
+              %a{hfer: "/media/download/F808.TXT", target: "_blank", title: "Отчет банка по МСФО"} ф.808 на 01.01.2013
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-txt
+              %p Сведения об обязательных нормативах
+              %a{hfer: "/media/download/F813.TXT", target: "_blank", title: "Отчет банка по МСФО"} ф.813 на 01.01.2013
+            .columns.small-4
+              %i.icon.icon-docs-txt
+              %p Отчет о движении денежных средств
+              %a{hfer: "/media/download/F814.TXT", target: "_blank", title: "Отчет банка по МСФО"} ф.814 за 2012 год
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Отчет за 2012 год
+              %a{hfer: "/media/download/audit-rsbu2012-god2012.pdf", target: "_blank", title: "Отчет банка по МСФО"} Аудиторское заключение
+
+
+      %section.statement-section
+        %h2 Отчет банка по МСФО
+        %ul.statements-documents-list
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Отчет за 2012 год
+              %a{hfer: "/media/download/MSFO-2012.pdf", target: "_blank", title: "Отчет банка по МСФО"} Отчет банка по МСФО
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Отчет за 2012 год
+              %a{hfer: "/media/download/auditor-msfo-2012.pdf", target: "_blank", title: "Аудиторское заключение финансовой отчетности по МСФО"} Аудиторское заключение финансовой отчетности по МСФО
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Отчет за 2012 год
+              %a{hfer: "/media/download/primechanie-msfo-2012.pdf", target: "_blank", title: "Примечания к МСФО"} Примечания к МСФО
+          %li.row
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Отчет за 2012 год
+              %a{hfer: "/media/download/497.pdf", target: "_blank", title: "Отчет банка по МСФО"} Отчет банка по МСФО
+            .columns.small-4
+              %i.icon.icon-docs-pdf
+              %p Отчет за 2012 год
+              %a{hfer: "/media/download/496.pdf", target: "_blank", title: "Аудиторское заключение финансовой отчетности по МСФО"} Аудиторское заключение финансовой отчетности по МСФО
+            .columns.small-4.empty
+
+
+%section.product-feedbacks-block
+  = render template: "shared/feeds"
+  = render template: "shared/contacts"

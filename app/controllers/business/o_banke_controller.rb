@@ -1,4 +1,7 @@
-class OBankeController < ApplicationController
+class Business::OBankeController < ApplicationController
+
+  layout "business"
+
   def index
     
   end
@@ -12,6 +15,10 @@ class OBankeController < ApplicationController
   end
 
   def financial_statements
+    
+  end
+
+  def registry_rules
     
   end
 end

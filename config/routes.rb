@@ -27,12 +27,23 @@ TwotbankRails::Application.routes.draw do
   get 'contacts'            => 'contacts#index'
   get 'credit-landing'      => 'live#credit_landing'
 
+  #live
   #o-banke
-  get 'o-banke'            => 'o_banke#index'
-  get 'o-banke/requisites' => 'o_banke#requisites'
-  get 'o-banke/info'       => 'o_banke#info'
-  get 'o-banke/financial-statements'  => "o_banke#financial_statements"
+  get 'o-banke'            => 'live/o_banke#index'
+  get 'o-banke/requisites' => 'live/o_banke#requisites'
+  get 'o-banke/info'       => 'live/o_banke#info'
+  get 'o-banke/financial-statements'  => "live/o_banke#financial_statements"
+  get 'o-banke/registry-rules'        => "live/o_banke#registry_rules"
   get 'ajax/geo/offices/:city_id'     => 'api#offices'
+
+  #business
+  #o-banke
+  get 'business/o-banke'            => 'business/o_banke#index'
+  get 'business/o-banke/requisites' => 'business/o_banke#requisites'
+  get 'business/o-banke/info'       => 'business/o_banke#info'
+  get 'business/o-banke/financial-statements'  => "business/o_banke#financial_statements"
+  get 'business/o-banke/registry-rules'        => "business/o_banke#registry_rules"
+
 
   #press-centre
   get 'press-centre'           => 'press_centre#index'
