@@ -1,0 +1,131 @@
+%section.bank-about-information
+  .row
+    .columns.small-12.large-3.bank-about-sidebar
+      .row
+        .logo-block.columns.small-5.large-10
+          = image_tag "logo-black.png"
+
+        .columns.small-6.large-12
+          .accordion-nav.auto{data: {section: "accordion"}}
+            %h5 Акции
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:"#"}
+                  Актуальные акции
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/95/", title: "Вклад+"} Вклад+
+                    %li
+                      %a{href: "/clients/29/", title: "Приведи друга"} Приведи друга
+                    %li
+                      %a{href: "/clients/49/", title: "Онлайн вклад на срок"} Онлайн вклад на срок
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:"#"}
+                  Архив
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/31/", title: "Весна+"} Весна+
+                
+                    %li
+                      %a{href: "/clients/51/", title: "Зима+"} Зима+
+                
+                    %li
+                      %a{href: "/clients/32/", title: "Больше доход с Интернет-Банком"} Больше доход с Интернет-Банком
+                
+                    %li
+                      %a{href: "/clients/102/", title: "Онлайн вклад до востребования"} Онлайн вклад до востребования
+                            
+            %h5 Тарифы и документы
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:"#"}
+                  Документы
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/35/", title: "Актуальные документы"} Актуальные документы    
+                    %li
+                      %a{href: "/clients/36/", title: "Документы для Сейфовых ячеек"} Документы для Сейфовых ячеек
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:"#"}
+                  Тарифы
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/39/", title: "Актуальные тарифы"} Актуальные тарифы
+                    %li
+                      %a{href: "/clients/40/", title: "Архивные тарифы"} Архивные тарифы
+            %h5 Условия
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:"#"}
+                  Депозитные продукты
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/44/", title: "тВклад"} тВклад
+                    %li
+                      %a{href: "/clients/101/", title: "Вклад на срок"} Вклад на срок
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:""}
+                  Кредитные продукты
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/46/", title: "Овердрафт к расчетной карте"} Овердрафт к расчетной карте
+                    %li
+                      %a{href: "/clients/47/", title: "Ипотечный кредит"} Ипотечный кредит
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:""}
+                  Архив
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/43/", title: "Доходный счет+"} Доходный счет+
+                    %li
+                      %a{href: "/clients/100/", title: "Доходный счет"} Доходный счет
+            %h5 Сервис
+            %section
+              %p.title{data:{section:{title: ""}}}
+                %a{href:""}
+                  Пополнение счета
+              .content{data:{section:{content:""}}}
+                .side-nav
+                  .hash-nav
+                    %li
+                      %a{href: "/clients/55/", title: "Безналичный перевод"} Безналичный перевод
+                    %li
+                      %a{href: "/clients/56/", title: "Перевод зарплаты на ваш счет"} Перевод зарплаты на ваш счет
+
+    .columns.small-12.large-9
+      %h1 Документы и тарифы
+      / В этот блок выводится контент
+      .clients-page-content-block
+        %h2 Популярные вопросы
+        %ul
+          %li
+            %a{href: "/clients/55/", title: "Безналичный перевод"} Безналичный перевод
+          %li
+            %a{href: "/clients/39/", title: "Актуальные тарифы"} Актуальные тарифы
+          %li
+            %a{href: "/clients/35/", title: "Актуальные документы"} Актуальные документы
+          %li
+            %a{href: "/clients/40/", title: "Архивные тарифы"} Архивные тарифы
+          %li
+            %a{href: "/clients/36/", title: "Документы для Сейфовых ячеек"} Документы для Сейфовых ячеек
+
+%section.padding-70
+  = render template: "shared/contacts"

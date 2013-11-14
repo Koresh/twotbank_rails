@@ -68,6 +68,9 @@ TwotbankRails::Application.routes.draw do
   get 'business/dohodniy-schet-dlya-biznesa' => 'business#dohodniy_schet_dlya_biznesa'
   get 'business/special/buhsoft'    => 'business#buhsoft'
 
+  #clients
+  get 'clients'                     => 'clients#index'
+
   #404
   get '*not_found' => 'errors#error_404' #unless Rails.application.config.consider_all_requests_local
   
