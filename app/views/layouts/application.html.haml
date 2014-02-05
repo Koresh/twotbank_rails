@@ -17,10 +17,6 @@
 
   %title= content_for?(:title) ? yield(:title) : "Untitled"
 
-  /[if IE 7 ] <script src="/assets/ie/ie7.js"></script>
-  /[if IE 8 ] <script src="/assets/ie/ie8.js"></script>
-  /[if IE 9 ] <script src="/assets/ie/ie9.js"></script>
-
   = stylesheet_link_tag "application"
   = javascript_include_tag "vendor/custom.modernizr"
   = csrf_meta_tag
@@ -28,9 +24,9 @@
   %link{:rel => "shortcut icon", :href => "/favicon.ico"}
   %link{:rel => "apple-touch-icon", :href => "/apple-touch-icon.png"}
 
- 
+  /[if IE 8 ] <script src="/assets/jquery.js"></script>
 
-
+  /[if IE 8 ] <script src="/assets/selectivizr-min.js"></script>
 
 %body
 
